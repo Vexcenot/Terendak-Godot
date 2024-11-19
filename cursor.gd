@@ -15,6 +15,7 @@ func _process(delta: float) -> void:
 	clicking()
 	punch_fist()
 	punching()
+	wintime()
 
 
 
@@ -53,6 +54,7 @@ func punching():
 		$hand1.frame = FIST;
 		
 var logged = false
+var logged2 = false
 
 func punch_fist():
 	if logged == true:
@@ -61,7 +63,15 @@ func punch_fist():
 func _on_punch_area_entered(area: Area2D) -> void:
 	if area.is_in_group("log"):
 		logged = true
+	if area.is_in_group("log2"):
+		logged2 = true
 
 func _on_punch_area_exited(area: Area2D) -> void:
 	if area.is_in_group("log"):
 		logged = false
+	if area.is_in_group("log2"):
+		logged2 = false
+
+func wintime():
+	if logged2 and DragManager.lastworm and DragManager.is_dragging:
+		get_tree().change_scene_to_file("res://scenes/win_condition.tscn")

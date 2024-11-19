@@ -150,5 +150,6 @@ libraries = {
 "": SubResource("AnimationLibrary_ywe1v")
 }
 
+[connection signal="area_entered" from="grab" to="." method="_on_grab_area_entered"]
 [connection signal="area_entered" from="punch" to="." method="_on_punch_area_entered"]
 [connection signal="area_exited" from="punch" to="." method="_on_punch_area_exited"]

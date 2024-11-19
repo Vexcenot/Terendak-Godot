@@ -56,7 +56,7 @@ var logged = false
 
 func punch_fist():
 	if logged == true:
-		$hand1.frame = FIST;
+		$hand1.frame = SPEAR;
 		
 func _on_punch_area_entered(area: Area2D) -> void:
 	if area.is_in_group("log"):

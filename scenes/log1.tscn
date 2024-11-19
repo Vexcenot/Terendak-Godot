@@ -1,0 +1,72 @@
+[gd_scene load_steps=7 format=3 uid="uid://cqb543nxl5wq8"]
+
+[ext_resource type="Texture2D" uid="uid://og1rub1pvijm" path="res://textures/lvl2.png" id="1_q8m3h"]
+[ext_resource type="Script" path="res://addons/donut_collision_polygon2D/donut_collision_polygon2D.gd" id="2_40ilr"]
+[ext_resource type="PackedScene" uid="uid://db8ykwgxb2vsd" path="res://scenes/sago.tscn" id="3_ol5ka"]
+[ext_resource type="PackedScene" uid="uid://bsify1dghbou2" path="res://scenes/wood shavings.tscn" id="4_ebgvj"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_l2yyt"]
+radius = 148.084
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mp7ck"]
+radius = 176.045
+
+[node name="log1" type="StaticBody2D" groups=["log"]]
+scale = Vector2(1.8, 1.8)
+
+[node name="lvl1" type="Sprite2D" parent="."]
+texture = ExtResource("1_q8m3h")
+
+[node name="Area2D" type="Area2D" parent="."]
+rotation = 0.00151274
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-1.01059, -6.99848)
+shape = SubResource("CircleShape2D_l2yyt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3, -7)
+shape = SubResource("CircleShape2D_mp7ck")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+
+[node name="DonutCollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2(-1.49998, -9.5)
+scale = Vector2(14.1761, 14.1761)
+polygon = PackedVector2Array(6.73533e-16, -11, 2.14599, -10.7886, 4.20952, -10.1627, 6.11127, -9.14617, 7.77817, -7.77817, 9.14617, -6.11127, 10.1627, -4.20952, 10.7886, -2.14599, 11, 0, 10.7886, 2.14599, 10.1627, 4.20952, 9.14617, 6.11127, 7.77817, 7.77817, 6.11127, 9.14617, 4.20952, 10.1627, 2.14599, 10.7886, 6.73533e-16, 11, -2.14599, 10.7886, -4.20952, 10.1627, -6.11127, 9.14617, -7.77817, 7.77817, -9.14617, 6.11127, -10.1627, 4.20952, -10.7886, 2.14599, -11, 1.34707e-15, -10.7886, -2.14599, -10.1627, -4.20952, -9.14617, -6.11127, -7.77817, -7.77817, -6.11127, -9.14617, -4.20952, -10.1627, -2.14599, -10.7886, -2.0206e-15, -11, -1.65322e-15, -9, -1.75581, -8.82707, -3.44415, -8.31492, -5.00013, -7.48323, -6.36396, -6.36396, -7.48323, -5.00013, -8.31492, -3.44415, -8.82707, -1.75581, -9, 1.10215e-15, -8.82707, 1.75581, -8.31492, 3.44415, -7.48323, 5.00013, -6.36396, 6.36396, -5.00013, 7.48323, -3.44415, 8.31492, -1.75581, 8.82707, 5.51073e-16, 9, 1.75581, 8.82707, 3.44415, 8.31492, 5.00013, 7.48323, 6.36396, 6.36396, 7.48323, 5.00013, 8.31492, 3.44415, 8.82707, 1.75581, 9, 0, 8.82707, -1.75581, 8.31492, -3.44415, 7.48323, -5.00013, 6.36396, -6.36396, 5.00013, -7.48323, 3.44415, -8.31492, 1.75581, -8.82707, 5.51073e-16, -9, 0.0001, -10.9999)
+script = ExtResource("2_40ilr")
+
+[node name="RigidBody2D4" parent="." instance=ExtResource("4_ebgvj")]
+position = Vector2(-49, 14)
+
+[node name="RigidBody2D5" parent="." instance=ExtResource("4_ebgvj")]
+position = Vector2(-4, 22)
+
+[node name="RigidBody2D6" parent="." instance=ExtResource("4_ebgvj")]
+position = Vector2(-37, -49)
+
+[node name="RigidBody2D7" parent="." instance=ExtResource("4_ebgvj")]
+position = Vector2(49, -14)
+
+[node name="RigidBody2D8" parent="." instance=ExtResource("4_ebgvj")]
+position = Vector2(26.4706, -67.0588)
+
+[node name="SAGO" parent="." instance=ExtResource("3_ol5ka")]
+position = Vector2(19.4444, 61.1111)
+
+[node name="SAGO3" parent="." instance=ExtResource("3_ol5ka")]
+position = Vector2(-57.2222, 59.4444)
+
+[node name="SAGO4" parent="." instance=ExtResource("3_ol5ka")]
+position = Vector2(34.4444, -47.2222)
+
+[node name="SAGO5" parent="." instance=ExtResource("3_ol5ka")]
+position = Vector2(82.7778, 21.6667)
+
+[node name="SAGO6" parent="." instance=ExtResource("3_ol5ka")]
+position = Vector2(-22.2222, -8.33333)
+
+[node name="SAGO2" parent="." instance=ExtResource("3_ol5ka")]
+position = Vector2(-63.8889, -48.3333)

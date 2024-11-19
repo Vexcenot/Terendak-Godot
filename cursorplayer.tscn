@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://com5fi03emyd2"]
+
+[ext_resource type="Script" path="res://node_2d.gd" id="1_qyawj"]
+[ext_resource type="Script" path="res://Inventory.gd" id="2_b3xw2"]
+[ext_resource type="Texture2D" uid="uid://csa1rpq1twnct" path="res://icon.svg" id="2_mmvbb"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_v6rpr"]
+radius = 71.0634
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_qyawj")
+
+[node name="Node" type="Node" parent="."]
+script = ExtResource("2_b3xw2")
+
+[node name="Icon" type="Sprite2D" parent="."]
+texture = ExtResource("2_mmvbb")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_v6rpr")

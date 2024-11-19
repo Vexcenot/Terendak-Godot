@@ -1,0 +1,47 @@
+[gd_scene load_steps=7 format=3 uid="uid://jkrudgouxjvm"]
+
+[ext_resource type="Script" path="res://sago.gd" id="1_bpl5r"]
+[ext_resource type="AudioStream" uid="uid://c24kwlybdmxb4" path="res://sounds/pick up.mp3" id="2_c1pf4"]
+[ext_resource type="AudioStream" uid="uid://0n127ye66u13" path="res://sounds/put down.mp3" id="3_ktvbw"]
+[ext_resource type="Texture2D" uid="uid://b6rpi2e1llrpt" path="res://textures/spear.png" id="4_vx2wk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2d5ab"]
+size = Vector2(57.5198, 229.024)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bxiai"]
+size = Vector2(23.4346, 102.497)
+
+[node name="SPEAR" type="RigidBody2D" groups=["spear"]]
+collision_layer = 512
+collision_mask = 1536
+gravity_scale = 0.0
+lock_rotation = true
+script = ExtResource("1_bpl5r")
+pickup_sound = ExtResource("2_c1pf4")
+drop_sound = ExtResource("3_ktvbw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["spear"]]
+z_as_relative = false
+position = Vector2(0.500001, -4.99999)
+scale = Vector2(1.895, 1.895)
+shape = SubResource("RectangleShape2D_2d5ab")
+
+[node name="Area2D" type="Area2D" parent="."]
+scale = Vector2(0.0449298, 0.0449298)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" groups=["spear"]]
+position = Vector2(11.1284, 55.6425)
+scale = Vector2(94.025, 94.025)
+shape = SubResource("RectangleShape2D_bxiai")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+z_index = 9
+rotation = -2.3911
+scale = Vector2(0.395, 0.395)
+texture = ExtResource("4_vx2wk")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]

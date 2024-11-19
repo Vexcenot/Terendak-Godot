@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=3 uid="uid://h3lai1jw0kot"]
+
+[ext_resource type="Script" path="res://basket.gd" id="1_mn22m"]
+[ext_resource type="Texture2D" uid="uid://c1aak05ks35x3" path="res://textures/basket.png" id="1_rkcth"]
+[ext_resource type="Script" path="res://addons/donut_collision_polygon2D/donut_collision_polygon2D.gd" id="2_nbqop"]
+[ext_resource type="AudioStream" uid="uid://bolv3kl42fxmx" path="res://sounds/axe (1).wav" id="4_a4isq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jtmwi"]
+radius = 494.025
+
+[node name="Basket" type="Node2D" groups=["Basket"]]
+script = ExtResource("1_mn22m")
+
+[node name="Basket" type="Sprite2D" parent="."]
+position = Vector2(-1.52588e-05, -3.8147e-06)
+texture = ExtResource("1_rkcth")
+
+[node name="Area2D" type="Area2D" parent="Basket"]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Basket/Area2D"]
+shape = SubResource("CircleShape2D_jtmwi")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Basket"]
+position = Vector2(6.10352e-05, 1.00005)
+scale = Vector2(50.8333, 50.8333)
+collision_layer = 2
+collision_mask = 2
+
+[node name="DonutCollisionPolygon2D" type="CollisionPolygon2D" parent="Basket/StaticBody2D"]
+polygon = PackedVector2Array(6.42918e-16, -10.5, 2.04845, -10.2982, 4.01818, -9.70074, 5.83349, -8.73043, 7.42462, -7.42462, 8.73043, -5.83349, 9.70074, -4.01818, 10.2982, -2.04845, 10.5, 0, 10.2982, 2.04845, 9.70074, 4.01818, 8.73043, 5.83349, 7.42462, 7.42462, 5.83349, 8.73043, 4.01818, 9.70074, 2.04845, 10.2982, 6.42918e-16, 10.5, -2.04845, 10.2982, -4.01818, 9.70074, -5.83349, 8.73043, -7.42462, 7.42462, -8.73043, 5.83349, -9.70074, 4.01818, -10.2982, 2.04845, -10.5, 1.28584e-15, -10.2982, -2.04845, -9.70074, -4.01818, -8.73043, -5.83349, -7.42462, -7.42462, -5.83349, -8.73043, -4.01818, -9.70074, -2.04845, -10.2982, -1.92876e-15, -10.5, -1.74506e-15, -9.5, -1.85336, -9.31746, -3.63549, -8.77686, -5.27792, -7.89896, -6.71751, -6.71751, -7.89896, -5.27792, -8.77686, -3.63549, -9.31746, -1.85336, -9.5, 1.16338e-15, -9.31746, 1.85336, -8.77686, 3.63549, -7.89896, 5.27792, -6.71751, 6.71751, -5.27792, 7.89896, -3.63549, 8.77686, -1.85336, 9.31746, 5.81688e-16, 9.5, 1.85336, 9.31746, 3.63549, 8.77686, 5.27792, 7.89896, 6.71751, 6.71751, 7.89896, 5.27792, 8.77686, 3.63549, 9.31746, 1.85336, 9.5, 0, 9.31746, -1.85336, 8.77686, -3.63549, 7.89896, -5.27792, 6.71751, -6.71751, 5.27792, -7.89896, 3.63549, -8.77686, 1.85336, -9.31746, 5.81688e-16, -9.5, 0.0001, -10.4999)
+script = ExtResource("2_nbqop")
+width = 1.0
+
+[node name="CountUpSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_a4isq")
+
+[node name="CountDownSound" type="AudioStreamPlayer2D" parent="."]
+
+[connection signal="body_entered" from="Basket/Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Basket/Area2D" to="." method="_on_area_2d_body_exited"]

@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bsify1dghbou2"]
+
+[ext_resource type="Texture2D" uid="uid://cn704hm4dbo1f" path="res://textures/wood-shaving_png.png" id="1_et1uh"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_osms1"]
+
+[node name="RigidBody2D" type="RigidBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_osms1")
+
+[node name="Wood-shavingPng" type="Sprite2D" parent="."]
+position = Vector2(-1, -2)
+scale = Vector2(0.0780769, 0.0780769)
+texture = ExtResource("1_et1uh")

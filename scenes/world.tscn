@@ -1,0 +1,56 @@
+[gd_scene load_steps=7 format=3 uid="uid://tlmnt1j0dci0"]
+
+[ext_resource type="Texture2D" uid="uid://dv3jghl32i1jy" path="res://textures/depositphotos_470256258-stock-photo-green-color-oil-pastel-crayon_jpg.png" id="1_rde5r"]
+[ext_resource type="PackedScene" uid="uid://bd3faxqyinlau" path="res://scenes/cursor.tscn" id="3_n5dkl"]
+[ext_resource type="PackedScene" uid="uid://h3lai1jw0kot" path="res://scenes/basket.tscn" id="4_fj40q"]
+[ext_resource type="PackedScene" uid="uid://brsjjoyekn4ri" path="res://scenes/pause_menu.tscn" id="5_lkvac"]
+[ext_resource type="AudioStream" uid="uid://bsh5eahlx734c" path="res://sounds/forest ambience.mp3" id="6_r7a5s"]
+[ext_resource type="PackedScene" uid="uid://lcj1q1qirq88" path="res://scenes/newlog.tscn" id="7_37t4w"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -442.0
+offset_top = -247.0
+offset_right = 1729.0
+offset_bottom = 1003.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_rde5r")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="pause" parent="CanvasLayer" instance=ExtResource("5_lkvac")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(577, 325)
+
+[node name="L O G" parent="." instance=ExtResource("7_37t4w")]
+position = Vector2(1035, -410)
+rotation = 1.48178
+scale = Vector2(0.935, 0.935)
+
+[node name="Basket" parent="." instance=ExtResource("4_fj40q")]
+modulate = Color(1, 1, 1, 0.541176)
+position = Vector2(247, 464)
+scale = Vector2(0.3, 0.3)
+
+[node name="cursor" parent="." instance=ExtResource("3_n5dkl")]
+position = Vector2(946, 333)
+
+[node name="Label" type="Label" parent="."]
+visible = false
+z_index = 1001
+offset_left = 103.0
+offset_top = 78.0
+offset_right = 259.0
+offset_bottom = 137.0
+text = "LEFT-CLICK = Intereact
+"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_r7a5s")
+autoplay = true

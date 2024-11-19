@@ -1,0 +1,68 @@
+[gd_scene load_steps=6 format=3 uid="uid://b73u13rqmmr7o"]
+
+[ext_resource type="Texture2D" uid="uid://e2rjyocmpwd3" path="res://textures/log (3).PNG" id="1_pp7x0"]
+[ext_resource type="PackedScene" uid="uid://db8ykwgxb2vsd" path="res://scenes/sago.tscn" id="3_k8d6t"]
+[ext_resource type="PackedScene" uid="uid://bsify1dghbou2" path="res://scenes/wood shavings.tscn" id="4_mwalp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v3do0"]
+size = Vector2(672, 624.5)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_anugj"]
+
+[node name="L O G" type="Node2D"]
+
+[node name="Log(1)" type="Sprite2D" parent="."]
+position = Vector2(579.111, 327.75)
+scale = Vector2(0.599537, 0.599537)
+texture = ExtResource("1_pp7x0")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(745, 332.75)
+shape = SubResource("RectangleShape2D_v3do0")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(745, 332.75)
+scale = Vector2(28.755, 28.755)
+shape = SubResource("CircleShape2D_anugj")
+
+[node name="Sago" parent="." instance=ExtResource("3_k8d6t")]
+position = Vector2(675, 422)
+
+[node name="Sago2" parent="." instance=ExtResource("3_k8d6t")]
+position = Vector2(649, 257)
+
+[node name="Sago3" parent="." instance=ExtResource("3_k8d6t")]
+position = Vector2(757, 189)
+
+[node name="Sago4" parent="." instance=ExtResource("3_k8d6t")]
+position = Vector2(810, 300)
+
+[node name="Sago7" parent="." instance=ExtResource("3_k8d6t")]
+position = Vector2(727, 328)
+
+[node name="Sago5" parent="." instance=ExtResource("3_k8d6t")]
+position = Vector2(850, 438)
+
+[node name="RigidBody2D" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(612, 465)
+
+[node name="RigidBody2D2" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(641, 193)
+
+[node name="RigidBody2D3" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(582, 358)
+
+[node name="RigidBody2D4" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(872, 198)
+
+[node name="RigidBody2D5" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(959, 380)
+
+[node name="RigidBody2D6" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(809, 463)
+
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]

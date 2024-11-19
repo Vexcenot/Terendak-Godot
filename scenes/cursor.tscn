@@ -1,0 +1,153 @@
+[gd_scene load_steps=8 format=3 uid="uid://bd3faxqyinlau"]
+
+[ext_resource type="Script" path="res://cursor.gd" id="1_vgvst"]
+[ext_resource type="Texture2D" uid="uid://1qd0qk5bex1s" path="res://textures/hand sprite.png" id="2_qwely"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ot6uy"]
+radius = 143.003
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ln3cf"]
+radius = 83.006
+
+[sub_resource type="Animation" id="Animation_svc6r"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("hand1:scale:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0.711111, -0.2, 0, 0.2, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("hand1:scale:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0.711111, -0.2, 0, 0.2, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("hand1:position:x")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(-18, -0.2, 0, 0.2, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("hand1:position:y")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(204.985, -0.2, 0, 0.2, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_hxmra"]
+resource_name = "punch"
+length = 0.1333
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("hand1:scale:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0.711111, -0.2, 0, 0.2, 0, 0.611, -0.2, 0, 0.2, 0, 0.711111, -0.2, 0, 0.2, 0),
+"times": PackedFloat32Array(0, 0.0333333, 0.2)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("hand1:scale:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(0.711111, -0.2, 0, 0.2, 0, 0.611, -0.2, 0, 0.2, 0, 0.711111, -0.2, 0, 0.2, 0),
+"times": PackedFloat32Array(0, 0.0333333, 0.2)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("hand1:position:x")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(-18, -0.2, 0, 0.2, 0, -15, -0.2, 0, 0.2, 0, -18, -0.2, 0, 0.2, 0),
+"times": PackedFloat32Array(0, 0.0333333, 0.2)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("hand1:position:y")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(204.985, -0.2, 0, 0.2, 0, 88, -0.2, 0, 0.2, 0, 204.985, -0.2, 0, 0.2, 0),
+"times": PackedFloat32Array(0, 0.0333333, 0.2)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ywe1v"]
+_data = {
+"RESET": SubResource("Animation_svc6r"),
+"punch": SubResource("Animation_hxmra")
+}
+
+[node name="CURSOR" type="Node2D" groups=["cursor"]]
+script = ExtResource("1_vgvst")
+
+[node name="hand1" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.772549)
+light_mask = 256
+visibility_layer = 256
+z_index = 11
+position = Vector2(-18, 204.985)
+scale = Vector2(0.711111, 0.711111)
+texture = ExtResource("2_qwely")
+hframes = 3
+
+[node name="grab" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="grab"]
+position = Vector2(0, -47)
+shape = SubResource("CircleShape2D_ot6uy")
+
+[node name="punch" type="Area2D" parent="."]
+position = Vector2(-9.615, 1.19)
+scale = Vector2(0.06, 0.06)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="punch"]
+position = Vector2(0, -47)
+scale = Vector2(0.47, 0.47)
+shape = SubResource("CircleShape2D_ot6uy")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-8, -20)
+shape = SubResource("CircleShape2D_ln3cf")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_ywe1v")
+}
+
+[connection signal="area_entered" from="punch" to="." method="_on_punch_area_entered"]
+[connection signal="area_exited" from="punch" to="." method="_on_punch_area_exited"]

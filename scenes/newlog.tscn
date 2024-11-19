@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://lcj1q1qirq88"]
+
+[ext_resource type="Script" path="res://newlog.gd" id="1_1r5ln"]
+[ext_resource type="Texture2D" uid="uid://dafvlreh8i0na" path="res://textures/log (1).PNG" id="1_bhwgb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v3do0"]
+size = Vector2(672, 624.5)
+
+[node name="L O G" type="Node2D"]
+script = ExtResource("1_1r5ln")
+
+[node name="Log(1)" type="Sprite2D" parent="."]
+position = Vector2(579.111, 327.75)
+scale = Vector2(0.599537, 0.599537)
+texture = ExtResource("1_bhwgb")
+
+[node name="breakarea" type="Area2D" parent="." groups=["log"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="breakarea"]
+position = Vector2(745, 332.75)
+shape = SubResource("RectangleShape2D_v3do0")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(745, 332.75)
+shape = SubResource("RectangleShape2D_v3do0")
+
+[connection signal="input_event" from="breakarea" to="." method="_on_area_2d_input_event"]

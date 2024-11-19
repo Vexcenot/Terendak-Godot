@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://bahbi15fyt24h"]
+
+[ext_resource type="Script" path="res://clickableblock.gd" id="1_you1r"]
+[ext_resource type="Texture2D" uid="uid://csa1rpq1twnct" path="res://icon.svg" id="2_l14bl"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_p1uhv"]
+radius = 146.168
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3mq2e"]
+radius = 102.56
+
+[node name="spear" type="RigidBody2D"]
+collision_layer = 3
+gravity_scale = 0.0
+script = ExtResource("1_you1r")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_p1uhv")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+light_mask = 16
+visibility_layer = 16
+texture = ExtResource("2_l14bl")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(36, 33)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-36, -33)
+shape = SubResource("CircleShape2D_3mq2e")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]

@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://d3ly1h55kyknp"]
+
+[ext_resource type="Script" path="res://log.gd" id="1_q0plk"]
+[ext_resource type="Texture2D" uid="uid://df847ujncyjlo" path="res://textures/pngtree-wood-log-slice-natural_png-image_10230361.png.png" id="2_63sv3"]
+[ext_resource type="Texture2D" uid="uid://bdtq6li0e77wn" path="res://textures/WhatsApp Image 2024-11-15 at 12.02.26 AM.jpeg" id="3_rfmae"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_y7owq"]
+radius = 144.292
+
+[node name="log0" type="StaticBody2D" groups=["log"]]
+position = Vector2(1, 2)
+scale = Vector2(1.8, 1.8)
+collision_layer = 1025
+
+[node name="lvl0" type="Sprite2D" parent="."]
+texture = ExtResource("2_63sv3")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 513
+collision_mask = 513
+script = ExtResource("1_q0plk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+scale = Vector2(0.665, 0.665)
+shape = SubResource("CircleShape2D_y7owq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(1.13, 1.13)
+shape = SubResource("CircleShape2D_y7owq")
+
+[node name="WhatsAppImage2024-11-15At12_02_26Am" type="Sprite2D" parent="."]
+position = Vector2(323.889, 173.333)
+scale = Vector2(0.502315, 0.502315)
+texture = ExtResource("3_rfmae")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]

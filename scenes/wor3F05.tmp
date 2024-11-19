@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://tlmnt1j0dci0"]
+
+[ext_resource type="PackedScene" uid="uid://d3ly1h55kyknp" path="res://scenes/log0.tscn" id="2_hms2t"]
+[ext_resource type="PackedScene" uid="uid://bd3faxqyinlau" path="res://scenes/cursor.tscn" id="3_n5dkl"]
+[ext_resource type="PackedScene" uid="uid://db8ykwgxb2vsd" path="res://scenes/sago.tscn" id="3_vgpwg"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(577, 325)
+
+[node name="log0" parent="." instance=ExtResource("2_hms2t")]
+position = Vector2(565, 332)
+
+[node name="SAGO" parent="." instance=ExtResource("3_vgpwg")]
+position = Vector2(66, 505)
+
+[node name="SAGO2" parent="." instance=ExtResource("3_vgpwg")]
+position = Vector2(182, 601)
+
+[node name="SAGO3" parent="." instance=ExtResource("3_vgpwg")]
+position = Vector2(145, 154)
+
+[node name="SAGO4" parent="." instance=ExtResource("3_vgpwg")]
+position = Vector2(166, 434)
+
+[node name="Node2D" parent="." instance=ExtResource("3_n5dkl")]
+position = Vector2(946, 333)

@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=3 uid="uid://cse2385sghqlp"]
+
+[ext_resource type="PackedScene" uid="uid://db8ykwgxb2vsd" path="res://scenes/sago.tscn" id="1_khrje"]
+[ext_resource type="Script" path="res://item.gd" id="1_nh0i2"]
+[ext_resource type="Texture2D" uid="uid://bamg6hpqg7nop" path="res://textures/watercolor-insect-sago-worm_png.png.png" id="2_v7qkg"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_26h4p"]
+radius = 13.7608
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ysevv"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_nh0i2")
+
+[node name="SAGO" parent="." instance=ExtResource("1_khrje")]
+script = null
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="SAGO"]
+scale = Vector2(1.895, 1.895)
+shape = SubResource("CircleShape2D_26h4p")
+
+[node name="Area2D2" type="Area2D" parent="SAGO"]
+scale = Vector2(0.0449298, 0.0449298)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SAGO/Area2D2"]
+scale = Vector2(94.025, 94.025)
+shape = SubResource("CircleShape2D_ysevv")
+
+[node name="Sprite2" type="Sprite2D" parent="SAGO"]
+scale = Vector2(0.0449298, 0.0449298)
+texture = ExtResource("2_v7qkg")

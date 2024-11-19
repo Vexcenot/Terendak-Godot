@@ -59,6 +59,7 @@ text = "LEFT-CLICK = Intereact
 stream = ExtResource("6_r7a5s")
 autoplay = true
 
+<<<<<<< HEAD
 [node name="winarea" type="Area2D" parent="."]
 script = ExtResource("7_62yoa")
 
@@ -68,3 +69,10 @@ shape = SubResource("RectangleShape2D_mcvhc")
 
 [connection signal="body_entered" from="winarea" to="CanvasLayer/pause" method="_on_winarea_body_entered"]
 [connection signal="body_exited" from="winarea" to="CanvasLayer/pause" method="_on_winarea_body_exited"]
+=======
+[node name="Label2" type="Label" parent="."]
+offset_right = 531.0
+offset_bottom = 279.0
+theme_override_font_sizes/font_size = 100
+text = "Yoshi eats many Sago worms"
+>>>>>>> 46a78d15ca075ed2975111b34463c3eb943f9214

@@ -39,3 +39,11 @@ func _on_stop_pressed():
 func _process(delta):
 	testEsc()
 	cursor()
+
+
+func _on_winarea_body_entered(body: Node2D) -> void:
+	pass # Replace with function body.
+
+
+func _on_winarea_body_exited(body: Node2D) -> void:
+	pass # Replace with function body.

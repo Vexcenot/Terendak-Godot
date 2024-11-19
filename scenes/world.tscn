@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://tlmnt1j0dci0"]
+[gd_scene load_steps=9 format=3 uid="uid://tlmnt1j0dci0"]
 
 [ext_resource type="Texture2D" uid="uid://cs0c6eaiyn0nc" path="res://textures/grass.png" id="1_c8euv"]
 [ext_resource type="PackedScene" uid="uid://bd3faxqyinlau" path="res://scenes/cursor.tscn" id="3_n5dkl"]
@@ -6,6 +6,10 @@
 [ext_resource type="PackedScene" uid="uid://brsjjoyekn4ri" path="res://scenes/pause_menu.tscn" id="5_lkvac"]
 [ext_resource type="AudioStream" uid="uid://bsh5eahlx734c" path="res://sounds/forest ambience.mp3" id="6_r7a5s"]
 [ext_resource type="PackedScene" uid="uid://lcj1q1qirq88" path="res://scenes/newlog.tscn" id="7_37t4w"]
+[ext_resource type="Script" path="res://scenes/winarea.gd" id="7_62yoa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mcvhc"]
+size = Vector2(675, 710)
 
 [node name="Node2D" type="Node2D"]
 
@@ -54,3 +58,13 @@ text = "LEFT-CLICK = Intereact
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_r7a5s")
 autoplay = true
+
+[node name="winarea" type="Area2D" parent="."]
+script = ExtResource("7_62yoa")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="winarea"]
+position = Vector2(838.5, 342)
+shape = SubResource("RectangleShape2D_mcvhc")
+
+[connection signal="body_entered" from="winarea" to="CanvasLayer/pause" method="_on_winarea_body_entered"]
+[connection signal="body_exited" from="winarea" to="CanvasLayer/pause" method="_on_winarea_body_exited"]

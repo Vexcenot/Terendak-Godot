@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://tlmnt1j0dci0"]
 
-[ext_resource type="Texture2D" uid="uid://dv3jghl32i1jy" path="res://textures/depositphotos_470256258-stock-photo-green-color-oil-pastel-crayon_jpg.png" id="1_rde5r"]
+[ext_resource type="Texture2D" uid="uid://cs0c6eaiyn0nc" path="res://textures/grass.png" id="1_c8euv"]
 [ext_resource type="PackedScene" uid="uid://bd3faxqyinlau" path="res://scenes/cursor.tscn" id="3_n5dkl"]
 [ext_resource type="PackedScene" uid="uid://h3lai1jw0kot" path="res://scenes/basket.tscn" id="4_fj40q"]
 [ext_resource type="PackedScene" uid="uid://brsjjoyekn4ri" path="res://scenes/pause_menu.tscn" id="5_lkvac"]
@@ -19,7 +19,7 @@ offset_right = 1729.0
 offset_bottom = 1003.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_rde5r")
+texture = ExtResource("1_c8euv")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -34,7 +34,7 @@ rotation = 1.48178
 scale = Vector2(0.935, 0.935)
 
 [node name="Basket" parent="." instance=ExtResource("4_fj40q")]
-modulate = Color(1, 1, 1, 0.541176)
+modulate = Color(0.65, 0.5915, 0.5915, 1)
 position = Vector2(247, 464)
 scale = Vector2(0.3, 0.3)
 

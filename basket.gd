@@ -7,6 +7,9 @@ var sago_count: int = 0
 var count_up_sound: AudioStreamPlayer2D
 var count_down_sound: AudioStreamPlayer2D
 
+func _process(delta: float) -> void:
+	wincondition()
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	# Load AudioStreamPlayer2D nodes and check for null values
@@ -30,9 +33,13 @@ func _on_area_2d_body_entered(area):
 		# Check if we reached the goal count of 8
 		if sago_count >= 6:
 			print("Basket is full!")
-			await get_tree().create_timer(1.5).timeout
-			get_tree().change_scene_to_file("res://scenes/win_condition.tscn")
+#			await get_tree().create_timer(1.5).timeout
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+			DragManager.lastworm = true
+
+func wincondition():
+	if DragManager.lastworm and DragManager.is_dragging and DragManager.loging == true:
+		get_tree().change_scene_to_file("res://scenes/win_condition.tscn")
 
 func _on_area_2d_body_exited(area):
 	if area.is_in_group("sago"):

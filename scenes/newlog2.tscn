@@ -35,6 +35,9 @@ position = Vector2(675, 422)
 [node name="Sago2" parent="." instance=ExtResource("3_k8d6t")]
 position = Vector2(649, 257)
 
+[node name="Sago6" parent="." instance=ExtResource("3_k8d6t")]
+position = Vector2(585, 350)
+
 [node name="Sago3" parent="." instance=ExtResource("3_k8d6t")]
 position = Vector2(757, 189)
 

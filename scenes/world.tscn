@@ -54,3 +54,9 @@ text = "LEFT-CLICK = Intereact
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_r7a5s")
 autoplay = true
+
+[node name="Label2" type="Label" parent="."]
+offset_right = 531.0
+offset_bottom = 279.0
+theme_override_font_sizes/font_size = 100
+text = "Yoshi eats many Sago worms"

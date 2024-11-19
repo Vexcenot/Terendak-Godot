@@ -16,7 +16,7 @@ func _process(delta: float) -> void:
 	punch_fist()
 	punching()
 	wintime()
-
+	cursorvis()
 
 
 #sprite assingments
@@ -71,6 +71,12 @@ func _on_punch_area_exited(area: Area2D) -> void:
 		logged = false
 	if area.is_in_group("log2"):
 		logged2 = false
+
+func cursorvis():
+	if get_tree().paused == true:
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	else:
+		Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 
 func wintime():
 	if logged2 and DragManager.lastworm and DragManager.is_dragging:

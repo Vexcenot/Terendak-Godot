@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://jkrudgouxjvm"]
 
-[ext_resource type="Script" path="res://sago.gd" id="1_bpl5r"]
+[ext_resource type="Script" path="res://scripts/sago.gd" id="1_bpl5r"]
 [ext_resource type="AudioStream" uid="uid://c24kwlybdmxb4" path="res://sounds/pick up.mp3" id="2_c1pf4"]
 [ext_resource type="AudioStream" uid="uid://0n127ye66u13" path="res://sounds/put down.mp3" id="3_ktvbw"]
 [ext_resource type="Texture2D" uid="uid://b6rpi2e1llrpt" path="res://textures/spear.png" id="4_vx2wk"]

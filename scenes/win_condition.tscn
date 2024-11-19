@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cpg4u3glin3oe"]
 
-[ext_resource type="Script" path="res://win_condition.gd" id="1_y8fcg"]
+[ext_resource type="Script" path="res://scripts/win_condition.gd" id="1_y8fcg"]
 [ext_resource type="AudioStream" uid="uid://dy43tm0fk5eaq" path="res://sounds/Ecce Homo (Mr Bean theme) by The Choirboys with Lyric.mp3" id="2_y2rw7"]
 
 [node name="Win condition" type="Node2D"]

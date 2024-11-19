@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://bd3faxqyinlau"]
 
-[ext_resource type="Script" path="res://cursor.gd" id="1_vgvst"]
+[ext_resource type="Script" path="res://scripts/cursor.gd" id="1_vgvst"]
 [ext_resource type="Texture2D" uid="uid://1qd0qk5bex1s" path="res://textures/hand sprite.png" id="2_qwely"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ot6uy"]

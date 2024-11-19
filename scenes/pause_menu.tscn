@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://brsjjoyekn4ri"]
 
 [ext_resource type="Texture2D" uid="uid://d1e42yv1wrp88" path="res://textures/Untitled_Artwork.png" id="1_2vbsw"]
-[ext_resource type="Script" path="res://pause.gd" id="1_julvq"]
+[ext_resource type="Script" path="res://scripts/pause.gd" id="1_julvq"]
 [ext_resource type="Texture2D" uid="uid://55a4ktagf27b" path="res://textures/pause bottom.png" id="2_71k75"]
 [ext_resource type="Shader" path="res://pause.gdshader" id="2_hlw4l"]
 [ext_resource type="FontFile" uid="uid://sswlt8c163m4" path="res://fonts/FIGHTBACK.ttf" id="3_xqba5"]

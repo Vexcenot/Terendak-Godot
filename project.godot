@@ -19,7 +19,7 @@ config/icon="res://icon.svg"
 
 Inventory="*res://Inventory.gd"
 EmbedGameAutoload="*res://addons/fabimakesgames.embed_game/embed_game_autoload.gd"
-DragManager="*res://DragManager.gd"
+DragManager="*res://scripts/DragManager.gd"
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 [dialogic]

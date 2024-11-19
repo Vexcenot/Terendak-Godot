@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://h3lai1jw0kot"]
 
-[ext_resource type="Script" path="res://basket.gd" id="1_mn22m"]
+[ext_resource type="Script" path="res://scripts/basket.gd" id="1_mn22m"]
 [ext_resource type="Texture2D" uid="uid://c1aak05ks35x3" path="res://textures/basket.png" id="1_rkcth"]
 [ext_resource type="Script" path="res://addons/donut_collision_polygon2D/donut_collision_polygon2D.gd" id="2_nbqop"]
 [ext_resource type="AudioStream" uid="uid://bolv3kl42fxmx" path="res://sounds/axe (1).wav" id="4_a4isq"]

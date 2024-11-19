@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://db8ykwgxb2vsd"]
 
-[ext_resource type="Script" path="res://sago.gd" id="1_3wnee"]
+[ext_resource type="Script" path="res://scripts/sago.gd" id="1_3wnee"]
 [ext_resource type="Texture2D" uid="uid://bamg6hpqg7nop" path="res://textures/watercolor-insect-sago-worm_png.png.png" id="1_5h6do"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_wbr4o"]

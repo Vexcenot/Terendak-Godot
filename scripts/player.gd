@@ -1,5 +1,6 @@
 extends CharacterBody2D
-
+func _ready():
+	Dialogic.start("intro")
 
 const SPEED = 500.0
 const JUMP_VELOCITY = -300.0

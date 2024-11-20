@@ -1,8 +1,8 @@
 extends Node2D
-func _ready() -> void:
-	#Dialogic.start("win")
-	await get_tree().create_timer(0.5).timeout
-	#play animations after this
+#func _ready() -> void:
+	#$AudioStreamPlayer.play()
+	#await get_tree().create_timer(.2).timeout
+
 
 
 func _on_button_pressed() -> void:

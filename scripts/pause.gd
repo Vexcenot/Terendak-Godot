@@ -12,12 +12,6 @@ func pause():
 	$AnimationPlayer.play("pause animation")
 	DragManager.is_dragging = false
 
-func cursor():
-	if get_tree().paused == true:
-		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-	else:
-		Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
-
 func testEsc():
 	if Input.is_action_just_pressed("esc") and !get_tree().paused:
 		pause()
@@ -38,7 +32,6 @@ func _on_stop_pressed():
 
 func _process(delta):
 	testEsc()
-	cursor()
 
 
 func _on_winarea_body_entered(body: Node2D) -> void:

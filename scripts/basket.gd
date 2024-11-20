@@ -33,8 +33,6 @@ func _on_area_2d_body_entered(area):
 #			await get_tree().create_timer(1.5).timeout
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 			DragManager.lastworm = true
-		if sago_count < 6:
-			DragManager.lastworm = false
 
 func _on_area_2d_body_exited(area):
 	if area.is_in_group("sago"):

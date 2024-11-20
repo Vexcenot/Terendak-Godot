@@ -35,6 +35,7 @@ func clicking():
 	if Input.is_action_just_pressed("rightclick"):
 		is_right_clicking = true
 		$hand1.frame = HAND
+		print("drag ", DragManager.is_dragging, " last ", DragManager.lastworm, " win ", DragManager.winbox)
 	elif Input.is_action_just_pressed("leftclick"):
 			is_right_clicking = false
 	if not is_right_clicking:
@@ -83,3 +84,8 @@ func wintime():
 		$AudioStreamPlayer2D.play()
 		await get_tree().create_timer(.2).timeout
 		get_tree().change_scene_to_file("res://scenes/win_condition.tscn")
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		logged2 = false
+		DragManager.lastworm == false
+		DragManager.is_dragging == false
+		

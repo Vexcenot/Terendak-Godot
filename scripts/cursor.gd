@@ -80,5 +80,6 @@ func cursorvis():
 
 func wintime():
 	if logged2 and DragManager.lastworm and DragManager.is_dragging:
+		$AudioStreamPlayer2D.play()
 		await get_tree().create_timer(.2).timeout
 		get_tree().change_scene_to_file("res://scenes/win_condition.tscn")

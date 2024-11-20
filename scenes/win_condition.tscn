@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cpg4u3glin3oe"]
 
 [ext_resource type="Script" path="res://scripts/win_condition.gd" id="1_y8fcg"]
-[ext_resource type="AudioStream" uid="uid://dy43tm0fk5eaq" path="res://sounds/Ecce Homo (Mr Bean theme) by The Choirboys with Lyric.mp3" id="2_y2rw7"]
+[ext_resource type="AudioStream" uid="uid://dacben2a836qg" path="res://sounds/fragment.wav" id="2_qc2mt"]
 
 [node name="Win condition" type="Node2D"]
 script = ExtResource("1_y8fcg")
@@ -23,7 +23,7 @@ theme_override_font_sizes/font_size = 71
 text = "  YOU GOT ALL DA WORMS!  "
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_y2rw7")
+stream = ExtResource("2_qc2mt")
 autoplay = true
 
 [node name="Label" type="Label" parent="."]

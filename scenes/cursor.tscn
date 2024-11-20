@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://bd3faxqyinlau"]
+[gd_scene load_steps=9 format=3 uid="uid://bd3faxqyinlau"]
 
 [ext_resource type="Script" path="res://scripts/cursor.gd" id="1_vgvst"]
 [ext_resource type="Texture2D" uid="uid://1qd0qk5bex1s" path="res://textures/hand sprite.png" id="2_qwely"]
+[ext_resource type="AudioStream" uid="uid://dacben2a836qg" path="res://sounds/fragment.wav" id="3_gccl6"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ot6uy"]
 radius = 143.003
@@ -150,6 +151,9 @@ shape = SubResource("CircleShape2D_ln3cf")
 libraries = {
 "": SubResource("AnimationLibrary_ywe1v")
 }
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_gccl6")
 
 [connection signal="area_entered" from="grab" to="." method="_on_grab_area_entered"]
 [connection signal="area_entered" from="punch" to="." method="_on_punch_area_entered"]

@@ -2282,6 +2282,7 @@ stream = ExtResource("6_r7a5s")
 autoplay = true
 
 [node name="winarea" type="Area2D" parent="." groups=["log2"]]
+visible = false
 script = ExtResource("7_o5vb7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="winarea"]

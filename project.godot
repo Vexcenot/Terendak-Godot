@@ -25,6 +25,7 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
+"Grandad": "res://characters/Grandad.dch",
 "Maya": "res://characters/Maya.dch"
 }
 directories/dtl_directory={
@@ -56,6 +57,7 @@ save/autosave_delay=60.0
 save/encryption_on_exports_only=true
 text/autopauses={}
 glossary/glossary_files=["res://Styles/Glossary.tres"]
+variables={}
 
 [display]
 

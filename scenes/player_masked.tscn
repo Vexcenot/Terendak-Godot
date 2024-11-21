@@ -1,14 +1,14 @@
-[gd_scene load_steps=6 format=3 uid="uid://rmlgveehkrkp"]
+[gd_scene load_steps=6 format=3 uid="uid://cu0st24xl7tb8"]
 
-[ext_resource type="Script" path="res://scripts/player.gd" id="1_8rf4p"]
-[ext_resource type="Texture2D" uid="uid://cuvjihquku2bu" path="res://Assets/charactermodels/placeholder.png" id="2_g4q1f"]
-[ext_resource type="Texture2D" uid="uid://ctcf7cdv3ydk6" path="res://Assets/charactermodels/placeholder_masked_glow.png" id="3_440fe"]
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_c4ksb"]
+[ext_resource type="Texture2D" uid="uid://cuvjihquku2bu" path="res://Assets/charactermodels/placeholder.png" id="2_q4a5v"]
+[ext_resource type="Texture2D" uid="uid://ctcf7cdv3ydk6" path="res://Assets/charactermodels/placeholder_masked_glow.png" id="3_j76qs"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_a2y5l"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_g4q1f")
+"texture": ExtResource("2_q4a5v")
 }],
 "loop": true,
 "name": &"idle",
@@ -16,7 +16,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_440fe")
+"texture": ExtResource("3_j76qs")
 }],
 "loop": true,
 "name": &"masked_idle",
@@ -30,15 +30,15 @@ size = Vector2(23, 176)
 light_mask = 2
 z_index = 5
 collision_layer = 2
-script = ExtResource("1_8rf4p")
+script = ExtResource("1_c4ksb")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 z_index = 5
 position = Vector2(0, -12)
 scale = Vector2(0.2, 0.2)
 sprite_frames = SubResource("SpriteFrames_a2y5l")
-animation = &"idle"
-autoplay = "idle"
+animation = &"masked_idle"
+autoplay = "masked_idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 z_index = 5

@@ -1,3 +1,7 @@
-[gd_resource type="ShaderMaterial" format=3 uid="uid://cnlkwoq221fe3"]
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://cnlkwoq221fe3"]
+
+[ext_resource type="Shader" path="res://Assets/shaders/shader4.gdshader" id="1_mq30w"]
 
 [resource]
+shader = ExtResource("1_mq30w")
+shader_parameter/lod = 1.025

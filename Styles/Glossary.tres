@@ -4,18 +4,7 @@
 
 [resource]
 script = ExtResource("1_ljp4g")
-entries = {
-"Maya": {
-"alternatives": [],
-"case_sensitive": true,
-"color": Color(0.96875, 0.480591, 0.480591, 1),
-"enabled": true,
-"extra": "",
-"name": "Maya",
-"text": "",
-"title": ""
-}
-}
+entries = {}
 enabled = true
 _translation_id = ""
 _translation_keys = {}

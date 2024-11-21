@@ -79,10 +79,11 @@ func cursorvis():
 	else:
 		Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 
+#detects if win conditions are met
 func wintime():
 	if logged2 and DragManager.lastworm and DragManager.is_dragging:
 		$AudioStreamPlayer2D.play()
-		await get_tree().create_timer(.2).timeout
+		#await get_tree().create_timer(.2).timeout
 		get_tree().change_scene_to_file("res://scenes/win_condition.tscn")
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 		logged2 = false

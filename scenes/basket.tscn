@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://h3lai1jw0kot"]
+[gd_scene load_steps=7 format=3 uid="uid://h3lai1jw0kot"]
 
 [ext_resource type="Script" path="res://scripts/basket.gd" id="1_mn22m"]
 [ext_resource type="Texture2D" uid="uid://c1aak05ks35x3" path="res://textures/basket.png" id="1_rkcth"]
 [ext_resource type="Script" path="res://addons/donut_collision_polygon2D/donut_collision_polygon2D.gd" id="2_nbqop"]
 [ext_resource type="AudioStream" uid="uid://bolv3kl42fxmx" path="res://sounds/axe (1).wav" id="4_a4isq"]
+[ext_resource type="AudioStream" uid="uid://dgyje6ek3152u" path="res://sounds/axe (5).wav" id="5_4mfxk"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_jtmwi"]
 radius = 494.025
@@ -37,6 +38,7 @@ width = 1.0
 stream = ExtResource("4_a4isq")
 
 [node name="CountDownSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_4mfxk")
 
 [connection signal="body_entered" from="Basket/Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Basket/Area2D" to="." method="_on_area_2d_body_exited"]

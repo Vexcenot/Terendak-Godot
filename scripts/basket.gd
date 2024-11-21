@@ -7,6 +7,10 @@ var sago_count: int = 0
 var count_up_sound: AudioStreamPlayer2D
 var count_down_sound: AudioStreamPlayer2D
 
+func _process(float) -> void:
+	sagocounter()
+	
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	# Load AudioStreamPlayer2D nodes and check for null values
@@ -18,27 +22,25 @@ func _ready() -> void:
 	if count_down_sound == null:
 		print("Error: CountDownSound node not found!")
 
+#updates game on sago count
+func sagocounter():
+	if sago_count >= 6:
+		print("Basket is full!")
+#		await get_tree().create_timer(1.5).timeout
+		DragManager.lastworm = true
+	else:
+		DragManager.lastworm = false
+
+#increases sago count
 func _on_area_2d_body_entered(area):
 	if area.is_in_group("sago"):
 		sago_count += 1
 		print("Sago entered. Current count: ", sago_count)
-		
-		# Play count up sound if available
-		if count_up_sound:
-			count_up_sound.play()
-		
-		# Check if we reached the goal count of 8
-		if sago_count >= 6:
-			print("Basket is full!")
-#			await get_tree().create_timer(1.5).timeout
-			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-			DragManager.lastworm = true
+		count_up_sound.play()
 
+#decreases sago count
 func _on_area_2d_body_exited(area):
 	if area.is_in_group("sago"):
 		sago_count = max(sago_count - 1, 0) # Prevents negative count
 		print("Sago exited. Current count: ", sago_count)
-		
-		# Play count down sound if available
-		if count_down_sound:
-			count_down_sound.play()
+		count_down_sound.play()

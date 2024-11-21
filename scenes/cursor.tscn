@@ -12,98 +12,10 @@ radius = 83.006
 
 [sub_resource type="Animation" id="Animation_svc6r"]
 length = 0.001
-tracks/0/type = "bezier"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("hand1:scale:x")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(0.711111, -0.2, 0, 0.2, 0),
-"times": PackedFloat32Array(0)
-}
-tracks/1/type = "bezier"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("hand1:scale:y")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(0.711111, -0.2, 0, 0.2, 0),
-"times": PackedFloat32Array(0)
-}
-tracks/2/type = "bezier"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("hand1:position:x")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(-18, -0.2, 0, 0.2, 0),
-"times": PackedFloat32Array(0)
-}
-tracks/3/type = "bezier"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("hand1:position:y")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(204.985, -0.2, 0, 0.2, 0),
-"times": PackedFloat32Array(0)
-}
 
 [sub_resource type="Animation" id="Animation_hxmra"]
 resource_name = "punch"
 length = 0.1333
-tracks/0/type = "bezier"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("hand1:scale:x")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"handle_modes": PackedInt32Array(0, 0, 0),
-"points": PackedFloat32Array(0.711111, -0.2, 0, 0.2, 0, 0.611, -0.2, 0, 0.2, 0, 0.711111, -0.2, 0, 0.2, 0),
-"times": PackedFloat32Array(0, 0.0333333, 0.2)
-}
-tracks/1/type = "bezier"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("hand1:scale:y")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"handle_modes": PackedInt32Array(0, 0, 0),
-"points": PackedFloat32Array(0.711111, -0.2, 0, 0.2, 0, 0.611, -0.2, 0, 0.2, 0, 0.711111, -0.2, 0, 0.2, 0),
-"times": PackedFloat32Array(0, 0.0333333, 0.2)
-}
-tracks/2/type = "bezier"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("hand1:position:x")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"handle_modes": PackedInt32Array(0, 0, 0),
-"points": PackedFloat32Array(-18, -0.2, 0, 0.2, 0, -15, -0.2, 0, 0.2, 0, -18, -0.2, 0, 0.2, 0),
-"times": PackedFloat32Array(0, 0.0333333, 0.2)
-}
-tracks/3/type = "bezier"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("hand1:position:y")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"handle_modes": PackedInt32Array(0, 0, 0),
-"points": PackedFloat32Array(204.985, -0.2, 0, 0.2, 0, 88, -0.2, 0, 0.2, 0, 204.985, -0.2, 0, 0.2, 0),
-"times": PackedFloat32Array(0, 0.0333333, 0.2)
-}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ywe1v"]
 _data = {

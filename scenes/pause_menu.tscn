@@ -208,10 +208,10 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 35
 text = "  RESTART  "
 
-[node name="STOP" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+[node name="LEAVE" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 35
-text = "   STOP   "
+text = "   LEAVE   "
 
 [node name="Label2" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -227,4 +227,4 @@ libraries = {
 
 [connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/RESUME" to="." method="_on_resume_pressed"]
 [connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/RESTART" to="." method="_on_restart_pressed"]
-[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/STOP" to="." method="_on_stop_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/LEAVE" to="." method="_on_stop_pressed"]

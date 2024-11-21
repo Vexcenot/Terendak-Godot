@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://doeeek7fjckud"]
+
+[ext_resource type="Texture2D" uid="uid://ciokcechpr7l3" path="res://textures/background-drawn-with-brown-oil-pencil_jpg.png" id="1_hsl0u"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+texture = ExtResource("1_hsl0u")
+metadata/_edit_use_anchors_ = true

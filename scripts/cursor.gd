@@ -74,19 +74,17 @@ func _on_punch_area_exited(area: Area2D) -> void:
 		logged2 = false
 
 func cursorvis():
-	if get_tree().paused == true:
+	if DragManager.paused:
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	else:
 		Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 
-#detects if win conditions are met
+
 func wintime():
 	if logged2 and DragManager.lastworm and DragManager.is_dragging:
-		$AudioStreamPlayer2D.play()
-		#await get_tree().create_timer(.2).timeout
-		get_tree().change_scene_to_file("res://scenes/win_condition.tscn")
-		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 		logged2 = false
 		DragManager.lastworm == false
 		DragManager.is_dragging == false
+		get_tree().change_scene_to_file("res://scenes/winhand.tscn")
+
 		

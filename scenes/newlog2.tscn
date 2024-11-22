@@ -51,21 +51,21 @@ position = Vector2(727, 328)
 position = Vector2(850, 438)
 
 [node name="RigidBody2D" parent="." instance=ExtResource("4_mwalp")]
-position = Vector2(612, 465)
+position = Vector2(940, 502)
 
 [node name="RigidBody2D2" parent="." instance=ExtResource("4_mwalp")]
-position = Vector2(641, 193)
+position = Vector2(865, 569)
 
 [node name="RigidBody2D3" parent="." instance=ExtResource("4_mwalp")]
 position = Vector2(582, 358)
 
 [node name="RigidBody2D4" parent="." instance=ExtResource("4_mwalp")]
-position = Vector2(872, 198)
+position = Vector2(745, 600)
 
 [node name="RigidBody2D5" parent="." instance=ExtResource("4_mwalp")]
-position = Vector2(959, 380)
+position = Vector2(984, 200)
 
 [node name="RigidBody2D6" parent="." instance=ExtResource("4_mwalp")]
-position = Vector2(809, 463)
+position = Vector2(941, 165)
 
 [connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]

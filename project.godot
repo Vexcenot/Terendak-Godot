@@ -25,6 +25,7 @@ Inventory="*res://Inventory.gd"
 EmbedGameAutoload="*res://addons/fabimakesgames.embed_game/embed_game_autoload.gd"
 DragManager="*res://scripts/DragManager.gd"
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
+FrameManager="*res://scripts/FrameManager.gd"
 
 [dialogic]
 

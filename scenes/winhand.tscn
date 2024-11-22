@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://v4occv5fgl7"]
 
-[ext_resource type="Script" path="res://winanimate.gd" id="1_3qtod"]
+[ext_resource type="Script" path="res://scripts/winanimate.gd" id="1_3qtod"]
 [ext_resource type="Texture2D" uid="uid://deyslfa76rlim" path="res://textures/shine hand animation.png" id="2_tx2km"]
 
 [node name="Node2D" type="Node2D"]

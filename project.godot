@@ -21,11 +21,9 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-Inventory="*res://Inventory.gd"
 EmbedGameAutoload="*res://addons/fabimakesgames.embed_game/embed_game_autoload.gd"
 DragManager="*res://scripts/DragManager.gd"
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
-FrameManager="*res://scripts/FrameManager.gd"
 
 [dialogic]
 
@@ -73,7 +71,7 @@ window/stretch/aspect="expand"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/YouCanDoIt/plugin.cfg", "res://addons/dialogic/plugin.cfg")
+enabled=PackedStringArray("res://addons/YouCanDoIt/plugin.cfg", "res://addons/dialogic/plugin.cfg", "res://addons/donut_collision_polygon2D/plugin.cfg")
 
 [global_group]
 
@@ -84,6 +82,7 @@ sago=""
 log=""
 cursor=""
 log2=""
+key=""
 
 [input]
 

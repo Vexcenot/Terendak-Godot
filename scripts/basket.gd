@@ -13,6 +13,9 @@ func _process(float) -> void:
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	soundmanager()
+
+func soundmanager():
 	# Load AudioStreamPlayer2D nodes and check for null values
 	count_up_sound = $CountUpSound
 	count_down_sound = $CountDownSound

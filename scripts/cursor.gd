@@ -81,10 +81,11 @@ func cursorvis():
 
 
 func wintime():
-	if logged2 and DragManager.lastworm and DragManager.is_dragging:
+	if logged2 and DragManager.lastworm and DragManager.is_dragging or DragManager.absolutewin:
 		logged2 = false
-		DragManager.lastworm == false
-		DragManager.is_dragging == false
+		DragManager.lastworm = false
+		DragManager.is_dragging = false
+		DragManager.absolutewin = false
 		get_tree().change_scene_to_file("res://scenes/winhand.tscn")
 
 		

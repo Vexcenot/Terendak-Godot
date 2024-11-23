@@ -317,7 +317,6 @@ position = Vector2(-18, 204.985)
 scale = Vector2(0.711111, 0.711111)
 texture = ExtResource("2_qwely")
 hframes = 3
-frame = 1
 
 [node name="grab" type="Area2D" parent="."]
 

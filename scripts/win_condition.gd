@@ -10,10 +10,7 @@ extends Node2D
 
 
 func _ready():
-	transition.play_backwards("fade")
-	await get_tree().create_timer(1).timeout
-	canvas_layer.free()
-	#animation_player.play("gone")
+	transition.play("fadeout")
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	
 func _on_button_pressed() -> void:

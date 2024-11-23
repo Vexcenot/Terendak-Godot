@@ -35,12 +35,13 @@ directories/dch_directory={
 "Maya": "res://characters/Maya.dch"
 }
 directories/dtl_directory={
+"confused": "res://timelines/confused.dtl",
 "intro": "res://timelines/intro.dtl",
 "texttest1": "res://texttest1.dtl",
 "win": "res://win.dtl"
 }
 glossary/default_case_sensitive=true
-layout/style_list=["res://Styles/Premade.tres"]
+layout/style_list=["res://Styles/Premade.tres", "res://timelines/basic.tres", "res://timelines/New_File.tres"]
 layout/default_style="res://Styles/Premade.tres"
 extensions_folder="res://addons/dialogic_additions"
 text/letter_speed=0.01

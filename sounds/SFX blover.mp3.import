@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dwkdbmtcnbfar"
+path="res://.godot/imported/SFX blover.mp3-c360f812e706463adcd9454dc330f201.mp3str"
+
+[deps]
+
+source_file="res://sounds/SFX blover.mp3"
+dest_files=["res://.godot/imported/SFX blover.mp3-c360f812e706463adcd9454dc330f201.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

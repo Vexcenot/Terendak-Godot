@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://b73u13rqmmr7o"]
+[gd_scene load_steps=7 format=3 uid="uid://b73u13rqmmr7o"]
 
 [ext_resource type="Texture2D" uid="uid://e2rjyocmpwd3" path="res://textures/log (3).PNG" id="1_pp7x0"]
 [ext_resource type="PackedScene" uid="uid://db8ykwgxb2vsd" path="res://scenes/sago.tscn" id="3_k8d6t"]
 [ext_resource type="PackedScene" uid="uid://bsify1dghbou2" path="res://scenes/wood shavings.tscn" id="4_mwalp"]
+[ext_resource type="Script" path="res://addons/donut_collision_polygon2D/donut_collision_polygon2D.gd" id="4_tu7tf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v3do0"]
 size = Vector2(672, 624.5)
@@ -29,43 +30,251 @@ position = Vector2(745, 332.75)
 scale = Vector2(28.755, 28.755)
 shape = SubResource("CircleShape2D_anugj")
 
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+collision_layer = 4
+collision_mask = 4
+
+[node name="DonutCollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D2"]
+position = Vector2(752, 321)
+scale = Vector2(26.4226, 26.4226)
+polygon = PackedVector2Array(6.42918e-16, -10.5, 2.04845, -10.2982, 4.01818, -9.70074, 5.83349, -8.73043, 7.42462, -7.42462, 8.73043, -5.83349, 9.70074, -4.01818, 10.2982, -2.04845, 10.5, 0, 10.2982, 2.04845, 9.70074, 4.01818, 8.73043, 5.83349, 7.42462, 7.42462, 5.83349, 8.73043, 4.01818, 9.70074, 2.04845, 10.2982, 6.42918e-16, 10.5, -2.04845, 10.2982, -4.01818, 9.70074, -5.83349, 8.73043, -7.42462, 7.42462, -8.73043, 5.83349, -9.70074, 4.01818, -10.2982, 2.04845, -10.5, 1.28584e-15, -10.2982, -2.04845, -9.70074, -4.01818, -8.73043, -5.83349, -7.42462, -7.42462, -5.83349, -8.73043, -4.01818, -9.70074, -2.04845, -10.2982, -1.92876e-15, -10.5, -1.74506e-15, -9.5, -1.85336, -9.31746, -3.63549, -8.77686, -5.27792, -7.89896, -6.71751, -6.71751, -7.89896, -5.27792, -8.77686, -3.63549, -9.31746, -1.85336, -9.5, 1.16338e-15, -9.31746, 1.85336, -8.77686, 3.63549, -7.89896, 5.27792, -6.71751, 6.71751, -5.27792, 7.89896, -3.63549, 8.77686, -1.85336, 9.31746, 5.81688e-16, 9.5, 1.85336, 9.31746, 3.63549, 8.77686, 5.27792, 7.89896, 6.71751, 6.71751, 7.89896, 5.27792, 8.77686, 3.63549, 9.31746, 1.85336, 9.5, 0, 9.31746, -1.85336, 8.77686, -3.63549, 7.89896, -5.27792, 6.71751, -6.71751, 5.27792, -7.89896, 3.63549, -8.77686, 1.85336, -9.31746, 5.81688e-16, -9.5, 0.0001, -10.4999)
+script = ExtResource("4_tu7tf")
+width = 1.0
+
 [node name="Sago" parent="." instance=ExtResource("3_k8d6t")]
 position = Vector2(675, 422)
+scale = Vector2(1, 1)
 
 [node name="Sago2" parent="." instance=ExtResource("3_k8d6t")]
 position = Vector2(649, 257)
+scale = Vector2(1, 1)
 
 [node name="Sago6" parent="." instance=ExtResource("3_k8d6t")]
 position = Vector2(585, 350)
+scale = Vector2(1, 1)
 
 [node name="Sago3" parent="." instance=ExtResource("3_k8d6t")]
 position = Vector2(757, 189)
+scale = Vector2(1, 1)
 
 [node name="Sago4" parent="." instance=ExtResource("3_k8d6t")]
 position = Vector2(810, 300)
+scale = Vector2(1, 1)
 
 [node name="Sago7" parent="." instance=ExtResource("3_k8d6t")]
 position = Vector2(727, 328)
+scale = Vector2(1, 1)
 
 [node name="Sago5" parent="." instance=ExtResource("3_k8d6t")]
 position = Vector2(850, 438)
+scale = Vector2(1, 1)
 
-[node name="RigidBody2D" parent="." instance=ExtResource("4_mwalp")]
-position = Vector2(940, 502)
+[node name="wood" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(618, 193)
 
-[node name="RigidBody2D2" parent="." instance=ExtResource("4_mwalp")]
-position = Vector2(865, 569)
+[node name="wood2" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(705, 121)
 
-[node name="RigidBody2D3" parent="." instance=ExtResource("4_mwalp")]
-position = Vector2(582, 358)
+[node name="wood3" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(891, 227)
 
-[node name="RigidBody2D4" parent="." instance=ExtResource("4_mwalp")]
-position = Vector2(745, 600)
+[node name="wood4" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(907, 362)
 
-[node name="RigidBody2D5" parent="." instance=ExtResource("4_mwalp")]
-position = Vector2(984, 200)
+[node name="wood5" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(793, 535)
 
-[node name="RigidBody2D6" parent="." instance=ExtResource("4_mwalp")]
-position = Vector2(941, 165)
+[node name="wood6" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(711, 537)
+
+[node name="wood7" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(635, 482)
+
+[node name="wood8" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(598, 422)
+
+[node name="wood9" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(552, 303)
+
+[node name="wood10" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(610, 244)
+
+[node name="wood11" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(717, 180)
+rotation = -0.740544
+
+[node name="wood12" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(853, 173)
+rotation = -0.740544
+
+[node name="wood13" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(807, 116)
+rotation = -0.740544
+
+[node name="wood14" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(828, 227)
+rotation = -0.740544
+
+[node name="wood15" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(941, 306)
+rotation = -0.740544
+
+[node name="wood16" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(865, 282)
+rotation = -0.740544
+
+[node name="wood17" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(865, 470)
+rotation = -0.740544
+
+[node name="wood18" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(939, 410)
+rotation = -0.740544
+
+[node name="wood19" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(896, 498)
+rotation = -0.740544
+
+[node name="wood20" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(742, 470)
+rotation = -0.740544
+
+[node name="wood21" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(791, 422)
+rotation = -0.740544
+
+[node name="wood22" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(681, 390)
+rotation = -0.740544
+
+[node name="wood23" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(559, 243)
+
+[node name="wood24" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(666, 179)
+rotation = -0.740544
+
+[node name="wood25" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(802, 172)
+rotation = -0.740544
+
+[node name="wood26" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(756, 115)
+rotation = -0.740544
+
+[node name="wood27" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(777, 226)
+rotation = -0.740544
+
+[node name="wood28" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(890, 305)
+rotation = -0.740544
+
+[node name="wood29" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(814, 281)
+rotation = -0.740544
+
+[node name="wood30" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(814, 469)
+rotation = -0.740544
+
+[node name="wood31" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(888, 409)
+rotation = -0.740544
+
+[node name="wood32" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(845, 497)
+rotation = -0.740544
+
+[node name="wood33" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(691, 469)
+rotation = -0.740544
+
+[node name="wood34" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(740, 421)
+rotation = -0.740544
+
+[node name="wood35" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(630, 389)
+rotation = -0.740544
+
+[node name="wood36" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(633, 248)
+
+[node name="wood37" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(740, 184)
+rotation = -0.740544
+
+[node name="wood38" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(876, 177)
+rotation = -0.740544
+
+[node name="wood39" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(830, 120)
+rotation = -0.740544
+
+[node name="wood40" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(851, 231)
+rotation = -0.740544
+
+[node name="wood41" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(964, 310)
+rotation = -0.740544
+
+[node name="wood42" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(888, 286)
+rotation = -0.740544
+
+[node name="wood43" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(888, 474)
+rotation = -0.740544
+
+[node name="wood44" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(962, 414)
+rotation = -0.740544
+
+[node name="wood45" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(919, 502)
+rotation = -0.740544
+
+[node name="wood46" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(765, 474)
+rotation = -0.740544
+
+[node name="wood47" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(814, 426)
+rotation = -0.740544
+
+[node name="wood48" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(704, 394)
+rotation = -0.740544
+
+[node name="wood49" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(634, 342)
+rotation = -0.740544
+
+[node name="wood50" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(706, 265)
+rotation = -0.740544
+
+[node name="wood51" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(658, 268)
+rotation = -0.740544
+
+[node name="wood52" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(777, 280)
+rotation = -0.740544
+
+[node name="wood53" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(764, 379)
+rotation = -0.740544
+
+[node name="wood54" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(842, 376)
+rotation = -0.740544
+
+[node name="wood55" parent="." instance=ExtResource("4_mwalp")]
+position = Vector2(692, 336)
+rotation = -0.740544
 
 [connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]

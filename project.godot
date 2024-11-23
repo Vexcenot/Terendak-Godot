@@ -73,7 +73,7 @@ window/stretch/aspect="expand"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/YouCanDoIt/plugin.cfg", "res://addons/dialogic/plugin.cfg", "res://addons/donut_collision_polygon2D/plugin.cfg", "res://addons/fabimakesgames.embed_game/plugin.cfg")
+enabled=PackedStringArray("res://addons/YouCanDoIt/plugin.cfg", "res://addons/dialogic/plugin.cfg")
 
 [global_group]
 

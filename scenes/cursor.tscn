@@ -305,6 +305,7 @@ _data = {
 
 [node name="CURSOR" type="Node2D" groups=["cursor"]]
 process_mode = 3
+z_index = 1
 script = ExtResource("1_vgvst")
 
 [node name="hand1" type="Sprite2D" parent="."]
@@ -334,6 +335,7 @@ scale = Vector2(0.47, 0.47)
 shape = SubResource("CircleShape2D_ot6uy")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_layer = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(-8, -20)

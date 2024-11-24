@@ -50,9 +50,9 @@ func clicking():
 #becomes fist when hovering over log
 func punching():
 	if Input.is_action_just_pressed("leftclick") and logged == true:
-		$AnimationPlayer.stop(true)
-		$AnimationPlayer.play("punch")
-		$hand1.frame = FIST;
+		$hand1/AnimationPlayer.stop(true)
+		$hand1/AnimationPlayer.play("punch")
+		$hand1.frame = SPEAR
 		
 var logged = false
 var logged2 = false

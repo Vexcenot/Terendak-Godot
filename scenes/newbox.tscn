@@ -5,7 +5,7 @@
 [ext_resource type="AudioStream" uid="uid://cjcw52o0temrr" path="res://sounds/engage-39995.mp3" id="3_frcgx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yh0ee"]
-size = Vector2(1129, 566)
+size = Vector2(36, 164)
 
 [node name="newbox" type="Node2D" groups=["Basket"]]
 script = ExtResource("1_36wad")
@@ -20,15 +20,16 @@ collision_layer = 3
 collision_mask = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="box/lock"]
-position = Vector2(-1.49998, 273)
+position = Vector2(-4.99998, 194)
 shape = SubResource("RectangleShape2D_yh0ee")
 
 [node name="Button" type="Button" parent="box"]
 modulate = Color(1, 1, 1, 0)
-offset_left = -161.0
-offset_top = 119.0
-offset_right = 144.0
-offset_bottom = 282.0
+z_index = 5
+offset_left = -182.0
+offset_top = -27.0
+offset_right = 184.0
+offset_bottom = 334.0
 disabled = true
 action_mode = 0
 

@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://doeeek7fjckud"]
+[gd_scene load_steps=6 format=3 uid="uid://doeeek7fjckud"]
 
 [ext_resource type="Texture2D" uid="uid://ciokcechpr7l3" path="res://textures/background-drawn-with-brown-oil-pencil_jpg.png" id="1_hsl0u"]
 [ext_resource type="PackedScene" uid="uid://bd3faxqyinlau" path="res://scenes/cursor.tscn" id="2_307ji"]
+[ext_resource type="PackedScene" uid="uid://brsjjoyekn4ri" path="res://scenes/pause_menu.tscn" id="5_1juiq"]
 [ext_resource type="PackedScene" uid="uid://cq8uc62kjnmvj" path="res://scenes/key.tscn" id="5_qw1vp"]
 [ext_resource type="PackedScene" uid="uid://w2wim3q7123q" path="res://scenes/newbox.tscn" id="6_tr8bp"]
 
@@ -20,14 +21,17 @@ size_flags_horizontal = 6
 size_flags_vertical = 6
 texture = ExtResource("1_hsl0u")
 
-[node name="CURSOR" parent="." instance=ExtResource("2_307ji")]
-position = Vector2(323, 255)
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+layer = 0
+
+[node name="pause" parent="CanvasLayer2" instance=ExtResource("5_1juiq")]
 
 [node name="key" parent="." instance=ExtResource("5_qw1vp")]
 position = Vector2(971, 508)
 
 [node name="newbox" parent="." instance=ExtResource("6_tr8bp")]
-position = Vector2(566, 194)
+position = Vector2(587, 162)
 scale = Vector2(0.475, 0.475)
 
-[connection signal="body_shape_entered" from="key" to="CURSOR" method="_on_key_body_shape_entered"]
+[node name="CURSOR" parent="." instance=ExtResource("2_307ji")]
+position = Vector2(201, 271)

@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://bkfpr202l306y"]
+
+[ext_resource type="Script" path="res://scripts/lever.gd" id="1_ayh1i"]
+[ext_resource type="Texture2D" uid="uid://46ym228cpwaj" path="res://Assets/charactermodels/Dakan1.png" id="1_jxetl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_of7ft"]
+size = Vector2(715.5, 876)
+
+[node name="Lever" type="Area2D"]
+scale = Vector2(0.1, 0.1)
+script = ExtResource("1_ayh1i")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+light_mask = 512
+visibility_layer = 512
+z_index = 10
+texture = ExtResource("1_jxetl")
+region_enabled = true
+region_rect = Rect2(0.361877, -2.47601, 505.447, 1000.57)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(8, -33)
+shape = SubResource("RectangleShape2D_of7ft")

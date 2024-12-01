@@ -3,7 +3,7 @@ func _ready():
 	Dialogic.start("intro")
 
 const SPEED = 500.0
-const JUMP_VELOCITY = -300.0
+const JUMP_VELOCITY = -500.0
 
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 

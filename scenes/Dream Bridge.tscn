@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://cy2plxd5of0x1"]
+
+[ext_resource type="Texture2D" uid="uid://c7bfvll7r3jmk" path="res://Assets/2dplatforming/Bridge no rail.png" id="1_ceeew"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lca2d"]
+size = Vector2(398, 33)
+
+[node name="Dream bridge" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-7, -22)
+texture = ExtResource("1_ceeew")
+region_enabled = true
+region_rect = Rect2(637.212, 486.835, 383.547, 129.115)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(5, -53.5)
+shape = SubResource("RectangleShape2D_lca2d")
+disabled = true

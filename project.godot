@@ -30,7 +30,8 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 directories/dch_directory={
 "Dakan 1": "res://characters/Dakan 1.dch",
 "Grandad": "res://characters/Grandad.dch",
-"Maya": "res://characters/Maya.dch"
+"Maya": "res://characters/Maya.dch",
+"Uncle Allen": "res://characters/Uncle Allen.dch"
 }
 directories/dtl_directory={
 "confused": "res://timelines/confused.dtl",

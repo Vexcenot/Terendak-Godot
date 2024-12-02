@@ -205,7 +205,7 @@ position = Vector2(-272, -7)
 script = ExtResource("7_rtdbv")
 
 [node name="Lever" parent="." instance=ExtResource("8_5s20i")]
-position = Vector2(-305, -139)
+position = Vector2(-216, -158)
 
 [node name="Dream bridge" parent="." instance=ExtResource("9_540ex")]
 position = Vector2(-448, 17)

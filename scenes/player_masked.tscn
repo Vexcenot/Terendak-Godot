@@ -1,14 +1,18 @@
-[gd_scene load_steps=6 format=3 uid="uid://cu0st24xl7tb8"]
+[gd_scene load_steps=10 format=3 uid="uid://cu0st24xl7tb8"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_c4ksb"]
-[ext_resource type="Texture2D" uid="uid://cuvjihquku2bu" path="res://Assets/charactermodels/placeholder.png" id="2_q4a5v"]
+[ext_resource type="Texture2D" uid="uid://cryq44nx14n6w" path="res://Assets/charactermodels/Maya_idle.png" id="3_83ap0"]
 [ext_resource type="Texture2D" uid="uid://ctcf7cdv3ydk6" path="res://Assets/charactermodels/placeholder_masked_glow.png" id="3_j76qs"]
+[ext_resource type="Texture2D" uid="uid://d16imqcl5n3sq" path="res://Assets/charactermodels/Maya_walk_1.png" id="4_vi6n2"]
+[ext_resource type="Texture2D" uid="uid://b5d238pqb2fge" path="res://Assets/charactermodels/Maya_walk_2.png" id="5_14nlg"]
+[ext_resource type="Texture2D" uid="uid://bcep1jbivb8ea" path="res://Assets/charactermodels/Maya_walk_3.png" id="6_48c6x"]
+[ext_resource type="Texture2D" uid="uid://boe1jmb1iv4wa" path="res://Assets/charactermodels/Maya_walk_4.png" id="7_wsrc1"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_a2y5l"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_q4a5v")
+"texture": ExtResource("3_83ap0")
 }],
 "loop": true,
 "name": &"idle",
@@ -21,10 +25,27 @@ animations = [{
 "loop": true,
 "name": &"masked_idle",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_vi6n2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_14nlg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_48c6x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_wsrc1")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fnqta"]
-size = Vector2(23, 176)
+size = Vector2(32, 214)
 
 [node name="player" type="CharacterBody2D"]
 light_mask = 2
@@ -35,12 +56,14 @@ script = ExtResource("1_c4ksb")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 z_index = 5
 position = Vector2(0, -12)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.6, 0.6)
 sprite_frames = SubResource("SpriteFrames_a2y5l")
-animation = &"masked_idle"
-autoplay = "masked_idle"
+animation = &"walk"
+autoplay = "idle"
+frame_progress = 0.117597
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 z_index = 5
-position = Vector2(6.5, -9)
+position = Vector2(0, 15)
 shape = SubResource("RectangleShape2D_fnqta")

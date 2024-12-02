@@ -1,17 +1,20 @@
 [gd_scene load_steps=3 format=3 uid="uid://t31087jjpc7d"]
 
-[ext_resource type="Texture2D" uid="uid://c7bfvll7r3jmk" path="res://Assets/2dplatforming/Bridge no rail.png" id="1_ldonw"]
+[ext_resource type="Texture2D" uid="uid://mv76j8tl0cil" path="res://Assets/2dplatforming/Wooden platform 1.png" id="1_l4hlo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pxaep"]
-size = Vector2(382, 14)
+size = Vector2(260, 38)
 
 [node name="bridge" type="StaticBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 visible = false
-scale = Vector2(0.2, 0.2)
-texture = ExtResource("1_ldonw")
+texture = ExtResource("1_l4hlo")
+region_enabled = true
+region_rect = Rect2(-5.43866, -0.34407, 306.062, 98.5623)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, -1)
 shape = SubResource("RectangleShape2D_pxaep")
 disabled = true
+one_way_collision = true

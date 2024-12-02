@@ -28,7 +28,7 @@
 "portraits": {
 "Default": {
 "export_overrides": {
-"image": "\"res://Assets/charactermodels/placeholder.png\""
+"image": "\"res://Assets/2dplatforming/UI/Maya Sprite.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
@@ -37,7 +37,7 @@
 },
 "Default_Masked": {
 "export_overrides": {
-"image": "\"res://Assets/charactermodels/placeholder_masked.png\""
+"image": "\"res://Assets/2dplatforming/UI/Maya Sprite Masked.png\""
 },
 "ignore_char_scale": false,
 "mirror": false,

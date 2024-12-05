@@ -31,10 +31,12 @@ directories/dch_directory={
 "Dakan 1": "res://characters/Dakan 1.dch",
 "Grandad": "res://characters/Grandad.dch",
 "Maya": "res://characters/Maya.dch",
-"Uncle Allen": "res://characters/Uncle Allen.dch"
+"Uncle Allen": "res://characters/Uncle Allen.dch",
+"tupeing": "res://characters/tupeing.dch"
 }
 directories/dtl_directory={
 "confused": "res://timelines/confused.dtl",
+"fake piece": "res://timelines/fake piece.dtl",
 "intro": "res://timelines/intro.dtl",
 "texttest1": "res://texttest1.dtl",
 "win": "res://win.dtl"

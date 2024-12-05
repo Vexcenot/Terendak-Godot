@@ -4,6 +4,7 @@ extends Area2D
 @onready var walls = $"../MazeTileMap"
 @onready var pieces = []  # Hold references to all items in the maze
 @onready var deposit_center = $"../Deposit"  # Node representing the deposit area
+@onready var fake_piece = $"../Piece_Fake"  # Reference to the fake piece in the scene
 
 var carried_piece: Area2D = null  # Currently carried piece
 var collected_pieces: Array = []  # To track deposited pieces
@@ -31,6 +32,8 @@ func _on_body_entered(area):
 		print("cursor hit a wall")
 		reset_cursor()
 		reset_all_pieces()
+		
+
 
 func reset_cursor():
 	# Reset the mouse cursor to the center of the screen
@@ -60,6 +63,10 @@ func _on_area_entered(area: Area2D) -> void:
 		reveal_piece_in_center(carried_piece)
 		carried_piece = null #drop the piece
 		check_victory_condition()
+		
+	elif area.is_in_group("fake_pieces"):
+		Dialogic.start("fake piece")
+		
 		
 func reveal_piece_in_center(piece: Area2D) -> void:
 	#move the piece to the deposit center and mark it as collected

@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://w2wim3q7123q" path="res://scenes/newbox.tscn" id="6_tr8bp"]
 
 [node name="world" type="Node2D"]
+position = Vector2(435, 93)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = -1

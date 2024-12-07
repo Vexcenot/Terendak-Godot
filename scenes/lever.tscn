@@ -28,7 +28,6 @@ layer = 10
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(8, -30.5)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_of7ft")
 
 [node name="M" type="Sprite2D" parent="."]

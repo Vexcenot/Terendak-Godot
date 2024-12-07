@@ -5,7 +5,7 @@ extends Area2D
 
 func _on_body_entered(body: Node2D) -> void:
 	print("Convo Started")
-	Dialogic.start("Felicia")
+	Dialogic.start("Depression")
 	print("cain get!")
 	Dialogic.timeline_ended.connect(ended)
 	

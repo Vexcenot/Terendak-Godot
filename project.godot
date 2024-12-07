@@ -40,6 +40,7 @@ directories/dch_directory={
 "tupeing": "res://characters/tupeing.dch"
 }
 directories/dtl_directory={
+"Allen": "res://timelines/Allen.dtl",
 "Dakan A Intro": "res://timelines/Dakan A Intro.dtl",
 "End Scene": "res://timelines/End Scene.dtl",
 "Everyone is here": "res://timelines/Everyone is here.dtl",
@@ -52,6 +53,7 @@ directories/dtl_directory={
 "confused": "res://timelines/confused.dtl",
 "fake piece": "res://timelines/fake piece.dtl",
 "intro": "res://timelines/intro.dtl",
+"intro_level 3": "res://timelines/intro_level 3.dtl",
 "texttest1": "res://texttest1.dtl",
 "win": "res://win.dtl"
 }

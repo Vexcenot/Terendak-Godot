@@ -29,12 +29,26 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 directories/dch_directory={
 "Dakan 1": "res://characters/Dakan 1.dch",
-"Grandad": "res://characters/Grandad.dch",
+"Dakan2": "res://characters/Dakan2.dch",
+"Dakan3": "res://characters/Dakan3.dch",
+"Felicia": "res://characters/Felicia.dch",
+"Grandpa": "res://characters/Grandpa.dch",
 "Maya": "res://characters/Maya.dch",
+"Rina": "res://characters/Rina.dch",
+"Tom": "res://characters/Tom.dch",
 "Uncle Allen": "res://characters/Uncle Allen.dch",
 "tupeing": "res://characters/tupeing.dch"
 }
 directories/dtl_directory={
+"Dakan A Intro": "res://timelines/Dakan A Intro.dtl",
+"End Scene": "res://timelines/End Scene.dtl",
+"Everyone is here": "res://timelines/Everyone is here.dtl",
+"Felicia": "res://timelines/Felicia.dtl",
+"Forest Walk": "res://timelines/Forest Walk.dtl",
+"Level 2 Intro": "res://timelines/Level 2 Intro.dtl",
+"Scary Maze Intro": "res://timelines/Scary Maze Intro.dtl",
+"Tom": "res://timelines/Tom.dtl",
+"Tom 2": "res://timelines/Tom 2.dtl",
 "confused": "res://timelines/confused.dtl",
 "fake piece": "res://timelines/fake piece.dtl",
 "intro": "res://timelines/intro.dtl",
@@ -69,8 +83,8 @@ variables={}
 
 [display]
 
+window/size/mode=3
 window/stretch/mode="viewport"
-window/stretch/aspect="expand"
 
 [editor_plugins]
 
@@ -86,6 +100,7 @@ log=""
 cursor=""
 log2=""
 key=""
+player=""
 
 [input]
 
@@ -146,3 +161,4 @@ toggle_lever={
 [rendering]
 
 textures/canvas_textures/default_texture_filter=2
+textures/default_filters/use_nearest_mipmap_filter=true

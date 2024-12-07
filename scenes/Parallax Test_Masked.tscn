@@ -1,4 +1,4 @@
-[gd_scene load_steps=65 format=4 uid="uid://c3y6eo5rju3qk"]
+[gd_scene load_steps=63 format=4 uid="uid://c3y6eo5rju3qk"]
 
 [ext_resource type="Script" path="res://scenes/Unc Status.gd" id="1_0qthn"]
 [ext_resource type="PackedScene" uid="uid://cu0st24xl7tb8" path="res://scenes/player_masked.tscn" id="1_hhkpk"]
@@ -34,7 +34,6 @@
 [ext_resource type="Texture2D" uid="uid://b04wm1xmbfwen" path="res://Assets/2dplatforming/World Deco/Cloud 1.png" id="18_huqw8"]
 [ext_resource type="Texture2D" uid="uid://prl444gug6uh" path="res://Assets/2dplatforming/World Deco/Cloud 2.png" id="19_7vsha"]
 [ext_resource type="PackedScene" uid="uid://t31087jjpc7d" path="res://scenes/bridge.tscn" id="21_6r5b5"]
-[ext_resource type="Texture2D" uid="uid://bhd8qu6wvcxl4" path="res://Assets/charactermodels/Uncle Allen world.png" id="21_yicrk"]
 [ext_resource type="Texture2D" uid="uid://dn7qr7n3g5xht" path="res://Assets/2dplatforming/Tree V2.png" id="23_03btd"]
 [ext_resource type="Texture2D" uid="uid://csugo05sp0sym" path="res://Assets/2dplatforming/World Deco/Pillar.png" id="25_xjoa2"]
 [ext_resource type="Texture2D" uid="uid://sgkn6023g5a6" path="res://Assets/2dplatforming/World Deco/Tree 3.png" id="26_5n1sl"]
@@ -48,8 +47,7 @@
 [ext_resource type="Texture2D" uid="uid://cgws6rnvbu15y" path="res://Assets/2dplatforming/World Deco/Rock 3.png" id="40_v8v0l"]
 [ext_resource type="Texture2D" uid="uid://c2135s5o5pi5p" path="res://Assets/2dplatforming/World Deco/Bush.png" id="41_x6fmg"]
 [ext_resource type="Texture2D" uid="uid://cp8oca3hq0ouf" path="res://Assets/2dplatforming/World Deco/Fern V3.png" id="42_0qc6i"]
-[ext_resource type="Texture2D" uid="uid://c5ga5c04ftkci" path="res://Assets/2dplatforming/world triggers/Key.png" id="44_r8mqu"]
-[ext_resource type="Texture2D" uid="uid://dkc3qvrxm86q8" path="res://Assets/charactermodels/Uncle NPC.png" id="46_4ecdq"]
+[ext_resource type="PackedScene" uid="uid://thoyfr24amdl" path="res://NPC Scenes/FeliciaCoin.tscn" id="51_8ekda"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_o0hq3"]
 shader = ExtResource("5_5h88r")
@@ -57,7 +55,7 @@ shader_parameter/alpha = 4.175
 shader_parameter/inner_radius = 0.0
 shader_parameter/outer_radius = 1.0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m7h8e"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_koiol"]
 texture = ExtResource("2_o3no0")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -223,7 +221,7 @@ texture = ExtResource("2_o3no0")
 2:15/0 = 0
 3:15/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qhfwg"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dn8gn"]
 texture = ExtResource("3_rrgua")
 16:2/0 = 0
 53:2/0 = 0
@@ -2445,8 +2443,8 @@ texture = ExtResource("3_rrgua")
 
 [sub_resource type="TileSet" id="TileSet_kdrks"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_m7h8e")
-sources/1 = SubResource("TileSetAtlasSource_qhfwg")
+sources/0 = SubResource("TileSetAtlasSource_koiol")
+sources/1 = SubResource("TileSetAtlasSource_dn8gn")
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_a2y5l"]
 animations = [{
@@ -2493,13 +2491,11 @@ script = SubResource("GDScript_0n73c")
 shader = ExtResource("17_d705t")
 shader_parameter/feather_size = 0.2
 shader_parameter/edge_color = Vector4(0, 0, 0, 0)
-shader_parameter/affect_left_side = true
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_u5s2p"]
 shader = ExtResource("17_d705t")
 shader_parameter/feather_size = 0.2
 shader_parameter/edge_color = Vector4(0, 0, 0, 0)
-shader_parameter/affect_left_side = true
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_2g8a6"]
 shader = ExtResource("11_m4tlk")
@@ -2509,7 +2505,6 @@ shader_parameter/lod = 0.622
 shader = ExtResource("17_d705t")
 shader_parameter/feather_size = 0.2
 shader_parameter/edge_color = Vector4(0, 0, 0, 0)
-shader_parameter/affect_left_side = false
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ie37q"]
 shader = ExtResource("13_udrg2")
@@ -4739,7 +4734,7 @@ sources/0 = SubResource("TileSetAtlasSource_mlfxw")
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_0qthn")
 
-[node name="player" parent="." instance=ExtResource("1_hhkpk")]
+[node name="player" parent="." groups=["player"] instance=ExtResource("1_hhkpk")]
 position = Vector2(-86, -338)
 
 [node name="HUD" type="CanvasLayer" parent="player"]
@@ -4781,7 +4776,7 @@ grow_vertical = 2
 
 [node name="Lever" parent="player" instance=ExtResource("4_jtles")]
 z_index = 10
-position = Vector2(-601, -381)
+position = Vector2(84.9999, -381)
 scale = Vector2(0.2, 0.2)
 priority = 10
 
@@ -4808,19 +4803,19 @@ scale = Vector2(0.6, 0.6)
 modulate = Color(1, 1, 1, 0.784314)
 
 [node name="bridge" parent="Dream/Sprite2D" instance=ExtResource("21_6r5b5")]
-position = Vector2(6430, -88.3333)
+position = Vector2(6415, -80)
 script = ExtResource("8_i3e77")
 
 [node name="bridge2" parent="Dream/Sprite2D" instance=ExtResource("21_6r5b5")]
-position = Vector2(6533.33, -375)
+position = Vector2(6556.67, -263.333)
 script = ExtResource("8_i3e77")
 
 [node name="bridge3" parent="Dream/Sprite2D" instance=ExtResource("21_6r5b5")]
-position = Vector2(6530, -576.667)
+position = Vector2(6615, -463.333)
 script = ExtResource("8_i3e77")
 
 [node name="bridge8" parent="Dream/Sprite2D" instance=ExtResource("21_6r5b5")]
-position = Vector2(6158.33, -748.333)
+position = Vector2(6708.33, -665)
 script = ExtResource("8_i3e77")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Dream/Sprite2D"]
@@ -4828,9 +4823,9 @@ visible = false
 z_index = 5
 position = Vector2(6155, -141.667)
 sprite_frames = SubResource("SpriteFrames_a2y5l")
-animation = &"walk"
+animation = &"masked_idle"
 autoplay = "idle"
-frame_progress = 0.117597
+frame_progress = 0.292849
 
 [node name="Triggers" type="Node2D" parent="Dream"]
 
@@ -4865,6 +4860,7 @@ offset_bottom = 17731.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.529412, 0.807843, 0.921569, 1)
+metadata/_edit_lock_ = true
 
 [node name="Cloud1" type="Sprite2D" parent="Visuals/Sky"]
 position = Vector2(1192, -1076)
@@ -5471,6 +5467,7 @@ self_modulate = Color(1, 1, 0.87451, 0.227451)
 position = Vector2(7265.62, -5175)
 scale = Vector2(366.206, 261.572)
 texture = ExtResource("10_pqmt4")
+metadata/_edit_lock_ = true
 
 [node name="TreeV19" type="Sprite2D" parent="Visuals/-2"]
 position = Vector2(5745, -285)
@@ -5591,6 +5588,7 @@ material = SubResource("ShaderMaterial_2g8a6")
 position = Vector2(4256.88, -1707.25)
 scale = Vector2(47.9638, 13.3027)
 texture = ExtResource("10_pqmt4")
+metadata/_edit_lock_ = true
 
 [node name="-1" type="CanvasLayer" parent="Visuals"]
 layer = -2
@@ -5657,6 +5655,10 @@ scale = Vector2(0.5, 0.5)
 
 [node name="Water2" type="Sprite2D" parent="Visuals/-1/Water"]
 position = Vector2(1914.89, 21.711)
+texture = ExtResource("9_gy47l")
+
+[node name="Water3" type="Sprite2D" parent="Visuals/-1/Water"]
+position = Vector2(2612.54, 12.2197)
 texture = ExtResource("9_gy47l")
 
 [node name="Water5" type="Sprite2D" parent="Visuals/-1/Water"]
@@ -5733,6 +5735,7 @@ material = SubResource("ShaderMaterial_ie37q")
 position = Vector2(1928.89, -835.556)
 scale = Vector2(142.196, 104.709)
 texture = ExtResource("10_pqmt4")
+metadata/_edit_lock_ = true
 
 [node name="0" type="CanvasLayer" parent="Visuals"]
 layer = -1
@@ -5754,20 +5757,6 @@ scale = Vector2(0.6, 0.6)
 texture = ExtResource("16_71a3f")
 region_enabled = true
 region_rect = Rect2(139.608, 0, 1641.99, 1080)
-
-[node name="UncleAllenWorld" type="Sprite2D" parent="Visuals/0"]
-visible = false
-position = Vector2(502, -327)
-scale = Vector2(0.6, 0.6)
-texture = ExtResource("21_yicrk")
-region_rect = Rect2(0, 0, 1920, 1080)
-
-[node name="UncleAllenNPC" type="Sprite2D" parent="Visuals/0"]
-position = Vector2(496, -351)
-scale = Vector2(0.3, 0.3)
-texture = ExtResource("46_4ecdq")
-region_enabled = true
-region_rect = Rect2(780.378, 0, 334.18, 1080)
 
 [node name="Grass" type="CanvasGroup" parent="Visuals/0"]
 position = Vector2(324.838, 21.9562)
@@ -6284,11 +6273,8 @@ rotation = 0.00872665
 scale = Vector2(2.8, 2.8)
 texture = ExtResource("7_aabm3")
 
-[node name="Key" type="Sprite2D" parent="."]
-position = Vector2(6083, -617)
-rotation = 0.764454
-scale = Vector2(0.1, 0.1)
-texture = ExtResource("44_r8mqu")
+[node name="Felicia" parent="." instance=ExtResource("51_8ekda")]
+position = Vector2(1023, -187)
 
 [connection signal="lever_state_changed" from="player/Lever" to="player/CanvasLayer3/Atmosphere" method="_on_lever_lever_state_changed"]
 [connection signal="lever_state_changed" from="player/Lever" to="Dream/Sprite2D/bridge" method="_on_lever_lever_state_changed"]

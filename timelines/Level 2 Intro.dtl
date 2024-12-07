@@ -1,0 +1,17 @@
+join Maya left
+join tupeing right
+Maya (Default): "Seems like we have made it out of the forest."
+tupeing: "Yes, we have."
+tupeing: "No more stunts like that again Maya..."
+Maya: If we did not, we would not have gotten...whatever this is..."
+tupeing: "True... but please think things through before you act."
+tupeing: "If we were to look for Dakans in the forest, We will be here forever!"
+Maya: "I...don't feel like talking to the neighbours..."
+tupeing (Angry): "MAYA TAKE THIS SERIOUSLY!"
+join Maya leftmost
+Maya (Default): "Woah, woah, okay, okay!"
+Maya: "We'll head towards the village again."
+Maya: ...which direction is it?
+tupeing (Default): ...
+tupeing: "Keep moving forwards."
+[end_timeline]

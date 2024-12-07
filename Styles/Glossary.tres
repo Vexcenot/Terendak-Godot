@@ -4,7 +4,13 @@
 
 [resource]
 script = ExtResource("1_ljp4g")
-entries = {}
+entries = {
+"Baban": {
+"case_sensitive": true,
+"name": "Baban",
+"title": "Melanau dress"
+}
+}
 enabled = true
 _translation_id = ""
 _translation_keys = {}

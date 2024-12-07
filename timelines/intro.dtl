@@ -1,10 +1,12 @@
+join tupeing center
+tupeing: <Press Space to forward the Dialogue.>
+tupeing: <Use A to Move Left, D to Move Right and W to jump. Alternatively you can use the arrow keys.>
+Maya: "Who are you talking to?"
 join Maya leftmost
-Maya: My name is Maya
-Maya: My parents told me to go to Mukah
-Maya: I am currently on a bus to there
-Maya: Its 10pm at night
-join "Dakan 1" rightmost
-Maya (Default_Masked): What the-
-"Dakan 1": Come Maya...
-leave Maya
-return
+tupeing: ...
+Maya: ...
+tupeing: "My spirit friends."
+Maya: "Sure..."
+Maya: "Maybe I'll check out the neighbours"
+Maya: "Time to look around the village..."
+[end_timeline]

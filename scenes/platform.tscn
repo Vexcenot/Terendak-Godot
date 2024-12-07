@@ -1,17 +1,19 @@
 [gd_scene load_steps=3 format=3 uid="uid://cxcshn51nlcct"]
 
-[ext_resource type="Texture2D" uid="uid://d2t110sjse05s" path="res://assets/sprites/platforms.png" id="1_8nd2n"]
+[ext_resource type="Texture2D" uid="uid://eb3ccf8wvqot" path="res://Assets/2dplatforming/Grass floating.png" id="1_ye04y"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kifd8"]
-size = Vector2(32, 8)
+size = Vector2(83, 19)
 
 [node name="platform" type="AnimatableBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_8nd2n")
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_ye04y")
 region_enabled = true
-region_rect = Rect2(16, 0, 32, 9.24885)
+region_rect = Rect2(656.641, 355.813, 287.67, 74.0578)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -1.5)
 shape = SubResource("RectangleShape2D_kifd8")
 one_way_collision = true

@@ -1,0 +1,16 @@
+join Maya leftmost
+join "Dakan 1" left
+join Dakan2 center
+join Dakan3 right
+join "Uncle Allen" rightmost
+leave "Uncle Allen"
+leave Dakan3
+leave Dakan2
+leave "Dakan 1"
+leave Maya
+join  center
+join tupeing leftmost
+join Grandpa left
+join Felicia center
+join Rina right
+join Tom rightmost

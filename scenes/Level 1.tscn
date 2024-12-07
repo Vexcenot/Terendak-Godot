@@ -4744,7 +4744,7 @@ script = ExtResource("3_4gt04")
 
 [node name="Camera2D" type="Camera2D" parent="player"]
 position = Vector2(6, -87)
-zoom = Vector2(0.8, 0.8)
+zoom = Vector2(1.2, 1.2)
 
 [node name="CanvasLayer3" type="CanvasLayer" parent="player"]
 layer = 10
@@ -5654,11 +5654,11 @@ rotation = -0.00872665
 scale = Vector2(0.5, 0.5)
 
 [node name="Water2" type="Sprite2D" parent="Visuals/-1/Water"]
-position = Vector2(1914.89, 21.711)
+position = Vector2(1921.11, 46.1871)
 texture = ExtResource("35_85a4m")
 
 [node name="Water3" type="Sprite2D" parent="Visuals/-1/Water"]
-position = Vector2(2612.54, 12.2197)
+position = Vector2(2641.27, 30.2489)
 texture = ExtResource("35_85a4m")
 
 [node name="Water5" type="Sprite2D" parent="Visuals/-1/Water"]

@@ -5595,7 +5595,7 @@ script = ExtResource("3_kxvyj")
 
 [node name="Camera2D" type="Camera2D" parent="player"]
 position = Vector2(6, -87)
-zoom = Vector2(0.8, 0.8)
+zoom = Vector2(1.2, 1.2)
 
 [node name="CanvasLayer3" type="CanvasLayer" parent="player"]
 layer = 10

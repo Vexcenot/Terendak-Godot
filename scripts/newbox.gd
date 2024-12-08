@@ -1,10 +1,10 @@
 extends Node2D
 
-# Counter to keep track of sagos in the basket
+
 
 #enables the win parameters
 func unlock():
-	$box.frame = 2
+	$box.frame = 1
 	$box/Button.disabled = false
 	print("fuck")
 

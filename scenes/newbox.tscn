@@ -1,35 +1,49 @@
-[gd_scene load_steps=5 format=3 uid="uid://w2wim3q7123q"]
+[gd_scene load_steps=6 format=3 uid="uid://w2wim3q7123q"]
 
 [ext_resource type="Script" path="res://scripts/newbox.gd" id="1_36wad"]
-[ext_resource type="Texture2D" uid="uid://ptb5amhh8j5q" path="res://textures/box.png" id="2_osr03"]
+[ext_resource type="Texture2D" uid="uid://b4ongwiqeuo27" path="res://textures/chestess.png" id="2_bnsi6"]
 [ext_resource type="AudioStream" uid="uid://cjcw52o0temrr" path="res://sounds/engage-39995.mp3" id="3_frcgx"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8colj"]
+size = Vector2(29.9868, 49.4409)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yh0ee"]
-size = Vector2(36, 164)
+size = Vector2(1056, 951.5)
 
 [node name="newbox" type="Node2D" groups=["Basket"]]
 script = ExtResource("1_36wad")
 
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(0, -3)
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(9, 77)
+scale = Vector2(41.585, 41.585)
+shape = SubResource("RectangleShape2D_8colj")
+
 [node name="box" type="Sprite2D" parent="."]
 position = Vector2(-1.52588e-05, -3.8147e-06)
-texture = ExtResource("2_osr03")
-hframes = 3
+texture = ExtResource("2_bnsi6")
+hframes = 2
 
 [node name="lock" type="Area2D" parent="box"]
 collision_layer = 3
 collision_mask = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="box/lock"]
-position = Vector2(-4.99998, 194)
+position = Vector2(14, -123.25)
 shape = SubResource("RectangleShape2D_yh0ee")
 
 [node name="Button" type="Button" parent="box"]
 modulate = Color(1, 1, 1, 0)
 z_index = 5
-offset_left = -182.0
-offset_top = -27.0
-offset_right = 184.0
-offset_bottom = 334.0
+offset_left = -242.765
+offset_top = -348.615
+offset_right = 123.235
+offset_bottom = 12.385
+scale = Vector2(1.445, 1.445)
 disabled = true
 action_mode = 0
 

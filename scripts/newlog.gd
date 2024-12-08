@@ -35,6 +35,7 @@ func _on_area_2d_input_event(viewport: Node, event: InputEvent, shape_idx: int) 
 			spawn_scene(scene1)
 		elif click_count == health:
 			spawn_scene(scene2)
+			Dialogic.start("Sago Worms Exposed")
 			process_mode = Node.PROCESS_MODE_DISABLED
 
 # Function to play a random sound

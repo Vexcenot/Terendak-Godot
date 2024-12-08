@@ -4753,7 +4753,7 @@ layer = 10
 visible = false
 modulate = Color(0.313726, 0, 1, 1)
 self_modulate = Color(1, 1, 0.87451, 0.227451)
-position = Vector2(1010, 19.9999)
+position = Vector2(1381, 227)
 scale = Vector2(27.9102, 17.0117)
 texture = ExtResource("4_hms1k")
 script = ExtResource("5_34ghn")
@@ -4776,7 +4776,7 @@ grow_vertical = 2
 
 [node name="Lever" parent="player" instance=ExtResource("7_y4ht0")]
 z_index = 10
-position = Vector2(84.9999, -381)
+position = Vector2(0, -400)
 scale = Vector2(0.2, 0.2)
 priority = 10
 

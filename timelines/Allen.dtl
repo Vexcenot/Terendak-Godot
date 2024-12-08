@@ -1,1 +1,23 @@
-"Uncle Allen": Do the Dialogue Flinz, I think theres 2
+join "Uncle Allen" rightmost
+join "Uncle Allen" left
+join Maya leftmost
+"Uncle Allen": "Maya! Where have you been?"
+"Uncle Allen": "Its getting late!"
+Maya: "Uncle Allen! Uhh, sorry, I didn't see the time!"
+Maya: "I was...."
+"Uncle Allen": "Get yourself cleaned up."
+"Uncle Allen": "I saw you were jumping around the kampung all afternoon."
+"Uncle Allen": "Sudah jadi monyet kah?!"
+Maya: "Eheh..."
+leave "Uncle Allen" [animation="Slide Out Right"]
+leave "Uncle Allen" [animation="Fade Out"]
+join tupeing center
+tupeing: "With all that energy..."
+tupeing: "You can fit in the kampung just fine!"
+tupeing: "You learned sago hunting, how about learning other roles too?"
+Maya: "..."
+Maya: "Diam."
+leave Maya
+leave tupeing
+[wait time="1.0"]
+[end_timeline]

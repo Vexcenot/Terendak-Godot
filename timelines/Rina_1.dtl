@@ -1,0 +1,23 @@
+join Maya leftmost
+join Rina rightmost [mirrored="true"]
+Maya: "Hi again Auntie Rina..."
+Rina: "Hi, hi!"
+Rina: "Maaf ya... saya lupa kamu sudah sepuluh tahun tak balik kampung..."
+Rina: "Tapi, kamu sudah lupa makanan yang kegemaran anda!"
+Maya: "Ehh...."
+Maya: "I...Don't believe it..."
+Rina: "Maya...Maya...have you lost you memories?"
+Rina: "Nak buat Dakan untuk kamu je?"
+Maya: "Errr... I'll pass..."
+Rina: "Ahahaha, tipu je."
+Maya: "But I was hoping to help you hunting some sago worms..."
+Rina: "Oh! Ok jak! Ikut saya ke belakang rumah!"
+Rina: "Saya ajar kamu!"
+join Rina leftmost
+leave Rina [animation="Slide Out Right"]
+leave Rina [animation="Fade Out"]
+Maya: "..."
+Maya: "I can do this..."
+leave Maya
+[wait time="1.0"]
+[end_timeline]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=75 format=4 uid="uid://81wsopmcnh7d"]
+[gd_scene load_steps=77 format=4 uid="uid://81wsopmcnh7d"]
 
 [ext_resource type="Script" path="res://scenes/sago_worms_.gd" id="1_8t3we"]
 [ext_resource type="PackedScene" uid="uid://cu0st24xl7tb8" path="res://scenes/player_masked.tscn" id="2_abjju"]
@@ -49,6 +49,8 @@
 [ext_resource type="Texture2D" uid="uid://c2135s5o5pi5p" path="res://Assets/2dplatforming/World Deco/Bush.png" id="47_jl2gh"]
 [ext_resource type="Texture2D" uid="uid://cp8oca3hq0ouf" path="res://Assets/2dplatforming/World Deco/Fern V3.png" id="48_2gsme"]
 [ext_resource type="PackedScene" uid="uid://thoyfr24amdl" path="res://NPC Scenes/FeliciaCoin.tscn" id="49_6csdb"]
+[ext_resource type="PackedScene" uid="uid://b6vqgfaalbo6k" path="res://NPC Scenes/Forget Dakan.tscn" id="50_7b0w6"]
+[ext_resource type="PackedScene" uid="uid://ctkskd4agb7bb" path="res://NPC Scenes/RinaCoin.tscn" id="51_dgbl8"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_o0hq3"]
 shader = ExtResource("6_d3i4e")
@@ -5604,7 +5606,7 @@ layer = 10
 visible = false
 modulate = Color(0.313726, 0, 1, 1)
 self_modulate = Color(1, 1, 0.87451, 0.227451)
-position = Vector2(1010, 19.9999)
+position = Vector2(1381, 227)
 scale = Vector2(27.9102, 17.0117)
 texture = ExtResource("4_5issk")
 script = ExtResource("5_gmp4r")
@@ -9016,6 +9018,12 @@ metadata/_edit_lock_ = true
 
 [node name="Felicia" parent="." instance=ExtResource("49_6csdb")]
 position = Vector2(1683, -186)
+
+[node name="Dakan 2" parent="." instance=ExtResource("50_7b0w6")]
+position = Vector2(16732, -115)
+
+[node name="Rina" parent="." instance=ExtResource("51_dgbl8")]
+position = Vector2(15922, -184)
 
 [connection signal="lever_state_changed" from="player/Lever" to="player/CanvasLayer3/Atmosphere" method="_on_lever_lever_state_changed"]
 [connection signal="lever_state_changed" from="player/Lever" to="Dream/Sprite2D/bridge" method="_on_lever_lever_state_changed"]

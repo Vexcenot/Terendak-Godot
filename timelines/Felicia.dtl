@@ -12,12 +12,12 @@ Felicia: "We look after each other."
 Felicia: “When one of us is in trouble, we all come together as one.”
 Felicia: “That is why we are hard at work to prepare for the Kaul Ritual.”
 Maya: “Kaul Ritual?”
-Felicia: “Yes, the Kaul Ritual where we celebrate the year’s harvest and protect everyone’s health.”
+Felicia: “The Kaul Ritual is an annual cleansing ritual to escort unwanted spirits out of the village."
 Maya: "Is that why you're wearing those clothes?
-Felicia: "Ya, its also an opportunity for us to put on our Baban."
+Felicia: "Ya, Baban is usually worn for events or ceremonies."
 Felicia: "We should get a set for you too one day."
 Maya: "I guess so."
-Maya: "I'm busy for the duration of my stay, I'll think about it later."
+Maya: "I'll think about it later."
 Felicia: "Don't worry, just contact me whenever!"
 Felicia: "Well, I've got to leave now, bye!"
 leave Felicia [animation="Slide Out Right" length="1.0"]
@@ -27,11 +27,7 @@ join Maya (Default) right [mirrored="true"]
 Maya: "Hmm, those clothes do look pretty..."
 Maya: "But I don't think I'll be able to wear it anywhere else..."
 Maya: "Nevermind, I don't want to give anyone trouble..."
-Maya: "On that note...I think I'll check out the forest instead."
-tupeing: "Are you going to walk around in the forest?"
-Maya: "Thats a great idea!"
-tupeing: "Wh-"
 leave Maya [animation="Slide Out Left" length="1.0"]
-leave Maya [animation="Fade Out"]
-tupeing: "Okay...be careful..."
+leave tupeing [animation="Fade Out"]
+[wait time="1.0"]
 [end_timeline]

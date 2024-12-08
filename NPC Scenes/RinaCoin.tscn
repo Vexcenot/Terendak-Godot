@@ -1,20 +1,30 @@
-[gd_scene load_steps=4 format=3 uid="uid://ctkskd4agb7bb"]
+[gd_scene load_steps=5 format=3 uid="uid://ctkskd4agb7bb"]
 
 [ext_resource type="Script" path="res://scripts/Rina1.gd" id="1_a5mx5"]
 [ext_resource type="Texture2D" uid="uid://l5hrbi84g0e8" path="res://Assets/2dplatforming/world triggers/World Models/Auntie Rina.png" id="2_glm4c"]
+[ext_resource type="Texture2D" uid="uid://cmeh3e8tsgkih" path="res://Assets/2dplatforming/world triggers/World Models/Rina.png" id="3_kvex1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e3xc7"]
 size = Vector2(95, 251)
 
-[node name="Allen" type="Area2D"]
+[node name="Rina" type="Area2D"]
 collision_mask = 2
 script = ExtResource("1_a5mx5")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(1.90735e-06, -2)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("2_glm4c")
 flip_h = true
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(-4.76837e-07, -7)
+scale = Vector2(0.282316, 0.282316)
+texture = ExtResource("3_kvex1")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(421.446, 0, 393.559, 1080)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-2.5, -1.5)

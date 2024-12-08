@@ -1,0 +1,20 @@
+join Rina rightmost [mirrored="true"]
+join Maya leftmost
+Rina: "Maya, Maya! Lama tak jumpa!"
+Maya: "Auntie Rina? It's been a while..."
+Rina: "Yeah! Come, come, I've been anxiously waiting for the day you return!"
+Maya: "What for?"
+Rina: "Tengok!"
+join Maya center
+join Rina right [mirrored="true"]
+Rina: <Rina shows a bowl full of fat Sago worms.>
+Rina: "You used to love these when you were very little!"
+Maya: "Ew! What? No way..."
+Maya: "These look disgusting... I don't want any!"
+join Maya leftmost [mirrored="true"]
+leave Maya [animation="Fade Out"]
+Rina: "Oh..."
+Rina: "Sudah sepuluh tahun je..."
+leave Rina
+[wait time="1.0"]
+[end_timeline]

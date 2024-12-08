@@ -1,19 +1,19 @@
-[gd_scene load_steps=4 format=3 uid="uid://3w6luficyxyc"]
+[gd_scene load_steps=4 format=3 uid="uid://b7cqsu13xmtmn"]
 
-[ext_resource type="Script" path="res://scripts/Dakan1.gd" id="1_p2473"]
-[ext_resource type="Texture2D" uid="uid://46ym228cpwaj" path="res://Assets/charactermodels/Dakan1.png" id="2_537pj"]
+[ext_resource type="Script" path="res://scripts/Dakan3.gd" id="1_22isn"]
+[ext_resource type="Texture2D" uid="uid://c1c053ah1mw47" path="res://characters/sprites/Dakan3.png" id="2_wxxmv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e3xc7"]
 size = Vector2(95, 251)
 
-[node name="Dakan 1" type="Area2D"]
+[node name="Dakan 3" type="Area2D"]
 scale = Vector2(0.5, 0.5)
 collision_mask = 2
-script = ExtResource("1_p2473")
+script = ExtResource("1_22isn")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.3, 0.3)
-texture = ExtResource("2_537pj")
+texture = ExtResource("2_wxxmv")
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

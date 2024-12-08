@@ -14,11 +14,7 @@ warnings/check_invalid_track_paths=false
 
 [application]
 
-<<<<<<< Updated upstream
-config/name="cursor game"
-=======
 config/name="Terendak"
->>>>>>> Stashed changes
 run/main_scene="res://scenes/main_menu.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"

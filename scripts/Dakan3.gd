@@ -1,6 +1,12 @@
 extends Area2D
 
-# Replace with function body.
+@onready var canvas_layer = $On
+
+func _process(delta: float) -> void:
+	if DragManager.mask_equip == true:
+		canvas_layer.visible = true
+	if DragManager.mask_equip == false:
+		canvas_layer.visible = false
 
 
 func _on_body_entered(body: Node2D) -> void:

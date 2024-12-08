@@ -29,6 +29,7 @@ func toggle_lever() -> void:
 	is_activated = !is_activated
 	update_lever_visuals()  # Update the sprite or visuals based on the state
 	emit_signal("lever_state_changed", is_activated)  # Notify connected objects
+	DragManager.mask_equip = !DragManager.mask_equip
 
 func update_lever_visuals() -> void:
 	# Change the lever sprite based on activation state

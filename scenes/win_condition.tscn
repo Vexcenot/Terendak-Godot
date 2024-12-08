@@ -4,11 +4,7 @@
 [ext_resource type="AudioStream" uid="uid://n2412bnu0en2" path="res://sounds/forest fucker.mp3" id="2_sth8e"]
 [ext_resource type="Texture2D" uid="uid://vapqy2bxm08a" path="res://textures/shadow.png" id="3_1emos"]
 [ext_resource type="FontFile" uid="uid://sswlt8c163m4" path="res://fonts/FIGHTBACK.ttf" id="3_gle32"]
-<<<<<<< Updated upstream
 [ext_resource type="Texture2D" uid="uid://b1rioj00is08b" path="res://textures/dwadasdwadwa.png" id="4_fgc4o"]
-=======
-[ext_resource type="Texture2D" uid="uid://bgkdnkvgts5j1" path="res://Assets/Scary Maze/Terendak piece 2.png" id="4_j482b"]
->>>>>>> Stashed changes
 
 [sub_resource type="Animation" id="Animation_nxaoi"]
 resource_name = "fade"
@@ -202,18 +198,6 @@ size_flags_horizontal = 4
 theme_override_font_sizes/font_size = 71
 text = "NEXT"
 
-<<<<<<< Updated upstream
-=======
-[node name="TerendakFragment" type="Sprite2D" parent="CanvasLayer2"]
-position = Vector2(678.322, 350.35)
-scale = Vector2(0.145, 0.145)
-texture = ExtResource("4_j482b")
-
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer2"]
-offset_right = 40.0
-offset_bottom = 40.0
-
->>>>>>> Stashed changes
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer2"]
 z_index = 15
 anchors_preset = 15

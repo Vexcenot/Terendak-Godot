@@ -1,41 +1,12 @@
-[gd_scene load_steps=20 format=3 uid="uid://c36fg7mb1vs0h"]
+[gd_scene load_steps=9 format=3 uid="uid://c36fg7mb1vs0h"]
 
 [ext_resource type="Script" path="res://scripts/mainmenu.gd" id="1_ktqx2"]
-[ext_resource type="Texture2D" uid="uid://jfnn5ekb4aln" path="res://textures/BG 1.JPG" id="2_48esx"]
 [ext_resource type="Texture2D" uid="uid://cqa7r7naqs6ej" path="res://textures/terendfak.png" id="2_fwhf4"]
 [ext_resource type="Texture2D" uid="uid://cwus70ps7kmt2" path="res://textures/42637_jpg.png" id="3_chfv4"]
-[ext_resource type="Texture2D" uid="uid://cfn5wf8yk4d0l" path="res://Assets/menu/Main Menu Hud.png" id="3_e4rek"]
-[ext_resource type="Texture2D" uid="uid://cjfkpyb735ntm" path="res://Assets/menu/Sago HUD 2.png" id="4_5bs7s"]
 [ext_resource type="FontFile" uid="uid://sswlt8c163m4" path="res://fonts/FIGHTBACK.ttf" id="4_hpdl8"]
 [ext_resource type="AudioStream" uid="uid://n2412bnu0en2" path="res://sounds/forest fucker.mp3" id="5_m3ppd"]
-[ext_resource type="Script" path="res://scenes/terendfak.gd" id="6_16qa1"]
-[ext_resource type="Texture2D" uid="uid://1isgw38fty1r" path="res://Assets/menu/play.png" id="8_7ybyr"]
-[ext_resource type="Texture2D" uid="uid://xomtd2q32yst" path="res://Assets/menu/quit.png" id="9_xwxle"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ww5k6"]
-texture = ExtResource("8_7ybyr")
-region_rect = Rect2(0, 450, 0, 1130)
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7xv8m"]
-texture = ExtResource("8_7ybyr")
-region_rect = Rect2(0, 450, 0, 1130)
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_q1rmt"]
-texture = ExtResource("8_7ybyr")
-region_rect = Rect2(0, 450.665, 2000, 1130.81)
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ejfyf"]
-texture = ExtResource("9_xwxle")
-region_rect = Rect2(0, 450, 0, 1130)
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_b43lk"]
-texture = ExtResource("9_xwxle")
-region_rect = Rect2(0, 450, 0, 1130)
-modulate_color = Color(1, 0, 0, 1)
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r3ata"]
-texture = ExtResource("9_xwxle")
-region_rect = Rect2(0, 450, 2000, 1130)
+[sub_resource type="Theme" id="Theme_8u7nv"]
 
 [sub_resource type="Theme" id="Theme_3lm1s"]
 
@@ -60,38 +31,8 @@ grow_vertical = 2
 scale = Vector2(1.495, 1.495)
 script = ExtResource("1_ktqx2")
 
-<<<<<<< Updated upstream
 [node name="Terendfak" type="Sprite2D" parent="."]
 position = Vector2(2.15381, -150.569)
-=======
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-layer = -8
-
-[node name="Background" type="Sprite2D" parent="CanvasLayer"]
-position = Vector2(966, 542)
-texture = ExtResource("2_48esx")
-
-[node name="Red Side" type="Sprite2D" parent="CanvasLayer"]
-visible = false
-position = Vector2(966, 538)
-texture = ExtResource("3_e4rek")
-
-[node name="Sprite2D3" type="Sprite2D" parent="CanvasLayer"]
-position = Vector2(965, 517)
-texture = ExtResource("4_5bs7s")
-
-[node name="Terendfak" type="Sprite2D" parent="CanvasLayer"]
-z_index = 2
-position = Vector2(970.465, 393.49)
-scale = Vector2(1.495, 1.495)
-texture = ExtResource("2_fwhf4")
-script = ExtResource("6_16qa1")
-
-[node name="Terendfak2" type="Sprite2D" parent="CanvasLayer/Terendfak"]
-modulate = Color(0, 0, 0, 0.392157)
-z_index = -1
-scale = Vector2(1.05, 1.05)
->>>>>>> Stashed changes
 texture = ExtResource("2_fwhf4")
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -138,10 +79,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -109.03
-offset_top = 153.846
-offset_right = 144.97
-offset_bottom = 345.846
+offset_left = -127.0
+offset_top = 130.14
+offset_right = 127.0
+offset_bottom = 275.43
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -149,76 +90,25 @@ grow_vertical = 2
 layout_mode = 2
 theme_override_constants/separation = 10
 
-[node name="PLAY" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="PLAY1" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 60
-theme_override_styles/hover = SubResource("StyleBoxTexture_ww5k6")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_7xv8m")
-theme_override_styles/normal = SubResource("StyleBoxTexture_q1rmt")
-text = " "
-icon_alignment = 1
+text = "lvl 1"
+
+[node name="PLAY2" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_8u7nv")
+theme_override_font_sizes/font_size = 60
+text = "lvl 2"
 
 [node name="QUIT" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 60
-theme_override_styles/hover = SubResource("StyleBoxTexture_ejfyf")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_b43lk")
-theme_override_styles/normal = SubResource("StyleBoxTexture_r3ata")
-text = " "
-icon_alignment = 1
+theme_override_font_sizes/font_size = 20
+text = "LEAVE"
 
-<<<<<<< Updated upstream
-=======
-[node name="Label" type="Label" parent="."]
-z_index = 6
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -349.0
-offset_top = -190.0
-offset_right = 349.0
-offset_bottom = 39.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_constants/shadow_offset_x = 6
-theme_override_constants/shadow_offset_y = 6
-theme_override_constants/shadow_outline_size = 10
-theme_override_fonts/font = ExtResource("4_hpdl8")
-theme_override_font_sizes/font_size = 101
-text = "Welcome to
-T E R E N D A K"
-horizontal_alignment = 1
-
-[node name="Label2" type="Label" parent="Label"]
-modulate = Color(0, 0, 0, 0.764706)
-z_index = -2
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -349.0
-offset_top = -114.5
-offset_right = 349.0
-offset_bottom = 114.5
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_constants/shadow_offset_x = 6
-theme_override_constants/shadow_offset_y = 6
-theme_override_constants/shadow_outline_size = 10
-theme_override_fonts/font = ExtResource("4_hpdl8")
-theme_override_font_sizes/font_size = 101
-text = "Welcome to
-T E R E N D A K"
-horizontal_alignment = 1
-
->>>>>>> Stashed changes
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_m3ppd")
 autoplay = true
@@ -239,6 +129,6 @@ offset_right = 40.0
 offset_bottom = 40.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_0s5v2")
 
-[connection signal="pressed" from="MarginContainer/VBoxContainer/PLAY" to="." method="_on_play_1_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/PLAY1" to="." method="_on_play_1_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/PLAY2" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/QUIT" to="." method="_on_quit_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/QUIT" to="." method="_on_play_1_pressed"]

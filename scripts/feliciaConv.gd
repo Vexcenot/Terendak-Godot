@@ -12,11 +12,9 @@ func _on_body_entered(body: Node2D) -> void:
 func talk():
 		print("Convo Started")
 		Dialogic.start("Felicia")
-		DragManager.talking = true
 		Dialogic.timeline_ended.connect(ended)
 		conversation_Felicia = true
 	
 func ended():
 	Dialogic.timeline_ended.disconnect(ended)
 	print("ended")
-	DragManager.talking = false

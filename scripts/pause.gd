@@ -8,7 +8,6 @@ func resume():
 	DragManager.paused = false
 
 
-
 func pause():
 	get_tree().paused = true
 	$AnimationPlayer.play("pause animation")
@@ -43,8 +42,3 @@ func _on_winarea_body_entered(body: Node2D) -> void:
 
 func _on_winarea_body_exited(body: Node2D) -> void:
 	pass # Replace with function body.
-
-
-func _on_p_button_pressed() -> void:
-	pause()
-	

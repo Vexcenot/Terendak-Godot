@@ -11,14 +11,6 @@ scale = Vector2(0.5, 0.5)
 collision_mask = 2
 script = ExtResource("1_p2473")
 
-[node name="On" type="Sprite2D" parent="."]
-visible = false
-modulate = Color(100, 100, 100, 0.3)
-position = Vector2(0, -76)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_537pj")
-flip_h = true
-
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("2_537pj")

@@ -14,11 +14,7 @@ warnings/check_invalid_track_paths=false
 
 [application]
 
-<<<<<<< Updated upstream
 config/name="cursor game"
-=======
-config/name="Terendak"
->>>>>>> Stashed changes
 run/main_scene="res://scenes/main_menu.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
@@ -45,7 +41,6 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "Allen": "res://timelines/Allen.dtl",
-"BeforeScaryMaze": "res://timelines/BeforeScaryMaze.dtl",
 "Dakan A Intro": "res://timelines/Dakan A Intro.dtl",
 "End Scene": "res://timelines/End Scene.dtl",
 "Everyone is here": "res://timelines/Everyone is here.dtl",
@@ -54,23 +49,15 @@ directories/dtl_directory={
 "Level 2 Intro": "res://timelines/Level 2 Intro.dtl",
 "Rina": "res://timelines/Rina.dtl",
 "Rina_1": "res://timelines/Rina_1.dtl",
-"Sago Worm Hunting": "res://timelines/Sago Worm Hunting.dtl",
-"Sago Worms Exposed": "res://timelines/Sago Worms Exposed.dtl",
-"Sagoflashback": "res://timelines/Sagoflashback.dtl",
 "Scary Maze Intro": "res://timelines/Scary Maze Intro.dtl",
 "Tom": "res://timelines/Tom.dtl",
 "Tom 2": "res://timelines/Tom 2.dtl",
-"Treekey": "res://timelines/Treekey.dtl",
 "Worm Quest": "res://timelines/Worm Quest.dtl",
 "confused": "res://timelines/confused.dtl",
 "dakan_deaf_1": "res://timelines/dakan_deaf_1.dtl",
-"depression": "res://timelines/depression.dtl",
-"drowning": "res://timelines/drowning.dtl",
 "fake piece": "res://timelines/fake piece.dtl",
 "intro": "res://timelines/intro.dtl",
 "intro_level 3": "res://timelines/intro_level 3.dtl",
-"mynameismaya": "res://timelines/mynameismaya.dtl",
-"outro": "res://timelines/outro.dtl",
 "texttest1": "res://texttest1.dtl",
 "win": "res://win.dtl"
 }

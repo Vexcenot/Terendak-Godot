@@ -44,31 +44,24 @@ width = 2.145
 
 [node name="Sago" parent="." instance=ExtResource("3_k8d6t")]
 position = Vector2(675, 422)
-scale = Vector2(1, 1)
 
 [node name="Sago2" parent="." instance=ExtResource("3_k8d6t")]
 position = Vector2(649, 257)
-scale = Vector2(1, 1)
 
 [node name="Sago6" parent="." instance=ExtResource("3_k8d6t")]
 position = Vector2(585, 350)
-scale = Vector2(1, 1)
 
 [node name="Sago3" parent="." instance=ExtResource("3_k8d6t")]
 position = Vector2(757, 189)
-scale = Vector2(1, 1)
 
 [node name="Sago4" parent="." instance=ExtResource("3_k8d6t")]
 position = Vector2(832, 277)
-scale = Vector2(1, 1)
 
 [node name="Sago7" parent="." instance=ExtResource("3_k8d6t")]
 position = Vector2(712, 327)
-scale = Vector2(1, 1)
 
 [node name="Sago5" parent="." instance=ExtResource("3_k8d6t")]
 position = Vector2(895, 420)
-scale = Vector2(1, 1)
 
 [node name="wood" parent="." instance=ExtResource("4_mwalp")]
 position = Vector2(908, 261)
@@ -79,6 +72,42 @@ position = Vector2(679, 423)
 [node name="wood6" parent="." instance=ExtResource("4_mwalp")]
 z_index = 10
 position = Vector2(785, 226)
+
+[node name="wood9" parent="." instance=ExtResource("4_mwalp")]
+z_index = 10
+position = Vector2(845, 330)
+
+[node name="wood10" parent="." instance=ExtResource("4_mwalp")]
+z_index = 10
+position = Vector2(709, 353)
+
+[node name="wood11" parent="." instance=ExtResource("4_mwalp")]
+z_index = 10
+position = Vector2(668, 226)
+
+[node name="wood12" parent="." instance=ExtResource("4_mwalp")]
+z_index = 10
+position = Vector2(789, 126)
+
+[node name="wood13" parent="." instance=ExtResource("4_mwalp")]
+z_index = 10
+position = Vector2(944, 356)
+
+[node name="wood14" parent="." instance=ExtResource("4_mwalp")]
+z_index = 10
+position = Vector2(767, 427)
+
+[node name="wood15" parent="." instance=ExtResource("4_mwalp")]
+z_index = 10
+position = Vector2(676, 455)
+
+[node name="wood16" parent="." instance=ExtResource("4_mwalp")]
+z_index = 10
+position = Vector2(774, 525)
+
+[node name="wood17" parent="." instance=ExtResource("4_mwalp")]
+z_index = 10
+position = Vector2(613, 254)
 
 [node name="wood7" parent="." instance=ExtResource("4_mwalp")]
 z_index = 10

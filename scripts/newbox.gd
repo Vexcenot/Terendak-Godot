@@ -1,10 +1,10 @@
 extends Node2D
 
-# Counter to keep track of sagos in the basket
+
 
 #enables the win parameters
 func unlock():
-	$box.frame = 2
+	$box.frame = 1
 	$box/Button.disabled = false
 	print("fuck")
 
@@ -12,6 +12,7 @@ func unlock():
 func _on_lock_body_entered(area):
 	if area.is_in_group("sago"):
 		unlock()
+		Dialogic.start("what")
 		$AudioStreamPlayer2D.play()
 
 #win button

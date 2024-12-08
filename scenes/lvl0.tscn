@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://w2wim3q7123q" path="res://scenes/newbox.tscn" id="6_tr8bp"]
 
 [node name="world" type="Node2D"]
+position = Vector2(435, 93)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = -1
@@ -27,10 +28,12 @@ layer = 0
 [node name="pause" parent="CanvasLayer2" instance=ExtResource("5_1juiq")]
 
 [node name="key" parent="." instance=ExtResource("5_qw1vp")]
-position = Vector2(971, 508)
+z_index = 1
+position = Vector2(1079, 769)
 
 [node name="newbox" parent="." instance=ExtResource("6_tr8bp")]
-position = Vector2(587, 162)
+z_index = 2
+position = Vector2(526, 329)
 scale = Vector2(0.475, 0.475)
 
 [node name="CURSOR" parent="." instance=ExtResource("2_307ji")]

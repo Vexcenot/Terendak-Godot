@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://cnlxpinmgmiwq"]
+
+[ext_resource type="Script" path="res://scripts/Tom1.gd" id="1_3f0f7"]
+[ext_resource type="Texture2D" uid="uid://b0axwc08af32h" path="res://Assets/2dplatforming/world triggers/World Models/UncleTom.png" id="2_ou2ph"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e3xc7"]
+size = Vector2(95, 251)
+
+[node name="Tom" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_3f0f7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_ou2ph")
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2.5, -1.5)
+shape = SubResource("RectangleShape2D_e3xc7")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

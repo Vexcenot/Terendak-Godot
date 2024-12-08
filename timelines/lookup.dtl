@@ -1,0 +1,13 @@
+join tupeing rightmost
+join Maya leftmost
+tupeing: "Maya look up into the tree!"
+tupeing: "There is a tree hanging up there!"
+Maya: "Woah, you're right!"
+Maya: "But how can I get to it?"
+tupeing: "The mask reveals paths"
+tupeing: "Put me on, there is a way."
+Maya: "Hmm..."
+<Press "M" to put on the Mask.>
+leave Maya
+[wait time="1.0"]
+[end_timeline]

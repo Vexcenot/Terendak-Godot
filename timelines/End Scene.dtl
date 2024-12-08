@@ -1,0 +1,14 @@
+join Maya (Masked_No Glow) leftmost
+Maya (Masked_No Glow): "Phew..."
+Maya (Masked_No Glow): "That was the scariest experience I've ever had..."
+Maya (Default): "Thank you for protecting me..."
+Maya: ...?
+join tupeing rightmost
+Maya: "Hello?"
+Maya (Default): ...
+Maya: "No..."
+Maya: After all this time...
+Maya: Thank you for everything...
+leave tupeing
+Maya: I have to get this to Grandpa...
+[end_timeline]

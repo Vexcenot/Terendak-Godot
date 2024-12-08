@@ -17,4 +17,3 @@ region_rect = Rect2(-5.43866, -0.34407, 306.062, 98.5623)
 position = Vector2(-2, -1)
 shape = SubResource("RectangleShape2D_pxaep")
 disabled = true
-one_way_collision = true

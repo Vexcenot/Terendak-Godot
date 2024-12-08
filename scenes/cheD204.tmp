@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://ccuyxy5520tns"]
+
+[ext_resource type="Script" path="res://scenes/chestlocked.gd" id="1_yp20w"]
+[ext_resource type="Texture2D" uid="uid://dkpxuyy1oofw6" path="res://Assets/2dplatforming/world triggers/Chest closed.png" id="2_8a5eu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2mlxp"]
+size = Vector2(750, 500)
+
+[node name="chest" type="Area2D"]
+position = Vector2(35.2, 15)
+scale = Vector2(0.1, 0.1)
+collision_mask = 2
+script = ExtResource("1_yp20w")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_8a5eu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-37, -9.99998)
+shape = SubResource("RectangleShape2D_2mlxp")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://scripts/win_condition.gd" id="1_y8fcg"]
 [ext_resource type="AudioStream" uid="uid://n2412bnu0en2" path="res://sounds/forest fucker.mp3" id="2_sth8e"]
 [ext_resource type="FontFile" uid="uid://sswlt8c163m4" path="res://fonts/FIGHTBACK.ttf" id="3_gle32"]
-[ext_resource type="Texture2D" uid="uid://nvdiscxtrh44" path="res://textures/terendak fragment.png" id="4_ccyvm"]
+[ext_resource type="Texture2D" uid="uid://bgkdnkvgts5j1" path="res://Assets/Scary Maze/Terendak piece 2.png" id="4_j482b"]
 
 [sub_resource type="Animation" id="Animation_nxaoi"]
 resource_name = "fade"
@@ -115,21 +115,10 @@ pitch_scale = 0.85
 autoplay = true
 
 [node name="Transition" type="AnimationPlayer" parent="."]
-root_node = NodePath("ColorRect")
+root_node = NodePath("../CanvasLayer2/ColorRect")
 libraries = {
 "": SubResource("AnimationLibrary_q3y1u")
 }
-
-[node name="ColorRect" type="ColorRect" parent="Transition"]
-modulate = Color(1, 1, 1, 0)
-z_index = 10
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-metadata/_edit_use_anchors_ = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = -1
@@ -157,13 +146,17 @@ size_flags_horizontal = 4
 color = Color(0.94902, 0.807843, 0.568627, 1)
 
 [node name="CanvasLayer2" type="CanvasLayer" parent="."]
+scale = Vector2(1.43, 1.43)
+transform = Transform2D(1.43, 0, 0, 1.43, 0, 0)
 
 [node name="Label" type="Label" parent="CanvasLayer2"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = 70.0
-offset_bottom = 70.0
+offset_left = -295.105
+offset_top = 44.0559
+offset_right = -295.105
+offset_bottom = 44.0559
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
@@ -181,10 +174,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -102.0
-offset_top = 120.0
-offset_right = 102.0
-offset_bottom = 260.0
+offset_left = -384.475
+offset_top = -9.23077
+offset_right = -180.475
+offset_bottom = 130.769
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
@@ -192,8 +185,22 @@ theme_override_font_sizes/font_size = 71
 text = "NEXT"
 
 [node name="TerendakFragment" type="Sprite2D" parent="CanvasLayer2"]
-position = Vector2(590, 304)
+position = Vector2(678.322, 350.35)
 scale = Vector2(0.145, 0.145)
-texture = ExtResource("4_ccyvm")
+texture = ExtResource("4_j482b")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer2"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer2"]
+z_index = 15
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
 
 [connection signal="pressed" from="CanvasLayer2/Button" to="." method="_on_button_pressed"]

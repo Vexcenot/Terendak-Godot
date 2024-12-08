@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://cq8uc62kjnmvj"]
 
 [ext_resource type="Script" path="res://scripts/sago.gd" id="1_5ldgu"]
-[ext_resource type="Texture2D" uid="uid://dvtcoqmb872lq" path="res://textures/360fx360f.png" id="2_mabja"]
+[ext_resource type="Texture2D" uid="uid://b05qx2eb462bi" path="res://textures/Key.png" id="2_n2ck6"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_wbr4o"]
 radius = 27.4457
@@ -20,19 +20,20 @@ freeze_mode = 1
 script = ExtResource("1_5ldgu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-scale = Vector2(1.895, 1.895)
+scale = Vector2(3.96, 3.96)
 shape = SubResource("CircleShape2D_wbr4o")
 
 [node name="Area2D" type="Area2D" parent="."]
 scale = Vector2(0.0449298, 0.0449298)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-scale = Vector2(159.745, 159.745)
+scale = Vector2(287.33, 287.33)
 shape = SubResource("CircleShape2D_gl3xi")
 
 [node name="Sprite" type="Sprite2D" parent="." groups=["key"]]
-scale = Vector2(0.41, 0.41)
-texture = ExtResource("2_mabja")
+rotation = -1.7017
+scale = Vector2(0.17, 0.17)
+texture = ExtResource("2_n2ck6")
 
 [connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]

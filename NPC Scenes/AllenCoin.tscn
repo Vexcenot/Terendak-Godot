@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://4cvanpht753u"]
+
+[ext_resource type="Script" path="res://scripts/Allen 1.gd" id="1_7qm4h"]
+[ext_resource type="Texture2D" uid="uid://dkc3qvrxm86q8" path="res://Assets/charactermodels/Uncle NPC.png" id="2_pp63g"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e3xc7"]
+size = Vector2(95, 251)
+
+[node name="Allen" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_7qm4h")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-5, 36)
+scale = Vector2(0.257215, 0.257215)
+texture = ExtResource("2_pp63g")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(820.917, 57.1459, 283.087, 1022.85)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-5, 1)
+shape = SubResource("RectangleShape2D_e3xc7")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

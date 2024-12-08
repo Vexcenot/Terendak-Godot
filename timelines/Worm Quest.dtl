@@ -1,0 +1,24 @@
+join Maya leftmost
+join Dakan2 rightmost
+Maya (Default_Masked): "That is another Dakan."
+Dakan2: "He he he..."
+Maya (Default_Masked): "Hi...I'm finding pieces of a Terendak...do you have one?"
+Dakan2: "Yes I do...but everything comes at a cost..."
+Maya (Default_Masked): What can I offer you?
+Dakan2: "I want...I want...worms!
+Dakan2: "Sago worms! Plump and writhing, plucked by your own hands!!"
+Maya (Default_Masked): "Ew! No!, Disgusting!"
+Maya (Default_Masked): "And by hand???!!!"
+Dakan2: "He...he...he..."
+Dakan2: "Then...empty handed you go!"
+Dakan2: "I have no time for cowards!"
+leave Dakan2 [animation="Fade Out"]
+join tupeing rightmost
+tupeing: "Seems like you have to face your fears, Maya."
+tupeing: "I know you can do it!"
+Maya: "..."
+Maya: "Thanks..."
+leave Maya
+leave tupeing
+[wait time="1.0"]
+[end_timeline]

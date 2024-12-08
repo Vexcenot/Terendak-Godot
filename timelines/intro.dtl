@@ -1,10 +1,11 @@
+[wait time="0.2"]
+join tupeing rightmost
 join Maya leftmost
-Maya: My name is Maya
-Maya: My parents told me to go to Mukah
-Maya: I am currently on a bus to there
-Maya: Its 10pm at night
-join "Dakan 1" rightmost
-Maya (Default_Masked): What the-
-"Dakan 1": Come Maya...
-leave Maya
-return
+join Maya left
+Maya: "So where can we find the pieces"
+tupeing: "A good start is to find spirit vessels, Dakans"
+tupeing: "Dakans are mostly found in the forest or near rivers."
+"They are used spiritual rituals whenever someone falls sick."
+Maya: "I guess we can check out the forest behind our house"
+tupeing: "Be careful around there."
+[end_timeline]

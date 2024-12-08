@@ -5,6 +5,7 @@ extends Area2D
 
 var original_position: Vector2  # To reset the item's position
 var is_being_carried: bool = false  # Whether the item is being carried
+var is_deposited: bool = false #keeps track the piece is deposited
 
 func _ready() -> void:
 	original_position = global_position  # Save the starting position
@@ -23,3 +24,4 @@ func reveal_in_center(center_position: Vector2) -> void:
 	global_position = center_position  # Move the item to the center
 	set_process(false)  # Stop further updates
 	is_being_carried = false
+	

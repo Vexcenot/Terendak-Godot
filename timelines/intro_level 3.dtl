@@ -1,0 +1,23 @@
+join tupeing rightmost
+join Maya leftmost
+Maya: "Its getting pretty late..."
+Maya: "And the Terrain is not as smooth as before."
+Maya: "And the tide is coming in."
+tupeing: "Happens often this time of the year."
+tupeing: "Its shallow enough to walk on."
+tupeing: "Though it does feel like you have no issue getting wet."
+Maya: "Diam."
+tupeing: "I'm just stating facts.
+tupeing: "I  sense some spirits have caught wind of your deeds today."
+tupeing: "They might want to take the pieces from you if you are not careful."
+Maya: "That sounds scary...."
+tupeing: "Worry not, I will protect you when the time comes."
+Maya: ...
+Maya: "We got 2 pieces already, it seems plenty."
+Maya: "I think I'll go home for the day."
+leave Maya
+leave tupeing
+tupeing: ...
+[end_timeline]
+[wait time="1.0"]
+[end_timeline]

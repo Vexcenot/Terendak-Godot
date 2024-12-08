@@ -10,11 +10,20 @@
 },
 "default_portrait": "Default",
 "description": "",
-"display_name": "Tupeing",
+"display_name": "Mask",
 "mirror": false,
 "nicknames": [""],
 "offset": Vector2(0, 0),
 "portraits": {
+"Angry": {
+"export_overrides": {
+"image": "\"res://Assets/2dplatforming/UI/Tupieng activated.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1.0,
+"scene": ""
+},
 "Default": {
 "export_overrides": {
 "image": "\"res://Assets/Scary Maze/Tupieng.png\""

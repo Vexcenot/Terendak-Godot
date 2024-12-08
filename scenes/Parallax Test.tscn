@@ -1,5 +1,6 @@
-[gd_scene load_steps=27 format=4 uid="uid://yub5ninuyhca"]
+[gd_scene load_steps=30 format=4 uid="uid://yub5ninuyhca"]
 
+[ext_resource type="Script" path="res://scenes/dialogicstart.gd" id="1_jkak5"]
 [ext_resource type="Texture2D" uid="uid://bn63j3idec2p0" path="res://Assets/sprites/world_tileset.png" id="1_lvq6p"]
 [ext_resource type="PackedScene" uid="uid://rmlgveehkrkp" path="res://scenes/player.tscn" id="2_ha0y6"]
 [ext_resource type="Texture2D" uid="uid://colgdrgmk36vc" path="res://Assets/2dplatforming/Plants V2.png" id="3_d0hq3"]
@@ -17,6 +18,8 @@
 [ext_resource type="Texture2D" uid="uid://o01j5n4m5ywe" path="res://Assets/Sky/blank.png" id="11_ti823"]
 [ext_resource type="Texture2D" uid="uid://chfm1e0a2ehsl" path="res://Assets/2dplatforming/Water.png" id="12_0uswd"]
 [ext_resource type="Texture2D" uid="uid://da5pmq0ed3rqg" path="res://Assets/2dplatforming/Grandpa house.png" id="12_r3y12"]
+[ext_resource type="PackedScene" uid="uid://chttued0gl4ku" path="res://NPC Scenes/felicia.tscn" id="18_q71mn"]
+[ext_resource type="PackedScene" uid="uid://doi4s6y0lab8k" path="res://scenes/coin.tscn" id="20_5l2bd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m7h8e"]
 texture = ExtResource("1_lvq6p")
@@ -4644,6 +4647,7 @@ texture = ExtResource("3_d0hq3")
 sources/0 = SubResource("TileSetAtlasSource_mlfxw")
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_jkak5")
 
 [node name="player" parent="." instance=ExtResource("2_ha0y6")]
 position = Vector2(1612, -143)
@@ -4902,3 +4906,10 @@ modulate = Color(0.5, 0.5, 0.5, 1)
 [node name="TreeV1" type="Sprite2D" parent="Visuals/3/Sprite2D"]
 position = Vector2(1509.23, -339.231)
 texture = ExtResource("7_dhgrg")
+
+[node name="Felicia" parent="." instance=ExtResource("18_q71mn")]
+position = Vector2(1870, -200)
+
+[node name="Coin" parent="." instance=ExtResource("20_5l2bd")]
+position = Vector2(1507, -209)
+scale = Vector2(5, 5)

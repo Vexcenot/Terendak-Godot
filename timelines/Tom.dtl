@@ -1,0 +1,28 @@
+join Tom rightmost
+"Hello Maya"
+join Maya leftmost
+Maya: "Hi...err..."
+Tom: "You can call me Uncle Tom"
+Tom: "I'm afraid you might have to find another way..."
+Tom: "There was a flood not too long ago...a few houses followed."
+Tom: "Thankfully nobody was hurt."
+Tom: The rains recently have been non-stop."
+Tom: "I hope it doesn't rain on the day of the festival."
+Tom: "You should attend it too!"
+Maya: "Maybe next time...I'm busy."
+Tom: "All right, but do stop by Auntie Rina's house."
+Tom: "She has something you love to eat when you were little."
+Maya: "Hmm...I'll be sure to check it out then."
+Maya: "Where is Auntie Rina's house?"
+Tom: It's on...the...other side of the village..."
+Tom: "Hmm...I think you might need to go around to cross safely..."
+Tom: "Some of the bridges have been broken due to age and the flood..."
+Maya: "Understood."
+leave Tom [animation="Slide Out Left" length="1.0"]
+leave Tom [animation="Fade Out"]
+join tupeing center
+tupeing: "Maya...I hope you're not thinking about it..."
+Maya: "...No...."
+Maya: "Its not like the flooded houses are the perfect platforms to jump across..."
+tupeing: <Sigh...>
+[end_timeline]

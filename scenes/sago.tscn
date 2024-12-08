@@ -31,7 +31,7 @@ scale = Vector2(159.745, 159.745)
 shape = SubResource("CircleShape2D_gl3xi")
 
 [node name="Sprite" type="Sprite2D" parent="."]
-scale = Vector2(0.0449298, 0.0449298)
+scale = Vector2(0.06, 0.06)
 texture = ExtResource("1_5h6do")
 
 [connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]

@@ -1,0 +1,17 @@
+join tupeing rightmost
+tupeing: Maya Watch Out!
+join Maya leftmost
+Maya: Woah!
+Maya: Wh- WHOSE HANDS ARE THESE
+tupeing: Keep me on Maya
+tupeing: I can protect you, we need to collect the pieces!
+leave Maya
+join tupeing center
+tupeing: Use your mouse to get the dropped pieces.
+tupeing: Be careful of the walls, they will grab you.
+tupeing: I need to use my powers to pull you back to safety
+tupeing: Dont worry about the hands, they are there to distract you...
+tupeing: Good luck!
+update tupeing [animation="Tada" length="1.0" wait="true"]
+leave tupeing [animation="Zoom Center Out"]
+[wait time="1.0" skippable="true"]

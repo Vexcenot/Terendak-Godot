@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://b16g0swjk1a1k" path="res://Assets/Scary Maze/Terendak piece 3.png" id="2_g3nlb"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_d2ebs"]
-radius = 17.0294
+radius = 19.0
 
 [node name="Piece" type="Area2D"]
 
@@ -12,5 +12,5 @@ scale = Vector2(0.05, 0.05)
 texture = ExtResource("2_g3nlb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(3, 10)
+position = Vector2(-18, -10)
 shape = SubResource("CircleShape2D_d2ebs")

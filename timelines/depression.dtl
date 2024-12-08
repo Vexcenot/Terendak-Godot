@@ -1,0 +1,17 @@
+join Maya (Default_Masked) leftmost
+join "Dakan 1" rightmost
+"Dakan 1": "Greetings."
+Maya (Default_Masked): !!!
+"Dakan 1": "Yes it so seems you can see me."
+"Dakan 1": "I was carved recently, but there were no shamans present."
+"Dakan 1": "I am but a wondering spirit who understands the situation."
+"Dakan 1": "Losing a loved one is heartbreaking."
+"Dakan 1": "I have what you need in this box."
+"Dakan 1": "But some kampung boy throw it up into the tree."
+"Dakan 1": "You will have to climb the tree to get it."
+"Dakan 1": "In the meantime, I will teach that boy a lesson."
+leave "Dakan 1"
+Maya (Default_Masked): "Lost in a tree huh?"
+tupeing: "Keep your eyes up in the tree, its up there somewhere."
+[wait time="1.0"]
+[end_timeline]

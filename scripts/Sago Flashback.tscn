@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cqcaanyetgjjs"]
+
+[ext_resource type="Script" path="res://scripts/sago_flashback.gd" id="1_yf0fl"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_yf0fl")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]

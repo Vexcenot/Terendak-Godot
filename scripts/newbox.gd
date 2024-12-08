@@ -12,6 +12,7 @@ func unlock():
 func _on_lock_body_entered(area):
 	if area.is_in_group("sago"):
 		unlock()
+		Dialogic.start("what")
 		$AudioStreamPlayer2D.play()
 
 #win button

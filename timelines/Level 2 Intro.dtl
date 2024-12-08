@@ -1,17 +1,20 @@
 join Maya left
 join tupeing right
-Maya (Default): "Seems like we have made it out of the forest."
-tupeing: "Yes, we have."
-tupeing: "No more stunts like that again Maya..."
-Maya: If we did not, we would not have gotten...whatever this is..."
+Maya (Default): "That Dakan was very helpful."
+tupeing: "Watch out, not all spirits are as friendly."
+tupeing: "It's best to be vigilant when dealing with the spirit world."
+Maya: "Seeing the spirit world is very scary..."
+Maya: "But I don't think I would have made it without you."
+Maya: "Who knew I could climb trees so easily?"
 tupeing: "True... but please think things through before you act."
-tupeing: "If we were to look for Dakans in the forest, We will be here forever!"
-Maya: "I...don't feel like talking to the neighbours..."
+tupeing: "You can get really hurt if you don't be careful..."
+Maya: "Aww, you're no fun."
 tupeing (Angry): "MAYA TAKE THIS SERIOUSLY!"
 join Maya leftmost
 Maya (Default): "Woah, woah, okay, okay!"
-Maya: "We'll head towards the village again."
-Maya: ...which direction is it?
-tupeing (Default): ...
-tupeing: "Keep moving forwards."
+Maya: "Yeah, okay, I'll be careful, all right?"
+tupeing: "..."
+leave Maya
+leave tupeing
+[wait time="1.0"]
 [end_timeline]

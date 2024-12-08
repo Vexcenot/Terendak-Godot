@@ -11,3 +11,6 @@ var talking = false #dialogue
 var rina_conversation_1 = false
 var dakan_2_intro = false
 var mask_equip: bool = false
+var chest_quest = false
+var chest_quest_complete = false
+var dakan_1 = false

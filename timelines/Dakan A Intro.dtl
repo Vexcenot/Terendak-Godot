@@ -8,5 +8,6 @@ tupeing: "You need to put me on."
 Maya: ...?
 leave tupeing
 leave Maya
+leave "Dakan 1"
 [wait time="1.0"]
 [end_timeline]

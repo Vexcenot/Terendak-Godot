@@ -1,0 +1,17 @@
+Maya: "Grandpa has always been a daredevil."
+Maya: "Even 50 years old, he was always doing the wildest things."
+Maya: "One time, he climbed a tree because I made a bet with him."
+[background arg="res://Assets/cutscene/Level 1/New 6.png" fade="0.0"]
+Maya: "I don't remember what the bet was, but grandpa did it anyway."
+tupeing: "What a very loving grandfather you have..."
+tupeing: "I see it flowing in your genes..."
+Maya: "Welp, it wasn't always sunshine and rainbows..."
+Maya: "One time, grandpa lost his balance."
+Maya: "Next thing you know, he has to use a walking stick..."
+tupeing: "Sounds rought..."
+tupeing: "I hope you don't end up like that, Maya."
+Maya: "Don't worry! I got strong bones!"
+tupeing: "We'll see who is still standing after today..."
+[background arg="res://Assets/cutscene/Intro/All black.png" fade="0.0"]
+[wait time="1.0"]
+[end_timeline]

@@ -8,6 +8,7 @@ func _on_body_entered(body: Node2D) -> void:
 	if conversation_Tom == false:
 		print("Convo Started")
 		Dialogic.start("Tom")
+		DragManager.talking = true
 		Dialogic.timeline_ended.connect(ended)
 		conversation_Tom = true
 		conversation_Tom_2 = false
@@ -18,6 +19,7 @@ func _on_body_entered(body: Node2D) -> void:
 	
 func ended():
 	Dialogic.timeline_ended.disconnect(ended)
+	DragManager.talking = false
 	print("ended")
 	
 func Tommy():

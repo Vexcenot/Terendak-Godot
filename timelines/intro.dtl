@@ -1,14 +1,6 @@
 [wait time="0.2"]
 join tupeing rightmost
-tupeing: <Press Space to forward the Dialogue.>
-tupeing: <Use "D" to Move Right, "A" to Move Left and "W" to jump.>
-tupeing: < Alternatively you can use the arrow keys.>
-Maya: "Who are you talking to?"
 join Maya leftmost
-tupeing: ...
-Maya: ...
-tupeing: "My spirit friends."
-Maya: "Sure..."
 join Maya left
 Maya: "So where can we find more Dakans..."
 tupeing: "Dakans are mostly found in the forest or near rivers."

@@ -1,0 +1,4 @@
+"Dakan 1": "Ah it seems you got the key."
+Maya: "I wonder what is inside this chest."
+[wait time="1.0"]
+[end_timeline]

@@ -58,6 +58,7 @@ directories/dtl_directory={
 "Tom 2": "res://timelines/Tom 2.dtl",
 "Treekey": "res://timelines/Treekey.dtl",
 "Worm Quest": "res://timelines/Worm Quest.dtl",
+"chesto": "res://timelines/chesto.dtl",
 "confused": "res://timelines/confused.dtl",
 "dakan_deaf_1": "res://timelines/dakan_deaf_1.dtl",
 "depression": "res://timelines/depression.dtl",
@@ -65,9 +66,14 @@ directories/dtl_directory={
 "fake piece": "res://timelines/fake piece.dtl",
 "intro": "res://timelines/intro.dtl",
 "intro_level 3": "res://timelines/intro_level 3.dtl",
+"keyget": "res://timelines/keyget.dtl",
+"lookup": "res://timelines/lookup.dtl",
+"lookup_masked": "res://timelines/lookup_masked.dtl",
 "mynameismaya": "res://timelines/mynameismaya.dtl",
 "outro": "res://timelines/outro.dtl",
+"spidergramps": "res://timelines/spidergramps.dtl",
 "texttest1": "res://texttest1.dtl",
+"what": "res://timelines/what.dtl",
 "win": "res://win.dtl"
 }
 glossary/default_case_sensitive=true

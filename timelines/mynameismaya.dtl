@@ -11,6 +11,8 @@
 [wait_input]
 [background arg="res://Assets/cutscene/Intro/5.png" fade="0.5"]
 [wait_input]
+[background arg="res://Assets/cutscene/Intro/6-2.png" fade="0.0"]
+[background arg="res://Assets/cutscene/Intro/6-3.png" fade="0.0"]
 [background arg="res://Assets/cutscene/Intro/6.png" fade="0.5"]
 [wait_input]
 [background arg="res://Assets/cutscene/Intro/7.png" fade="0.5"]

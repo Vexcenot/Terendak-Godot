@@ -11,11 +11,10 @@ func _process(delta: float) -> void:
 
 
 func _on_body_entered(body: Node2D) -> void:
-	if DragManager.mask_equip == true:
-		print("Convo Started")
+	if DragManager.mask_equip == true and DragManager.chest_quest_complete == false and DragManager.dakan_1 == false:
+		print("Depression")
 		Dialogic.start("depression")
 		DragManager.talking = true
-		print("cain get!")
 		Dialogic.timeline_ended.connect(ended)
 	if DragManager.mask_equip == false:
 		Dialogic.start("Dakan A Intro")
@@ -25,9 +24,15 @@ func _on_body_entered(body: Node2D) -> void:
 func ended():
 	Dialogic.timeline_ended.disconnect(ended)
 	print("ended")
+	DragManager.dakan_1 = true
+	DragManager.chest_quest = true
 	DragManager.talking = false
 	
 func mask():
 	Dialogic.timeline_ended.disconnect(mask)
 	print("ended")
 	DragManager.talking = false
+	
+
+	
+	

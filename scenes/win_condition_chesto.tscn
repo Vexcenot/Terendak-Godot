@@ -1,9 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://cpg4u3glin3oe"]
+[gd_scene load_steps=8 format=3 uid="uid://dgd8xqy068e2n"]
 
-[ext_resource type="Script" path="res://scripts/win_condition.gd" id="1_y8fcg"]
-[ext_resource type="AudioStream" uid="uid://n2412bnu0en2" path="res://sounds/forest fucker.mp3" id="2_sth8e"]
-[ext_resource type="FontFile" uid="uid://sswlt8c163m4" path="res://fonts/FIGHTBACK.ttf" id="3_gle32"]
-[ext_resource type="Texture2D" uid="uid://bgkdnkvgts5j1" path="res://Assets/Scary Maze/Terendak piece 2.png" id="4_j482b"]
+[ext_resource type="Script" path="res://scripts/win_condition_chesto.gd" id="1_jker5"]
+[ext_resource type="AudioStream" uid="uid://n2412bnu0en2" path="res://sounds/forest fucker.mp3" id="2_780yc"]
+[ext_resource type="FontFile" uid="uid://sswlt8c163m4" path="res://fonts/FIGHTBACK.ttf" id="3_33fvr"]
+[ext_resource type="Texture2D" uid="uid://dk5pxtkq5qwn7" path="res://Assets/Scary Maze/Terendak piece 1.png" id="4_abb0s"]
 
 [sub_resource type="Animation" id="Animation_nxaoi"]
 resource_name = "fade"
@@ -107,10 +107,10 @@ _data = {
 
 [node name="Win condition" type="Node2D"]
 process_mode = 3
-script = ExtResource("1_y8fcg")
+script = ExtResource("1_jker5")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_sth8e")
+stream = ExtResource("2_780yc")
 pitch_scale = 0.85
 autoplay = true
 
@@ -163,7 +163,7 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 6
 theme_override_constants/shadow_offset_y = 6
 theme_override_constants/shadow_outline_size = 10
-theme_override_fonts/font = ExtResource("3_gle32")
+theme_override_fonts/font = ExtResource("3_33fvr")
 theme_override_font_sizes/font_size = 101
 text = "TERENDAK PIECE FOUND!"
 horizontal_alignment = 1
@@ -187,13 +187,14 @@ text = "NEXT"
 [node name="TerendakFragment" type="Sprite2D" parent="CanvasLayer2"]
 position = Vector2(678.322, 350.35)
 scale = Vector2(0.145, 0.145)
-texture = ExtResource("4_j482b")
+texture = ExtResource("4_abb0s")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer2"]
 offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer2"]
+visible = false
 z_index = 15
 anchors_preset = 15
 anchor_right = 1.0

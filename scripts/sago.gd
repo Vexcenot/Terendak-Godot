@@ -57,6 +57,7 @@ func drop_item() -> void:
 # Input event handler
 func _on_area_2d_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
 	if event is InputEventMouseButton:
+		print("im working")
 		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
 			# If left-clicked and not already dragging, pick up the object
 			if !is_dragging and !DragManager.is_dragging:

@@ -1,6 +1,6 @@
 [background arg="res://Assets/cutscene/Intro/All black.png" fade="0.0"]
-...
-...
+Press Space to forward text.
+No movement is available while dialogue is active
 [background arg="res://Assets/cutscene/Intro/1.png" fade="0.5"]
 [wait_input]
 [background arg="res://Assets/cutscene/Intro/2.png" fade="0.5"]

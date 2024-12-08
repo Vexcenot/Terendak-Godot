@@ -28,4 +28,4 @@ func worms():
 	Dialogic.timeline_ended.disconnect(worms)
 	print("worms")
 	DragManager.talking = false
-	get_tree().change_scene_to_file("res://scenes/world.tscn")
+	get_tree().change_scene_to_file("res://scenes/win_condition.tscn")

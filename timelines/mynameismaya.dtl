@@ -2,26 +2,78 @@
 Press Space to forward text.
 No movement is available while dialogue is active
 [background arg="res://Assets/cutscene/Intro/1.png" fade="0.5"]
-[wait_input]
+My name is Maya.
+I'm currently boarding a bus to Mukah.
+Maya: "This is going to be a long ride..."
 [background arg="res://Assets/cutscene/Intro/2.png" fade="0.5"]
-[wait_input]
+It's in the middle of April, I have nothing to do.
+I wanted to sit at home and relax on the bed all day.
+But my parents sent me some urgent news.
+My grandpa in Mukah fell ill, but they cannot return because of their jobs.
 [background arg="res://Assets/cutscene/Intro/3.png" fade="0.5"]
-[wait_input]
-[background arg="res://Assets/cutscene/Intro/4.png" fade="0.5"]
-[wait_input]
+Reluctantly, I volunteered to book a trip to Mukah to help out.
+I decided I needed time away from the city.
+The only bus available departs at 10pm.
+[background arg="res://Assets/cutscene/Intro/4.png" fade="1.0"]
+...
+[background arg="res://Assets/cutscene/Intro/All black.png" fade="0.0"]
+...
 [background arg="res://Assets/cutscene/Intro/5.png" fade="0.5"]
-[wait_input]
+"Help me Maya..."
+"Help me..."
 [background arg="res://Assets/cutscene/Intro/6-2.png" fade="0.0"]
+...
 [background arg="res://Assets/cutscene/Intro/6-3.png" fade="0.0"]
+...
 [background arg="res://Assets/cutscene/Intro/6.png" fade="0.5"]
-[wait_input]
+...
+Before I knew it, I was already in Mukah.
 [background arg="res://Assets/cutscene/Intro/7.png" fade="0.5"]
-[wait_input]
+The sounds of nature are peaceful compared to the city.
+It's been decade since I was last here...
 [background arg="res://Assets/cutscene/Intro/8.png" fade="0.5"]
-[wait_input]
+"Uncle Allen is waiting for me at the door."
+"Uncle Allen": "Maya...Welcome!"
+Maya: "Long time no see, Uncle Allen."
+"Uncle Allen": "Lets not waste time, go see your grandpa."
+[background arg="res://Assets/cutscene/Intro/All black.png" fade="0.0"]
+The walk towards Grandpa feels longer than usual.
+I remembered him as a carefree kind of person.
+Its surreal to think we would loose all strength one day.
 [background arg="res://Assets/cutscene/Intro/9.png" fade="0.5"]
-[wait_input]
+Maya: Grandpa!
+What greeted me in the room is a old and withered body.
+I can't believe my eyes.
+Grandpa looks in my direction, but did not recognise me.
+I wanted to help, but theres nothing I could do.
+"Uncle Allen": Hey, why don't you look around the house, see if there's anything you can do to help.
+Uncle Allen read my mind, though futile, at I'm not idling around.
+Its not long after that when the it happened.
 [background arg="res://Assets/cutscene/Intro/All black.png" fade="0.5"]
-[wait_input]
+"Maya...Maya...Maya..." - a disembodied voice called out to me.
+It came from the storage room
+Its beckoning me to enter...what will I find inside?
+[background arg="res://Assets/cutscene/Intro/All black.png" fade="0.0"]
+It was pitch black, it took a while for my eyes to adjust
+Among the pots, decorations and fishing utensils lies...
+[background arg="res://Assets/cutscene/Intro/11.png" fade="0.0"]
+A Mask
+It started talking to me telepathincally.
+tupeing: "Maya..."
+tupeing: "All this time, your grandpa has been battling spirits..."
+tupeing: "Ever since I was crafted by his very hands, the unseen forces have been ruthless."
+[background arg="res://Assets/cutscene/Intro/All black.png" fade="0.0"]
+I did not believe it at first.
+I thought its just a silly mask.
+But when I put it on...
+[background arg="res://Assets/cutscene/Intro/12.png" fade="0.0"]
+I knew I had to listen...
+My only hope to save grandpa lies in this mask.
+Maya: "What should I do?"
+tupeing: "Gather the strength of your Grandpa."
+tupeing: "They have been scattered around."
+tupeing: "Reunite them, and your grandpa will suffer no more..."
+[background arg="res://Assets/cutscene/Intro/All black.png" fade="0.0"]
+That marked the start of my journey.
 [wait time="1.0"]
 [end_timeline]

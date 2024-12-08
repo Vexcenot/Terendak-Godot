@@ -4908,6 +4908,7 @@ frame_progress = 0.292849
 [node name="Triggers" type="Node2D" parent="Dream"]
 
 [node name="TileMap" type="TileMap" parent="."]
+visible = false
 texture_filter = 1
 position = Vector2(4, -50)
 tile_set = SubResource("TileSet_kdrks")

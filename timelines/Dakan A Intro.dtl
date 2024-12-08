@@ -4,8 +4,8 @@ join "Dakan 1" center
 Maya (Default): "Hello...?"
 Maya (Default): "Helloooooooo"
 tupeing: "Maya, you're forgetting something."
-tupeing: "You need to put me on."
-Maya: ...?
+tupeing: "You need to put me on. You can only communicate with spirits through me."
+Maya: ...? (Press M to equip Mask.)
 leave tupeing
 leave Maya
 leave "Dakan 1"

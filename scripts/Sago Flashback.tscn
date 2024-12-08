@@ -8,3 +8,5 @@ script = ExtResource("1_yf0fl")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_xm2a8")
+
+[node name="Camera2D" type="Camera2D" parent="."]

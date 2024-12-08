@@ -1,12 +1,12 @@
 [gd_scene load_steps=3 format=3 uid="uid://dmvy4b2ko4b7c"]
 
 [ext_resource type="Script" path="res://scenes/final_cutscene.gd" id="1_fbcux"]
-[ext_resource type="Texture2D" uid="uid://dluw74rbtva4e" path="res://Assets/sprites/WhatsApp Image 2024-12-08 at 16.07.43.jpeg" id="2_cgn0q"]
+[ext_resource type="Texture2D" uid="uid://bmpa8fmhmxo1m" path="res://Assets/cutscene/Intro/All black.png" id="2_o51c8"]
 
 [node name="Final Cutscene" type="Node2D"]
 script = ExtResource("1_fbcux")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_cgn0q")
+texture = ExtResource("2_o51c8")
 
 [node name="Camera2D" type="Camera2D" parent="."]

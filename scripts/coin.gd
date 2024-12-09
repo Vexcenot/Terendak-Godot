@@ -4,12 +4,16 @@ extends Area2D
 
 
 func _on_body_entered(body: Node2D) -> void:
-	print("Convo Started")
-	Dialogic.start("Felicia")
-	print("cain get!")
+	print("Key Get!")
+	Dialogic.start("Treekey")
+	DragManager.talking = true
 	Dialogic.timeline_ended.connect(ended)
+	
 	
 func ended():
 	Dialogic.timeline_ended.disconnect(ended)
-	print("ended")
-	queue_free()
+	print("A key???")
+	DragManager.talking = false
+	DragManager.chest_quest_complete = true
+	
+	

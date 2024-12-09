@@ -9,7 +9,6 @@
 [ext_resource type="PackedScene" uid="uid://ccuyxy5520tns" path="res://scenes/chest.tscn" id="7_0coem"]
 [ext_resource type="PackedScene" uid="uid://bkfpr202l306y" path="res://scenes/lever.tscn" id="7_y4ht0"]
 [ext_resource type="Texture2D" uid="uid://bn63j3idec2p0" path="res://Assets/sprites/world_tileset.png" id="8_a558a"]
-[ext_resource type="PackedScene" uid="uid://cil5hbm8suyts" path="res://scenes/TreeKey.tscn" id="8_ttkhx"]
 [ext_resource type="Texture2D" uid="uid://colgdrgmk36vc" path="res://Assets/2dplatforming/Plants V2.png" id="9_f4h7i"]
 [ext_resource type="PackedScene" uid="uid://t31087jjpc7d" path="res://scenes/bridge.tscn" id="10_0gqu6"]
 [ext_resource type="PackedScene" uid="uid://3w6luficyxyc" path="res://NPC Scenes/Depression Dakan.tscn" id="10_p6j52"]
@@ -52,6 +51,7 @@
 [ext_resource type="Texture2D" uid="uid://cp8oca3hq0ouf" path="res://Assets/2dplatforming/World Deco/Fern V3.png" id="47_jhlho"]
 [ext_resource type="PackedScene" uid="uid://thoyfr24amdl" path="res://NPC Scenes/FeliciaCoin.tscn" id="48_0l7j0"]
 [ext_resource type="PackedScene" uid="uid://brsjjoyekn4ri" path="res://scenes/pause_menu.tscn" id="50_kygd2"]
+[ext_resource type="PackedScene" uid="uid://bcp8pmbatc4qv" path="res://scenes/keykun.tscn" id="52_r8ccw"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_o0hq3"]
 shader = ExtResource("6_7ucxl")
@@ -4801,11 +4801,6 @@ layer_1/tile_data = PackedInt32Array(65533, 0, 0, 65534, 0, 0, 65535, 0, 0, 0, 0
 [node name="Dakan 1" parent="." instance=ExtResource("10_p6j52")]
 position = Vector2(4505, -110)
 
-[node name="Key" parent="." instance=ExtResource("8_ttkhx")]
-position = Vector2(6081, -610)
-rotation = 0.647517
-script = null
-
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 position = Vector2(6034, -271)
 scale = Vector2(0.6, 0.6)
@@ -6294,6 +6289,9 @@ texture = ExtResource("25_4pby5")
 
 [node name="Felicia" parent="." instance=ExtResource("48_0l7j0")]
 position = Vector2(1023, -185)
+
+[node name="key kun" parent="." instance=ExtResource("52_r8ccw")]
+position = Vector2(6118, -603)
 
 [connection signal="lever_state_changed" from="player/Lever" to="player/CanvasLayer3/Atmosphere" method="_on_lever_lever_state_changed"]
 [connection signal="lever_state_changed" from="player/Lever" to="Dream/Sprite2D/bridge" method="_on_lever_lever_state_changed"]

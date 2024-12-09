@@ -4,11 +4,10 @@ extends Area2D
 
 
 func _on_body_entered(body: Node2D) -> void:
-	if DragManager.dakan_1 == true:
-		print("Key Get!")
-		Dialogic.start("Treekey")
-		DragManager.talking = true
-		Dialogic.timeline_ended.connect(ended)
+	print("Key Get!")
+	Dialogic.start("Treekey")
+	DragManager.talking = true
+	Dialogic.timeline_ended.connect(ended)
 	
 	
 func ended():

@@ -1,0 +1,5 @@
+[background arg="res://Assets/menu/ControlsSago.png" fade="0.5"]
+[wait_input]
+[background fade="0.5"]
+Maya: Lets see whats's inside...
+[end_timeline]

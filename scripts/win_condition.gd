@@ -11,6 +11,7 @@ extends Node2D
 
 func _ready():
 	transition.play("fadeout")
+	Dialogic.start("wait")
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	
 func _on_button_pressed() -> void:

@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=4 uid="uid://tlmnt1j0dci0"]
+[gd_scene load_steps=14 format=4 uid="uid://tlmnt1j0dci0"]
 
 [ext_resource type="Texture2D" uid="uid://bqpgrv70qik48" path="res://Assets/2dplatforming/Grass platform.png" id="1_ofwrl"]
 [ext_resource type="Script" path="res://scenes/world.gd" id="1_r1hjv"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://h3lai1jw0kot" path="res://scenes/basket.tscn" id="4_fj40q"]
 [ext_resource type="PackedScene" uid="uid://brsjjoyekn4ri" path="res://scenes/pause_menu.tscn" id="5_lkvac"]
 [ext_resource type="AudioStream" uid="uid://bsh5eahlx734c" path="res://sounds/forest ambience.mp3" id="6_r7a5s"]
+[ext_resource type="Script" path="res://scripts/cursor2.gd" id="7_17tu4"]
 [ext_resource type="PackedScene" uid="uid://lcj1q1qirq88" path="res://scenes/newlog.tscn" id="7_37t4w"]
 [ext_resource type="Script" path="res://scripts/winarea.gd" id="7_o5vb7"]
 [ext_resource type="Texture2D" uid="uid://colgdrgmk36vc" path="res://Assets/2dplatforming/Plants V2.png" id="8_1jxog"]
@@ -2282,6 +2283,7 @@ scale = Vector2(0.415, 0.415)
 
 [node name="cursor" parent="." instance=ExtResource("3_n5dkl")]
 position = Vector2(946, 333)
+script = ExtResource("7_17tu4")
 
 [node name="Label" type="Label" parent="."]
 visible = false

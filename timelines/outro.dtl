@@ -35,6 +35,7 @@ One day it will all just vanish.
 ...
 ...
 ...
-[background arg="res://Assets/cutscene/Credits.png" fade="0.5"]
-[wait time="1.0"]
+[background arg="res://Assets/cutscene/Credits.png" fade="1.0"]
+[wait time="10.0" skippable="true"]
+[background fade="1.0"]
 [end_timeline]

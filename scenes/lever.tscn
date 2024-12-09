@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bkfpr202l306y"]
 
 [ext_resource type="Script" path="res://scripts/lever.gd" id="1_ayh1i"]
-[ext_resource type="Texture2D" uid="uid://dkb8efko7iysq" path="res://Assets/2dplatforming/UI/Tupieng.png" id="2_dkeuo"]
+[ext_resource type="Texture2D" uid="uid://c64texe20lapt" path="res://Assets/charactermodels/Mask outline (1).png" id="2_3xri4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_of7ft"]
 size = Vector2(715.5, 881)
@@ -15,10 +15,10 @@ light_mask = 512
 visibility_layer = 512
 z_index = 10
 position = Vector2(1.52588e-05, -50)
-scale = Vector2(2, 2)
-texture = ExtResource("2_dkeuo")
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_3xri4")
 region_enabled = true
-region_rect = Rect2(0.361877, -2.47601, 505.447, 497.305)
+region_rect = Rect2(908.427, 195.9, 497.473, 729.12)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 process_priority = 5

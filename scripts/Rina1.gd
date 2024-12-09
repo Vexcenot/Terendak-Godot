@@ -3,6 +3,7 @@ extends Area2D
 func _on_body_entered(body: Node2D) -> void:
 	print("Convo Started")
 	Dialogic.start("Rina")
+	DragManager.talking = true
 	Dialogic.timeline_ended.connect(ended)
 
 		

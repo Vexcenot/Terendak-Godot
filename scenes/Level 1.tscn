@@ -1,8 +1,9 @@
-[gd_scene load_steps=67 format=4 uid="uid://pylmcga4ivhy"]
+[gd_scene load_steps=71 format=4 uid="uid://pylmcga4ivhy"]
 
 [ext_resource type="Script" path="res://scenes/Unc Status.gd" id="1_grl0q"]
 [ext_resource type="PackedScene" uid="uid://cu0st24xl7tb8" path="res://scenes/player_masked.tscn" id="2_rn2o0"]
 [ext_resource type="Script" path="res://scripts/hud.gd" id="3_4gt04"]
+[ext_resource type="Script" path="res://scenes/forest_ambience.gd" id="4_4sjfk"]
 [ext_resource type="Texture2D" uid="uid://o01j5n4m5ywe" path="res://Assets/Sky/blank.png" id="4_hms1k"]
 [ext_resource type="Script" path="res://scripts/atmosphere_activate.gd" id="5_34ghn"]
 [ext_resource type="Shader" path="res://Assets/shaders/Vignette.gdshader" id="6_7ucxl"]
@@ -12,8 +13,11 @@
 [ext_resource type="Texture2D" uid="uid://colgdrgmk36vc" path="res://Assets/2dplatforming/Plants V2.png" id="9_f4h7i"]
 [ext_resource type="PackedScene" uid="uid://t31087jjpc7d" path="res://scenes/bridge.tscn" id="10_0gqu6"]
 [ext_resource type="PackedScene" uid="uid://3w6luficyxyc" path="res://NPC Scenes/Depression Dakan.tscn" id="10_p6j52"]
+[ext_resource type="Script" path="res://scenes/soundtrack.gd" id="10_w1l6r"]
 [ext_resource type="Script" path="res://scenes/dream sequence.gd" id="11_6fbp6"]
 [ext_resource type="Texture2D" uid="uid://bt6eqp7lhsi4" path="res://Assets/2dplatforming/UI/M.png" id="11_e5qb6"]
+[ext_resource type="AudioStream" uid="uid://cov8cet2c0ksi" path="res://Assets/sfx/space waster/Mengarang [lCwN6FEZ1qk].wav" id="11_noqx5"]
+[ext_resource type="AudioStream" uid="uid://becn5ab1vi1" path="res://Assets/sfx/Mengarang [lCwN6FEZ1qk].ogg" id="11_o8daf"]
 [ext_resource type="Texture2D" uid="uid://cryq44nx14n6w" path="res://Assets/charactermodels/Maya_idle.png" id="12_kchvs"]
 [ext_resource type="Texture2D" uid="uid://ctcf7cdv3ydk6" path="res://Assets/charactermodels/placeholder_masked_glow.png" id="13_hha7l"]
 [ext_resource type="Texture2D" uid="uid://d16imqcl5n3sq" path="res://Assets/charactermodels/Maya_walk_1.png" id="14_yrlpo"]
@@ -55,7 +59,7 @@
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_o0hq3"]
 shader = ExtResource("6_7ucxl")
-shader_parameter/alpha = 3.0
+shader_parameter/alpha = 2.0
 shader_parameter/inner_radius = 0.0
 shader_parameter/outer_radius = 1.0
 
@@ -4791,6 +4795,19 @@ position = Vector2(0, -400)
 scale = Vector2(0.2, 0.2)
 priority = 10
 
+[node name="Soundtrack" type="AudioStreamPlayer2D" parent="player"]
+position = Vector2(3917, 61)
+stream = ExtResource("11_noqx5")
+volume_db = 3.702
+autoplay = true
+script = ExtResource("10_w1l6r")
+
+[node name="Forest ambience" type="AudioStreamPlayer2D" parent="player"]
+position = Vector2(-2, -7)
+stream = ExtResource("11_o8daf")
+autoplay = true
+script = ExtResource("4_4sjfk")
+
 [node name="TileMap" type="TileMap" parent="."]
 visible = false
 texture_filter = 1
@@ -6305,6 +6322,8 @@ position = Vector2(1023, -185)
 [connection signal="lever_state_changed" from="player/Lever" to="Dream/Sprite2D/bridge2" method="_on_lever_lever_state_changed"]
 [connection signal="lever_state_changed" from="player/Lever" to="Dream/Sprite2D/bridge3" method="_on_lever_lever_state_changed"]
 [connection signal="lever_state_changed" from="player/Lever" to="Dream/Sprite2D/bridge8" method="_on_lever_lever_state_changed"]
+[connection signal="finished" from="player/Soundtrack" to="player/Soundtrack" method="_on_finished"]
+[connection signal="finished" from="player/Forest ambience" to="player/Forest ambience" method="_on_finished"]
 
 [editable path="Coin"]
 [editable path="player/Lever"]

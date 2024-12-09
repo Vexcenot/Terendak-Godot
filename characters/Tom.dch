@@ -17,7 +17,7 @@
 "portraits": {
 "Default": {
 "export_overrides": {
-"image": "\"res://characters/sprites/Uncle Tommy.png\""
+"image": "\"res://Assets/sprites/Uncle Tom Shaded.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),

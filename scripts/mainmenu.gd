@@ -4,7 +4,7 @@ extends Control
 
 
 
-func _on_play_1_pressed() -> void:
+func _on_play_pressed() -> void:
 	get_tree().change_scene_to_file("res://scripts/mynameismaya.tscn")
 
 

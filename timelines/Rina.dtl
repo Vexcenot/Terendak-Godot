@@ -14,7 +14,6 @@ Maya: "These look disgusting... I don't want any!"
 join Maya leftmost [mirrored="true"]
 leave Maya [animation="Fade Out"]
 Rina: "Oh..."
-Maya: "Thanks..."
 Rina: "Sudah sepuluh tahun je..."
 leave tupeing
 leave Rina [animation="Fade Out"]
@@ -52,4 +51,3 @@ Maya: "I can do this..."
 leave Maya
 [wait time="1.0"]
 [end_timeline]
-Maya (Default): "Uhh,

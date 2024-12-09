@@ -1,0 +1,75 @@
+[gd_scene load_steps=7 format=3 uid="uid://voj4rpfgbdhr"]
+
+[ext_resource type="Script" path="res://scripts/winanimate_chesto.gd" id="1_xs0yw"]
+[ext_resource type="Texture2D" uid="uid://deyslfa76rlim" path="res://textures/shine hand animation.png" id="2_2n1qu"]
+[ext_resource type="Texture2D" uid="uid://kkdhknqc3msi" path="res://textures/white glow.png" id="3_o75a5"]
+[ext_resource type="Texture2D" uid="uid://bpwl4biq2ncdg" path="res://textures/nugget.png" id="4_sh054"]
+[ext_resource type="AudioStream" uid="uid://cym3qq5yv7h68" path="res://sounds/Plants Vs Zombies Victory Jingle.mp3" id="5_m0ovp"]
+[ext_resource type="AudioStream" uid="uid://dacben2a836qg" path="res://sounds/fragment.wav" id="6_116rg"]
+
+[node name="Node2D" type="Node2D"]
+scale = Vector2(1.3, 1.3)
+script = ExtResource("1_xs0yw")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -4
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+z_index = -12
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="1" type="Sprite2D" parent="."]
+position = Vector2(-14.6972, 87.8218)
+scale = Vector2(0.962266, 0.962266)
+texture = ExtResource("2_2n1qu")
+hframes = 4
+
+[node name="2" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(-14.6972, 87.8218)
+scale = Vector2(0.962266, 0.962266)
+texture = ExtResource("2_2n1qu")
+hframes = 4
+frame = 1
+
+[node name="3" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(-14.6972, 87.8218)
+scale = Vector2(0.962266, 0.962266)
+texture = ExtResource("2_2n1qu")
+hframes = 4
+frame = 2
+
+[node name="4" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(-14.6972, 87.8218)
+scale = Vector2(0.962266, 0.962266)
+texture = ExtResource("2_2n1qu")
+hframes = 4
+frame = 3
+
+[node name="WhiteGlow" type="Sprite2D" parent="."]
+position = Vector2(-17, 9)
+scale = Vector2(1e-05, 1e-05)
+texture = ExtResource("3_o75a5")
+
+[node name="5" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-14.6972, 87.8218)
+scale = Vector2(0.962266, 0.962266)
+texture = ExtResource("4_sh054")
+hframes = 4
+frame = 3
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_m0ovp")
+pitch_scale = 0.66
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_116rg")
+autoplay = true

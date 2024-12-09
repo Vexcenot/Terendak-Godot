@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://vaguw350nj2y"
+path="res://.godot/imported/river-ambience-23452.mp3-b1a43012b4f5499b385bd0c77ec5d9dd.mp3str"
+
+[deps]
+
+source_file="res://Assets/sfx/space waster/river-ambience-23452.mp3"
+dest_files=["res://.godot/imported/river-ambience-23452.mp3-b1a43012b4f5499b385bd0c77ec5d9dd.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://caingmda1e7qi"]
 
-[ext_resource type="Script" path="res://scripts/win_condition_chesto.gd" id="1_jker5"]
+[ext_resource type="Script" path="res://scenes/win_condition_chesto.gd" id="1_7kima"]
 [ext_resource type="AudioStream" uid="uid://n2412bnu0en2" path="res://sounds/forest fucker.mp3" id="2_780yc"]
 [ext_resource type="FontFile" uid="uid://sswlt8c163m4" path="res://fonts/FIGHTBACK.ttf" id="3_33fvr"]
 [ext_resource type="Texture2D" uid="uid://dk5pxtkq5qwn7" path="res://Assets/Scary Maze/Terendak piece 1.png" id="4_abb0s"]
@@ -107,7 +107,7 @@ _data = {
 
 [node name="Win condition" type="Node2D"]
 process_mode = 3
-script = ExtResource("1_jker5")
+script = ExtResource("1_7kima")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_780yc")

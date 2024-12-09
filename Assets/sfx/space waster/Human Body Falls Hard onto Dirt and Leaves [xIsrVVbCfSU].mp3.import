@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://8w2dh5sihka3"
+path="res://.godot/imported/Human Body Falls Hard onto Dirt and Leaves [xIsrVVbCfSU].mp3-782507b65cb8718db685d2e996046b0e.mp3str"
+
+[deps]
+
+source_file="res://Assets/sfx/space waster/Human Body Falls Hard onto Dirt and Leaves [xIsrVVbCfSU].mp3"
+dest_files=["res://.godot/imported/Human Body Falls Hard onto Dirt and Leaves [xIsrVVbCfSU].mp3-782507b65cb8718db685d2e996046b0e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

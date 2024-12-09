@@ -11,8 +11,8 @@ signal lever_state_changed(activated: bool)
 
 # Textures for the lever states
 const TEXTURES: Dictionary = {
-	'on': preload("res://Assets/2dplatforming/UI/Tupieng activated.png"),
-	'off': preload("res://Assets/2dplatforming/UI/Tupieng.png")
+	'on': preload("res://Assets/charactermodels/Mask outline (1).png"),
+	'off': preload("res://Assets/2dplatforming/Invisible Bridge.png")
 }
 
 func _ready() -> void:

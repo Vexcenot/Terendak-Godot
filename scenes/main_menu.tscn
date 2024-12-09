@@ -206,6 +206,5 @@ offset_right = 40.0
 offset_bottom = 40.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_0s5v2")
 
-[connection signal="pressed" from="MarginContainer/VBoxContainer/PLAY" to="." method="_on_play_1_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/QUIT" to="." method="_on_play_1_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/PLAY" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/QUIT" to="." method="_on_quit_pressed"]

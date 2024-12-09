@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://thoyfr24amdl"]
 
 [ext_resource type="Script" path="res://scripts/feliciaConv.gd" id="1_7umle"]
-[ext_resource type="Texture2D" uid="uid://cokd1bt144ctl" path="res://Assets/2dplatforming/world triggers/World Models/Auntie Felicia.png" id="2_spmio"]
+[ext_resource type="Texture2D" uid="uid://sxfq34njqgb" path="res://Assets/charactermodels/Npc 2 2D.png" id="2_xpqrb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e3xc7"]
 size = Vector2(95, 251)
@@ -11,9 +11,12 @@ collision_mask = 2
 script = ExtResource("1_7umle")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -8)
 scale = Vector2(0.3, 0.3)
-texture = ExtResource("2_spmio")
+texture = ExtResource("2_xpqrb")
 flip_h = true
+region_enabled = true
+region_rect = Rect2(1081.52, 0, 356.965, 1080)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -109)

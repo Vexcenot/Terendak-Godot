@@ -2,8 +2,6 @@ join Tom left [mirrored="true"]
 Tom: "MAYA! ARE YOU OKAY? WHAT HAPPENED?!"
 join Maya right
 Maya: *cough* *cough* "Nothing...I just decided to go for a swim..."
-Tom: "I can get a towel to dry you off!"
-Maya: "Don't...worry...about...it..."
 leave Tom [animation="Slide Out Right"]
 leave Tom [animation="Fade Out"]
 join tupeing center

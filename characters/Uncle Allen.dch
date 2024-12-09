@@ -17,11 +17,11 @@
 "portraits": {
 "New portrait": {
 "export_overrides": {
-"image": "\"res://characters/sprites/Uncle Allen Sprite.png\""
+"image": "\"res://Assets/sprites/Uncle Allen Shaded.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 1,
+"scale": 1.0,
 "scene": ""
 }
 },

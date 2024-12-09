@@ -15,6 +15,8 @@ corner_radius_bottom_right = 3
 corner_radius_bottom_left = 3
 
 [node name="TextboxWithSpeakerPortrait" type="Control"]
+top_level = true
+z_index = 1000
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -71,6 +73,18 @@ size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.3
 mouse_filter = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_dmg1w")
+
+[node name="Label" type="Label" parent="Anchor/Panel/HBox/PortraitPanel"]
+z_index = 100
+layout_mode = 0
+offset_left = -68.1267
+offset_top = 123.857
+offset_right = 906.873
+offset_bottom = 260.857
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 15
+text = "<Space> to continue"
+horizontal_alignment = 1
 
 [node name="PortraitBackgroundColor" type="ColorRect" parent="Anchor/Panel/HBox/PortraitPanel"]
 unique_name_in_owner = true

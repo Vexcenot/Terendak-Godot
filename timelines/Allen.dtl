@@ -12,12 +12,10 @@ Maya: "Eheh..."
 leave "Uncle Allen" [animation="Slide Out Right"]
 leave "Uncle Allen" [animation="Fade Out"]
 join tupeing center
-tupeing: "With all that energy..."
-tupeing: "You can fit in the kampung just fine!"
-tupeing: "You learned sago hunting, how about learning other roles too?"
-Maya: "..."
-Maya: "Diam."
-leave Maya
-leave tupeing
+tupeing: He's right you know?
+Maya: DIAM!
+leave tupeing [animation="Slide Out Left"]
+leave tupeing [animation="Fade Out" length="0.1"]
 [wait time="1.0"]
+leave Maya
 [end_timeline]

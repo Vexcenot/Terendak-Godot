@@ -5,33 +5,36 @@
 [resource]
 script = ExtResource("1_ljp4g")
 entries = {
-"\"Tapi, kamu sudah lupa makanan kegemaran!\"": {
-"alternatives": ["Translation"],
-"color": Color(0.733333, 0.227451, 0.270588, 1),
-"extra": "Maya loves sago worms in her childhood.",
-"name": "\"Tapi, kamu sudah lupa makanan kegemaran!\"",
-"text": "But you have forgotten your favourite food!.",
-"title": ""
-},
 "Baban": {
 "case_sensitive": true,
 "color": Color(0.733333, 0.227451, 0.270588, 1),
 "name": "Baban",
-"text": "Traditionally worn during events",
+"text": "A Melanau dress, black and red, Traditionally worn during events",
 "title": "Melanau dress"
 },
 "I will teach that boy a lesson.": {
 "name": "I will teach that boy a lesson.",
 "text": "Spirits will attack a person through the mind, body, soul or emotions. From an outsider's perspective, they receive an illness.",
-"title": "Cause sickness"
+"title": "Causes sickness"
 },
-"Translation": "\"Tapi, kamu sudah lupa makanan kegemaran!\"",
+"Tapi, kamu sudah lupa makanan kegemaran!": {
+"alternatives": ["Translation"],
+"case_sensitive": true,
+"color": Color(0.733333, 0.227451, 0.270588, 1),
+"extra": "Maya loves sago worms in her childhood.",
+"name": "Tapi, kamu sudah lupa makanan kegemaran!",
+"text": "But you have forgotten your favourite food!.",
+"title": "Maya Fact #1337"
+},
+"Translation": "Tapi, kamu sudah lupa makanan kegemaran!",
 "Uncle Tom": {
 "name": "Uncle Tom",
-"text": "He has a sleeper build. Man is built like a tank under those clothes."
+"text": "He has a sleeper build. Man is built like a tank under those clothes.",
+"title": "Looks can be deceiving"
 },
 "“Selamet suab. Inou dengah nou?”": {
 "name": "“Selamet suab. Inou dengah nou?”",
+"text": "Bahasa Melanau",
 "title": "Good morning, how are you?"
 }
 }

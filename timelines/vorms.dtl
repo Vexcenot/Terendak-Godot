@@ -1,6 +1,6 @@
-[background arg="res://Assets/menu/ControlsSago.png" fade="0.5"]
+[background arg="res://Assets/menu/ControlsSago.png" fade="0.0"]
 [wait_input]
+[background fade="1.0"]
 [wait time="1.0"]
-[background fade="0.5"]
 Maya: I hate this....
 [end_timeline]

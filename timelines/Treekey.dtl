@@ -1,0 +1,12 @@
+join Maya (Default_Masked) leftmost
+Maya: "Woah!"
+Maya (Default_Masked): "I didn't know I could do that!"
+tupeing: "Maya...you are more active when you are connected to the spirutal world..."
+Maya: "Yeah!, I just climbed a tree without breaking a sweat!"
+tupeing: "Be careful, with great power-"
+Maya: "LETS GOOOOO!!!!!"
+leave Maya [animation="Slide Out Right"]
+leave Maya [animation="Fade Out"]
+tupeing: <sigh....>
+[wait time="1.0"]
+[end_timeline]

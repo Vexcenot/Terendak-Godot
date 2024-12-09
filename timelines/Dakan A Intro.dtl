@@ -1,1 +1,13 @@
-Sample Text
+join tupeing rightmost
+join Maya leftmost
+join "Dakan 1" center
+Maya (Default): "Hello...?"
+Maya (Default): "Helloooooooo"
+tupeing: "Maya, you're forgetting something."
+tupeing: "You need to put me on. You can only communicate with spirits through me."
+Maya: ...? (Press M to equip Mask.)
+leave tupeing
+leave Maya
+leave "Dakan 1"
+[wait time="1.0"]
+[end_timeline]

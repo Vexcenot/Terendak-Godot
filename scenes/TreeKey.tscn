@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://cil5hbm8suyts"]
+
+[ext_resource type="Script" path="res://scenes/TreeKey.gd" id="1_ndv82"]
+[ext_resource type="Texture2D" uid="uid://c5ga5c04ftkci" path="res://Assets/2dplatforming/world triggers/Key.png" id="2_mpadh"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6f7x1"]
+radius = 43.0465
+
+[node name="Key" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_ndv82")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_mpadh")
+region_enabled = true
+region_rect = Rect2(680.366, 243.105, 535.102, 614.504)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_6f7x1")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

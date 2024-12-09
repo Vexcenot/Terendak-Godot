@@ -41,6 +41,7 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "Allen": "res://timelines/Allen.dtl",
+"BeforeScaryMaze": "res://timelines/BeforeScaryMaze.dtl",
 "Dakan A Intro": "res://timelines/Dakan A Intro.dtl",
 "End Scene": "res://timelines/End Scene.dtl",
 "Everyone is here": "res://timelines/Everyone is here.dtl",
@@ -49,16 +50,30 @@ directories/dtl_directory={
 "Level 2 Intro": "res://timelines/Level 2 Intro.dtl",
 "Rina": "res://timelines/Rina.dtl",
 "Rina_1": "res://timelines/Rina_1.dtl",
+"Sago Worm Hunting": "res://timelines/Sago Worm Hunting.dtl",
+"Sago Worms Exposed": "res://timelines/Sago Worms Exposed.dtl",
+"Sagoflashback": "res://timelines/Sagoflashback.dtl",
 "Scary Maze Intro": "res://timelines/Scary Maze Intro.dtl",
 "Tom": "res://timelines/Tom.dtl",
 "Tom 2": "res://timelines/Tom 2.dtl",
+"Treekey": "res://timelines/Treekey.dtl",
 "Worm Quest": "res://timelines/Worm Quest.dtl",
+"chesto": "res://timelines/chesto.dtl",
 "confused": "res://timelines/confused.dtl",
 "dakan_deaf_1": "res://timelines/dakan_deaf_1.dtl",
+"depression": "res://timelines/depression.dtl",
+"drowning": "res://timelines/drowning.dtl",
 "fake piece": "res://timelines/fake piece.dtl",
 "intro": "res://timelines/intro.dtl",
 "intro_level 3": "res://timelines/intro_level 3.dtl",
+"keyget": "res://timelines/keyget.dtl",
+"lookup": "res://timelines/lookup.dtl",
+"lookup_masked": "res://timelines/lookup_masked.dtl",
+"mynameismaya": "res://timelines/mynameismaya.dtl",
+"outro": "res://timelines/outro.dtl",
+"spidergramps": "res://timelines/spidergramps.dtl",
 "texttest1": "res://texttest1.dtl",
+"what": "res://timelines/what.dtl",
 "win": "res://win.dtl"
 }
 glossary/default_case_sensitive=true

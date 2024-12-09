@@ -1,0 +1,9 @@
+Maya: ...
+Maya: Eh?
+*Crash*
+[background arg="res://Assets/cutscene/Level 3/New 5.png" fade="0.0"]
+Dakan3: "Hehehehehehehehe...."
+Maya: Hey!
+Maya: Huh?
+[wait time="1.0"]
+[end_timeline]

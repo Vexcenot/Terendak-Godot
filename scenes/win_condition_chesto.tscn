@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dgd8xqy068e2n"]
+[gd_scene load_steps=8 format=3 uid="uid://caingmda1e7qi"]
 
 [ext_resource type="Script" path="res://scripts/win_condition_chesto.gd" id="1_jker5"]
 [ext_resource type="AudioStream" uid="uid://n2412bnu0en2" path="res://sounds/forest fucker.mp3" id="2_780yc"]

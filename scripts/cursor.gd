@@ -86,6 +86,6 @@ func wintime():
 		DragManager.lastworm = false
 		DragManager.is_dragging = false
 		DragManager.absolutewin = false
-		get_tree().change_scene_to_file("res://scenes/win_condition_chesto.gd")
+		get_tree().change_scene_to_file("res://scenes/win_condition_chesto.tscn")
 
 		

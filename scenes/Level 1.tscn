@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://o01j5n4m5ywe" path="res://Assets/Sky/blank.png" id="4_hms1k"]
 [ext_resource type="Script" path="res://scripts/atmosphere_activate.gd" id="5_34ghn"]
 [ext_resource type="Shader" path="res://Assets/shaders/Vignette.gdshader" id="6_7ucxl"]
-[ext_resource type="PackedScene" path="res://scenes/chest.tscn" id="7_0coem"]
+[ext_resource type="PackedScene" uid="uid://ccuyxy5520tns" path="res://scenes/chest.tscn" id="7_0coem"]
 [ext_resource type="PackedScene" uid="uid://bkfpr202l306y" path="res://scenes/lever.tscn" id="7_y4ht0"]
 [ext_resource type="Texture2D" uid="uid://bn63j3idec2p0" path="res://Assets/sprites/world_tileset.png" id="8_a558a"]
 [ext_resource type="PackedScene" uid="uid://cil5hbm8suyts" path="res://scenes/TreeKey.tscn" id="8_ttkhx"]

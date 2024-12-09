@@ -1,16 +1,18 @@
-Maya: "Ah it seems you got the key."
+Maya: "A chest in the tree!"
 Maya: "I wonder what is inside this chest."
 Maya: "Woah!"
 Maya (Default_Masked): "I didn't know I could do that!"
 tupeing: "Maya...you are more active when you are connected to the spirutal world..."
 Maya: "Yeah!, I just climbed a tree without breaking a sweat!"
+Maya: "I CAN DO ANYTHING!"
 tupeing: "Be careful, with great power-"
 Maya: "LETS GOOOOO!!!!!"
+[sound path="res://Assets/sfx/Human Body Falls Hard onto Dirt and Leaves [xIsrVVbCfSU].ogg" volume="0.0"]
 leave Maya [animation="Slide Out Right"]
 leave Maya [animation="Fade Out"]
-Maya jumps down from the tree.
 [background arg="res://Assets/cutscene/Intro/All black.png" fade="0.0"]
-Maya: Ouch!
+Maya jumps down from the tree.
+She landed on her face
 tupeing: <sigh....>
 [wait time="1.0"]
 [end_timeline]

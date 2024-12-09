@@ -10,13 +10,13 @@
 [ext_resource type="PackedScene" uid="uid://ccuyxy5520tns" path="res://scenes/chest.tscn" id="7_0coem"]
 [ext_resource type="PackedScene" uid="uid://bkfpr202l306y" path="res://scenes/lever.tscn" id="7_y4ht0"]
 [ext_resource type="Texture2D" uid="uid://bn63j3idec2p0" path="res://Assets/sprites/world_tileset.png" id="8_a558a"]
+[ext_resource type="AudioStream" uid="uid://dk517okk6jxek" path="res://Assets/sfx/Human Body Falls Hard onto Dirt and Leaves [xIsrVVbCfSU].ogg" id="9_d1aau"]
 [ext_resource type="Texture2D" uid="uid://colgdrgmk36vc" path="res://Assets/2dplatforming/Plants V2.png" id="9_f4h7i"]
 [ext_resource type="PackedScene" uid="uid://t31087jjpc7d" path="res://scenes/bridge.tscn" id="10_0gqu6"]
 [ext_resource type="PackedScene" uid="uid://3w6luficyxyc" path="res://NPC Scenes/Depression Dakan.tscn" id="10_p6j52"]
 [ext_resource type="Script" path="res://scenes/soundtrack.gd" id="10_w1l6r"]
 [ext_resource type="Script" path="res://scenes/dream sequence.gd" id="11_6fbp6"]
 [ext_resource type="Texture2D" uid="uid://bt6eqp7lhsi4" path="res://Assets/2dplatforming/UI/M.png" id="11_e5qb6"]
-[ext_resource type="AudioStream" uid="uid://cov8cet2c0ksi" path="res://Assets/sfx/space waster/Mengarang [lCwN6FEZ1qk].wav" id="11_noqx5"]
 [ext_resource type="AudioStream" uid="uid://becn5ab1vi1" path="res://Assets/sfx/Mengarang [lCwN6FEZ1qk].ogg" id="11_o8daf"]
 [ext_resource type="Texture2D" uid="uid://cryq44nx14n6w" path="res://Assets/charactermodels/Maya_idle.png" id="12_kchvs"]
 [ext_resource type="Texture2D" uid="uid://ctcf7cdv3ydk6" path="res://Assets/charactermodels/placeholder_masked_glow.png" id="13_hha7l"]
@@ -4797,7 +4797,7 @@ priority = 10
 
 [node name="Soundtrack" type="AudioStreamPlayer2D" parent="player"]
 position = Vector2(3917, 61)
-stream = ExtResource("11_noqx5")
+stream = ExtResource("9_d1aau")
 volume_db = 3.702
 autoplay = true
 script = ExtResource("10_w1l6r")

@@ -19,19 +19,20 @@ The only bus available departs at 10pm.
 [background arg="res://Assets/cutscene/Intro/All black.png" fade="0.0"]
 ...
 [background arg="res://Assets/cutscene/Intro/5.png" fade="0.5"]
-"Help me Maya..."
+"Help me..."
 "Help me..."
 [background arg="res://Assets/cutscene/Intro/6-2.png" fade="0.0"]
-...
+[wait time="1.0"]
 [background arg="res://Assets/cutscene/Intro/6-3.png" fade="0.0"]
-...
+[wait time="1.0"]
 [background arg="res://Assets/cutscene/Intro/6.png" fade="0.5"]
-...
+[wait time="1.0"]
 Before I knew it, I was already in Mukah.
 [background arg="res://Assets/cutscene/Intro/7.png" fade="0.5"]
 The sounds of nature are peaceful compared to the city.
 It's been decade since I was last here...
-[background arg="res://Assets/cutscene/Intro/8.png" fade="0.5"]
+[music path="res://Assets/sfx/summer-outdoors-nature-ambience-228110.mp3" fade="0.0" volume="0.0"]
+[background arg="8.png" fade="0.5"]
 "Uncle Allen is waiting for me at the door."
 "Uncle Allen": "Maya...Welcome!"
 Maya: "Long time no see, Uncle Allen."
@@ -49,7 +50,7 @@ I wanted to help, but theres nothing I could do.
 "Uncle Allen": Hey, why don't you look around the house, see if there's anything you can do to help.
 Uncle Allen read my mind, though futile, at I'm not idling around.
 Its not long after that when the it happened.
-[background arg="res://Assets/cutscene/Intro/All black.png" fade="0.5"]
+[background arg="res://Assets/cutscene/Intro/10.png" fade="0.5"]
 "Maya...Maya...Maya..." - a disembodied voice called out to me.
 It came from the storage room
 Its beckoning me to enter...what will I find inside?
@@ -57,6 +58,7 @@ Its beckoning me to enter...what will I find inside?
 It was pitch black, it took a while for my eyes to adjust
 Among the pots, decorations and fishing utensils lies...
 [background arg="res://Assets/cutscene/Intro/11.png" fade="0.0"]
+[sound path="res://Assets/sfx/Mask Reveal.ogg" volume="0.0"]
 A Mask
 It started talking to me telepathincally.
 tupeing: "Maya..."

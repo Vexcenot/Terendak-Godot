@@ -6,6 +6,7 @@
 size = Vector2(83, 19)
 
 [node name="platform" type="AnimatableBody2D"]
+visibility_layer = 524801
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.3, 0.3)
@@ -14,6 +15,7 @@ region_enabled = true
 region_rect = Rect2(656.641, 355.813, 287.67, 74.0578)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+top_level = true
 position = Vector2(-0.5, -1.5)
 shape = SubResource("RectangleShape2D_kifd8")
 one_way_collision = true

@@ -25,7 +25,8 @@ texture = ExtResource("2_wxxmv")
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-2.5, -1.5)
+position = Vector2(0, -126)
+scale = Vector2(2, 2)
 shape = SubResource("RectangleShape2D_e3xc7")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

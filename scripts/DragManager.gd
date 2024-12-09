@@ -8,9 +8,9 @@ var paused = false #checks if game is paused
 var absolutewin = false #skips all other checks for granting victory
 var talking = false #dialogue
 
-var rina_conversation_1 = false
-var dakan_2_intro = false
 var mask_equip: bool = false
-var chest_quest_complete = false
-var dakan_1 = false
-var chest_quest = false
+
+func _on_scene_changed(new_scene):
+	# Reset the global boolean
+	mask_equip = false
+	print("Global boolean reset on scene change")

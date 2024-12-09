@@ -5,10 +5,34 @@
 [resource]
 script = ExtResource("1_ljp4g")
 entries = {
+"\"Tapi, kamu sudah lupa makanan kegemaran!\"": {
+"alternatives": ["Translation"],
+"color": Color(0.733333, 0.227451, 0.270588, 1),
+"extra": "Maya loves sago worms in her childhood.",
+"name": "\"Tapi, kamu sudah lupa makanan kegemaran!\"",
+"text": "But you have forgotten your favourite food!.",
+"title": ""
+},
 "Baban": {
 "case_sensitive": true,
+"color": Color(0.733333, 0.227451, 0.270588, 1),
 "name": "Baban",
+"text": "Traditionally worn during events",
 "title": "Melanau dress"
+},
+"I will teach that boy a lesson.": {
+"name": "I will teach that boy a lesson.",
+"text": "Spirits will attack a person through the mind, body, soul or emotions. From an outsider's perspective, they receive an illness.",
+"title": "Cause sickness"
+},
+"Translation": "\"Tapi, kamu sudah lupa makanan kegemaran!\"",
+"Uncle Tom": {
+"name": "Uncle Tom",
+"text": "He has a sleeper build. Man is built like a tank under those clothes."
+},
+"“Selamet suab. Inou dengah nou?”": {
+"name": "“Selamet suab. Inou dengah nou?”",
+"title": "Good morning, how are you?"
 }
 }
 enabled = true

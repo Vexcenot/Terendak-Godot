@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://doeeek7fjckud"]
+[gd_scene load_steps=7 format=3 uid="uid://doeeek7fjckud"]
 
+[ext_resource type="Script" path="res://scenes/lvl_0_dialogue.gd" id="1_duo1h"]
 [ext_resource type="Texture2D" uid="uid://ciokcechpr7l3" path="res://textures/background-drawn-with-brown-oil-pencil_jpg.png" id="1_hsl0u"]
 [ext_resource type="PackedScene" uid="uid://bd3faxqyinlau" path="res://scenes/cursor.tscn" id="2_307ji"]
 [ext_resource type="PackedScene" uid="uid://brsjjoyekn4ri" path="res://scenes/pause_menu.tscn" id="5_1juiq"]
@@ -8,6 +9,7 @@
 
 [node name="world" type="Node2D"]
 position = Vector2(435, 93)
+script = ExtResource("1_duo1h")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = -1

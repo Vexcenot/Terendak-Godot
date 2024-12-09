@@ -19,7 +19,8 @@ region_enabled = true
 region_rect = Rect2(820.917, 57.1459, 283.087, 1022.85)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-5, 1)
+position = Vector2(1, -77)
+scale = Vector2(2, 2)
 shape = SubResource("RectangleShape2D_e3xc7")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

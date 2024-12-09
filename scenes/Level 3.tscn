@@ -1,4 +1,4 @@
-[gd_scene load_steps=71 format=4 uid="uid://cqvbad5atfd52"]
+[gd_scene load_steps=72 format=4 uid="uid://cqvbad5atfd52"]
 
 [ext_resource type="Script" path="res://scenes/Level 3.gd" id="1_83y17"]
 [ext_resource type="PackedScene" uid="uid://cu0st24xl7tb8" path="res://scenes/player_masked.tscn" id="2_ayido"]
@@ -52,6 +52,7 @@
 [ext_resource type="Texture2D" uid="uid://cp8oca3hq0ouf" path="res://Assets/2dplatforming/World Deco/Fern V3.png" id="47_od7uq"]
 [ext_resource type="PackedScene" uid="uid://thoyfr24amdl" path="res://NPC Scenes/FeliciaCoin.tscn" id="48_k876g"]
 [ext_resource type="Texture2D" uid="uid://ko6o5kdqgud" path="res://Assets/2dplatforming/World Deco/Grass vari 2.png" id="50_0kivw"]
+[ext_resource type="Texture2D" uid="uid://bt6eqp7lhsi4" path="res://Assets/2dplatforming/UI/M.png" id="53_hk82y"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_o0hq3"]
 shader = ExtResource("6_mtqe3")
@@ -6826,12 +6827,11 @@ position = Vector2(-3082.97, -202.296)
 texture = ExtResource("47_od7uq")
 
 [node name="Sprite2D2" type="Sprite2D" parent="Visuals/3"]
-modulate = Color(0.24, 0.24, 0.24, 0.607843)
+modulate = Color(0.239216, 0.239216, 0.239216, 0.203922)
 position = Vector2(2658.76, -2861.79)
 rotation = 1.5708
 scale = Vector2(304.798, 734.434)
 texture = SubResource("GradientTexture2D_on7qd")
-metadata/_edit_lock_ = true
 
 [node name="Felicia" parent="." instance=ExtResource("48_k876g")]
 position = Vector2(1023, -187)
@@ -6840,6 +6840,11 @@ position = Vector2(1023, -187)
 layer = 128
 
 [node name="pause" parent="CanvasLayer" instance=ExtResource("2_so4wr")]
+
+[node name="M" type="Sprite2D" parent="."]
+position = Vector2(-4870, -138)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("53_hk82y")
 
 [connection signal="lever_state_changed" from="player/Lever" to="player/CanvasLayer3/Atmosphere" method="_on_lever_lever_state_changed"]
 [connection signal="lever_state_changed" from="player/Lever" to="Dream/Sprite2D/bridge" method="_on_lever_lever_state_changed"]

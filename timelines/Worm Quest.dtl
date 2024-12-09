@@ -13,12 +13,7 @@ Dakan2: "He...he...he..."
 Dakan2: "Then...empty handed you go!"
 Dakan2: "I have no time for cowards!"
 leave Dakan2 [animation="Fade Out"]
-join tupeing rightmost
-tupeing: "Seems like you have to face your fears, Maya."
-tupeing: "I know you can do it!"
 Maya: "..."
-Maya: "Thanks..."
 leave Maya
-leave tupeing
 [wait time="1.0"]
 [end_timeline]

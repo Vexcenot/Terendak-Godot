@@ -1,4 +1,7 @@
-[wait time="0.2"]
+[wait time="0.5"]
+[background arg="res://Assets/menu/ControlsV2.png" fade="1.0"]
+[wait_input]
+[background fade="0.5"]
 join tupeing rightmost
 join Maya leftmost
 join Maya left

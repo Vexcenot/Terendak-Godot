@@ -11,12 +11,10 @@ func _process(delta: float) -> void:
 		canvas_layer.visible = false
 
 func _on_body_entered(body: Node2D) -> void:
-	if DragManager.rina_conversation_1 == true:
-		print("Convo Started")
-		Dialogic.start("Worm Quest")
-		DragManager.talking = true
-		Dialogic.timeline_ended.connect(dakan)
-		DragManager.dakan_2_intro = true
+	print("Convo Started")
+	Dialogic.start("Worm Quest")
+	DragManager.talking = true
+	Dialogic.timeline_ended.connect(dakan)
 
 func dakan():
 	Dialogic.timeline_ended.disconnect(dakan)

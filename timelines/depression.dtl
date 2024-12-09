@@ -6,12 +6,16 @@ Maya (Default_Masked): !!!
 "Dakan 1": "I was carved recently, but there were no shamans present."
 "Dakan 1": "I am but a wondering spirit who understands the situation."
 "Dakan 1": "Losing a loved one is heartbreaking."
-"Dakan 1": "I have what you need in this box."
-"Dakan 1": "But some kampung boy threw it up into the tree."
+"Dakan 1": "I have what you need...in a box..."
+Maya: "Where is the box?"
+"Dakan 1": "Its in a tree somewhere."
+"Dakan 1": "But some kampung boy threw it up there."
 "Dakan 1": "You will have to climb the tree to get it."
 "Dakan 1": "In the meantime, I will teach that boy a lesson."
 leave "Dakan 1"
 Maya (Default_Masked): "Lost in a tree huh?"
 tupeing: "Keep your eyes up in the tree, its up there somewhere."
+"Dakan 1": <Empty Text Event>
+leave Maya
 [wait time="1.0"]
 [end_timeline]

@@ -49,10 +49,10 @@
 [ext_resource type="Texture2D" uid="uid://cgws6rnvbu15y" path="res://Assets/2dplatforming/World Deco/Rock 3.png" id="46_wfape"]
 [ext_resource type="Texture2D" uid="uid://c2135s5o5pi5p" path="res://Assets/2dplatforming/World Deco/Bush.png" id="47_jl2gh"]
 [ext_resource type="Texture2D" uid="uid://cp8oca3hq0ouf" path="res://Assets/2dplatforming/World Deco/Fern V3.png" id="48_2gsme"]
-[ext_resource type="Texture2D" uid="uid://n7b64fxjl10u" path="res://Assets/charactermodels/Grass floating.png" id="49_pwa2g"]
 [ext_resource type="PackedScene" uid="uid://b6vqgfaalbo6k" path="res://NPC Scenes/Forget Dakan.tscn" id="50_7b0w6"]
 [ext_resource type="PackedScene" uid="uid://ctkskd4agb7bb" path="res://NPC Scenes/RinaCoin.tscn" id="51_dgbl8"]
 [ext_resource type="PackedScene" uid="uid://brsjjoyekn4ri" path="res://scenes/pause_menu.tscn" id="51_nanuh"]
+[ext_resource type="Texture2D" uid="uid://bt6eqp7lhsi4" path="res://Assets/2dplatforming/UI/M.png" id="53_s3nmp"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_o0hq3"]
 shader = ExtResource("6_d3i4e")
@@ -5677,11 +5677,11 @@ position = Vector2(4433.33, 193.333)
 script = ExtResource("16_rkat4")
 
 [node name="bridge2" parent="Dream/Sprite2D" instance=ExtResource("15_t7bu2")]
-position = Vector2(4891.67, -36.667)
+position = Vector2(4800, 48.333)
 script = ExtResource("16_rkat4")
 
 [node name="bridge3" parent="Dream/Sprite2D" instance=ExtResource("15_t7bu2")]
-position = Vector2(5293.33, -221.667)
+position = Vector2(5230, -123.334)
 script = ExtResource("16_rkat4")
 
 [node name="bridge4" parent="Dream/Sprite2D" instance=ExtResource("15_t7bu2")]
@@ -5717,7 +5717,7 @@ position = Vector2(8898.33, -55.0003)
 script = ExtResource("16_rkat4")
 
 [node name="bridge17" parent="Dream/Sprite2D" instance=ExtResource("15_t7bu2")]
-position = Vector2(9503.33, -55.0003)
+position = Vector2(9658.33, -60.0003)
 script = ExtResource("16_rkat4")
 
 [node name="bridge14" parent="Dream/Sprite2D" instance=ExtResource("15_t7bu2")]
@@ -5741,41 +5741,210 @@ frame_progress = 0.292849
 
 [node name="Triggers" type="Node2D" parent="."]
 
-[node name="platform" parent="." instance=ExtResource("23_mr7rd")]
-position = Vector2(9200, -5)
+[node name="CanvasGroup" type="CanvasGroup" parent="."]
+position = Vector2(9371, 16)
+scale = Vector2(3, 3)
 
-[node name="platform2" parent="." instance=ExtResource("23_mr7rd")]
-position = Vector2(9381, 69)
+[node name="platform" parent="CanvasGroup" instance=ExtResource("23_mr7rd")]
+visibility_layer = 1
+z_index = 100
+position = Vector2(-0.666667, -6.66667)
 
-[node name="platform3" parent="." instance=ExtResource("23_mr7rd")]
-position = Vector2(9560, 98)
+[node name="platform13" parent="CanvasGroup" instance=ExtResource("23_mr7rd")]
+visibility_layer = 1
+z_index = 100
+position = Vector2(-77.6667, -6.33333)
 
-[node name="platform4" parent="." instance=ExtResource("23_mr7rd")]
-position = Vector2(9104, -39)
+[node name="platform14" parent="CanvasGroup" instance=ExtResource("23_mr7rd")]
+visibility_layer = 1
+z_index = 100
+position = Vector2(76.0001, -6.33333)
 
-[node name="platform6" parent="." instance=ExtResource("23_mr7rd")]
-position = Vector2(9188, -39)
+[node name="platform2" parent="CanvasGroup" instance=ExtResource("23_mr7rd")]
+visibility_layer = 1
+z_index = 100
+position = Vector2(-1.99992, 10.6667)
+scale = Vector2(0.333333, 0.333333)
 
-[node name="platform7" parent="." instance=ExtResource("23_mr7rd")]
-position = Vector2(9271, -39)
+[node name="platform15" parent="CanvasGroup" instance=ExtResource("23_mr7rd")]
+visibility_layer = 1
+z_index = 100
+position = Vector2(49.3333, 10.6667)
+scale = Vector2(0.333333, 0.333333)
 
-[node name="platform8" parent="." instance=ExtResource("23_mr7rd")]
-position = Vector2(9351, -39)
+[node name="platform17" parent="CanvasGroup" instance=ExtResource("23_mr7rd")]
+visibility_layer = 1
+z_index = 100
+position = Vector2(75.3333, 10.6667)
+scale = Vector2(0.333333, 0.333333)
 
-[node name="platform9" parent="." instance=ExtResource("23_mr7rd")]
-position = Vector2(9434, -39)
+[node name="platform18" parent="CanvasGroup" instance=ExtResource("23_mr7rd")]
+visibility_layer = 1
+z_index = 100
+position = Vector2(101, 10.6667)
+scale = Vector2(0.333333, 0.333333)
 
-[node name="platform10" parent="." instance=ExtResource("23_mr7rd")]
-position = Vector2(9514, -39)
+[node name="platform19" parent="CanvasGroup" instance=ExtResource("23_mr7rd")]
+visibility_layer = 1
+z_index = 100
+position = Vector2(126.333, 10.6667)
+scale = Vector2(0.333333, 0.333333)
 
-[node name="platform11" parent="." instance=ExtResource("23_mr7rd")]
-position = Vector2(9593, -39)
+[node name="platform16" parent="CanvasGroup" instance=ExtResource("23_mr7rd")]
+visibility_layer = 1
+z_index = 100
+position = Vector2(24.0001, 10.6667)
+scale = Vector2(0.333333, 0.333333)
 
-[node name="platform12" parent="." instance=ExtResource("23_mr7rd")]
-position = Vector2(9676, -39)
+[node name="platform3" parent="CanvasGroup" instance=ExtResource("23_mr7rd")]
+visibility_layer = 1
+z_index = 100
+position = Vector2(-52.9999, 10.6667)
+scale = Vector2(0.333333, 0.333333)
 
-[node name="platform5" parent="." instance=ExtResource("23_mr7rd")]
-position = Vector2(9022, -39)
+[node name="platform21" parent="CanvasGroup" instance=ExtResource("23_mr7rd")]
+visibility_layer = 1
+z_index = 100
+position = Vector2(-78.3334, 10.6667)
+scale = Vector2(0.333333, 0.333333)
+
+[node name="platform20" parent="CanvasGroup" instance=ExtResource("23_mr7rd")]
+visibility_layer = 1
+z_index = 100
+position = Vector2(-27.9999, 10.6667)
+scale = Vector2(0.333333, 0.333333)
+
+[node name="platform22" parent="CanvasGroup" instance=ExtResource("23_mr7rd")]
+visibility_layer = 1
+z_index = 100
+position = Vector2(-2.33325, 34)
+scale = Vector2(0.333333, 0.333333)
+
+[node name="platform23" parent="CanvasGroup" instance=ExtResource("23_mr7rd")]
+visibility_layer = 1
+z_index = 100
+position = Vector2(49, 34)
+scale = Vector2(0.333333, 0.333333)
+
+[node name="platform24" parent="CanvasGroup" instance=ExtResource("23_mr7rd")]
+visibility_layer = 1
+z_index = 100
+position = Vector2(75, 34)
+scale = Vector2(0.333333, 0.333333)
+
+[node name="platform25" parent="CanvasGroup" instance=ExtResource("23_mr7rd")]
+visibility_layer = 1
+z_index = 100
+position = Vector2(100.667, 34)
+scale = Vector2(0.333333, 0.333333)
+
+[node name="platform26" parent="CanvasGroup" instance=ExtResource("23_mr7rd")]
+visibility_layer = 1
+z_index = 100
+position = Vector2(126, 34)
+scale = Vector2(0.333333, 0.333333)
+
+[node name="platform27" parent="CanvasGroup" instance=ExtResource("23_mr7rd")]
+visibility_layer = 1
+z_index = 100
+position = Vector2(23.6667, 34)
+scale = Vector2(0.333333, 0.333333)
+
+[node name="platform28" parent="CanvasGroup" instance=ExtResource("23_mr7rd")]
+visibility_layer = 1
+z_index = 100
+position = Vector2(-53.3333, 34)
+scale = Vector2(0.333333, 0.333333)
+
+[node name="platform29" parent="CanvasGroup" instance=ExtResource("23_mr7rd")]
+visibility_layer = 1
+z_index = 100
+position = Vector2(-78.6667, 34)
+scale = Vector2(0.333333, 0.333333)
+
+[node name="platform30" parent="CanvasGroup" instance=ExtResource("23_mr7rd")]
+visibility_layer = 1
+z_index = 100
+position = Vector2(-28.3333, 34)
+scale = Vector2(0.333333, 0.333333)
+
+[node name="platform4" parent="CanvasGroup" instance=ExtResource("23_mr7rd")]
+visibility_layer = 1
+z_index = 100
+position = Vector2(-89, -13.6667)
+scale = Vector2(0.333333, 0.333333)
+
+[node name="platform6" parent="CanvasGroup" instance=ExtResource("23_mr7rd")]
+visibility_layer = 1
+z_index = 100
+position = Vector2(-61, -13.6667)
+scale = Vector2(0.333333, 0.333333)
+
+[node name="platform7" parent="CanvasGroup" instance=ExtResource("23_mr7rd")]
+visibility_layer = 1
+z_index = 100
+position = Vector2(-33.3333, -13.6667)
+scale = Vector2(0.333333, 0.333333)
+
+[node name="platform8" parent="CanvasGroup" instance=ExtResource("23_mr7rd")]
+visibility_layer = 1
+z_index = 100
+position = Vector2(-6.66675, -13.6667)
+scale = Vector2(0.333333, 0.333333)
+
+[node name="platform9" parent="CanvasGroup" instance=ExtResource("23_mr7rd")]
+visibility_layer = 1
+z_index = 100
+position = Vector2(21, -13.6667)
+scale = Vector2(0.333333, 0.333333)
+
+[node name="platform10" parent="CanvasGroup" instance=ExtResource("23_mr7rd")]
+visibility_layer = 1
+z_index = 100
+position = Vector2(47.6667, -13.6667)
+scale = Vector2(0.333333, 0.333333)
+
+[node name="platform11" parent="CanvasGroup" instance=ExtResource("23_mr7rd")]
+visibility_layer = 1
+z_index = 100
+position = Vector2(74, -13.6667)
+scale = Vector2(0.333333, 0.333333)
+
+[node name="platform12" parent="CanvasGroup" instance=ExtResource("23_mr7rd")]
+visibility_layer = 1
+z_index = 100
+position = Vector2(101.667, -13.6667)
+scale = Vector2(0.333333, 0.333333)
+
+[node name="platform5" parent="CanvasGroup" instance=ExtResource("23_mr7rd")]
+visibility_layer = 1
+z_index = 100
+position = Vector2(-116.333, -13.6667)
+scale = Vector2(0.333333, 0.333333)
+
+[node name="BridgeWithRail9" type="Sprite2D" parent="CanvasGroup"]
+modulate = Color(0.956863, 1, 0.756863, 1)
+z_index = 100
+position = Vector2(37.0525, 13.9636)
+rotation = -2.03331
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("39_ntm03")
+region_enabled = true
+region_rect = Rect2(310.346, 383.306, 1085.9, 153.783)
+
+[node name="BridgeWithRail10" type="Sprite2D" parent="CanvasGroup"]
+modulate = Color(0.956863, 1, 0.756863, 1)
+z_index = 100
+position = Vector2(37.0525, 11.9636)
+rotation = -2.03331
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("39_ntm03")
+flip_v = true
+region_enabled = true
+region_rect = Rect2(310.346, 383.306, 1085.9, 153.783)
+
+[node name="CanvasLayer3" type="CanvasLayer" parent="."]
+layer = 100
 
 [node name="Visuals" type="Node" parent="."]
 
@@ -9029,30 +9198,11 @@ texture = SubResource("GradientTexture1D_fqbgc")
 metadata/_edit_lock_ = true
 
 [node name="CanvasLayer2" type="CanvasLayer" parent="."]
-
-[node name="GrassFloating" type="Sprite2D" parent="CanvasLayer2"]
-position = Vector2(9200, -7)
-scale = Vector2(0.326008, 0.295775)
-texture = ExtResource("49_pwa2g")
-region_enabled = true
-region_rect = Rect2(664.666, 347.324, 273.899, 71.3279)
-
-[node name="GrassFloating2" type="Sprite2D" parent="CanvasLayer2"]
-position = Vector2(9377, 67)
-scale = Vector2(0.326008, 0.295775)
-texture = ExtResource("49_pwa2g")
-region_enabled = true
-region_rect = Rect2(664.666, 347.324, 273.899, 71.3279)
-
-[node name="GrassFloating3" type="Sprite2D" parent="CanvasLayer2"]
-position = Vector2(9555, 97)
-scale = Vector2(0.326008, 0.295775)
-texture = ExtResource("49_pwa2g")
-region_enabled = true
-region_rect = Rect2(664.666, 347.324, 273.899, 71.3279)
+layer = 20
 
 [node name="Dakan 2" parent="." instance=ExtResource("50_7b0w6")]
-position = Vector2(17041, -115)
+position = Vector2(15569, -118)
+scale = Vector2(0.7, 0.7)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = 128
@@ -9060,12 +9210,19 @@ layer = 128
 [node name="pause" parent="CanvasLayer" instance=ExtResource("51_nanuh")]
 
 [node name="Rina" parent="." instance=ExtResource("51_dgbl8")]
-position = Vector2(15922, -184)
+position = Vector2(16401, -184)
+
+[node name="M" type="Sprite2D" parent="."]
+position = Vector2(10413, -449)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("53_s3nmp")
 
 [connection signal="lever_state_changed" from="player/Lever" to="player/CanvasLayer3/Atmosphere" method="_on_lever_lever_state_changed"]
 [connection signal="lever_state_changed" from="player/Lever" to="Dream/Sprite2D/bridge" method="_on_lever_lever_state_changed"]
 [connection signal="lever_state_changed" from="player/Lever" to="Dream/Sprite2D/bridge2" method="_on_lever_lever_state_changed"]
 [connection signal="lever_state_changed" from="player/Lever" to="Dream/Sprite2D/bridge3" method="_on_lever_lever_state_changed"]
+[connection signal="lever_state_changed" from="player/Lever" to="Dream/Sprite2D/bridge4" method="_on_lever_lever_state_changed"]
+[connection signal="lever_state_changed" from="player/Lever" to="Dream/Sprite2D/bridge5" method="_on_lever_lever_state_changed"]
 [connection signal="lever_state_changed" from="player/Lever" to="Dream/Sprite2D/bridge8" method="_on_lever_lever_state_changed"]
 [connection signal="lever_state_changed" from="player/Lever" to="Dream/Sprite2D/bridge9" method="_on_lever_lever_state_changed"]
 [connection signal="lever_state_changed" from="player/Lever" to="Dream/Sprite2D/bridge12" method="_on_lever_lever_state_changed"]

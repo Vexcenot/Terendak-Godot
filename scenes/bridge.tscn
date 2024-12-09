@@ -9,6 +9,7 @@ size = Vector2(260, 38)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 visible = false
+modulate = Color(1, 0, 0, 1)
 texture = ExtResource("1_l4hlo")
 region_enabled = true
 region_rect = Rect2(-5.43866, -0.34407, 306.062, 98.5623)

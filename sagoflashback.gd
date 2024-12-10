@@ -5,7 +5,7 @@ func _ready():
 	spidergramps()
 
 func spidergramps():
-	Dialogic.start("spidergramps")
+	Dialogic.start("Sagoflashback")
 
 	Dialogic.timeline_ended.connect(ended)
 	

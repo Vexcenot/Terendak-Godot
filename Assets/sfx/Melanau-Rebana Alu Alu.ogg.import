@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dhk3g8vir2edv"
+path="res://.godot/imported/Melanau-Rebana Alu Alu.ogg-b97a71998e01fd4efd55ab37fbbcd827.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/sfx/Melanau-Rebana Alu Alu.ogg"
+dest_files=["res://.godot/imported/Melanau-Rebana Alu Alu.ogg-b97a71998e01fd4efd55ab37fbbcd827.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bhjfdswmiid1f"
+path="res://.godot/imported/horror-rumble-winds-253834.ogg-838c512192b90fabfc078f14f9fd1828.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/sfx/space waster/horror-rumble-winds-253834.ogg"
+dest_files=["res://.godot/imported/horror-rumble-winds-253834.ogg-838c512192b90fabfc078f14f9fd1828.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

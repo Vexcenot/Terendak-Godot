@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://bqttumtv63r0d"]
+[gd_scene load_steps=34 format=3 uid="uid://bqttumtv63r0d"]
 
 [ext_resource type="Script" path="res://scenes/scary_maze.gd" id="1_0im1k"]
 [ext_resource type="Texture2D" uid="uid://bn63j3idec2p0" path="res://Assets/sprites/world_tileset.png" id="1_7tt2e"]
@@ -20,6 +20,10 @@
 [ext_resource type="Texture2D" uid="uid://catek5mtut8tt" path="res://Assets/Scary Maze/hands/9.png" id="16_w0wgr"]
 [ext_resource type="Texture2D" uid="uid://cmhgunfukms6y" path="res://Assets/Scary Maze/hands/10.png" id="17_3qv5f"]
 [ext_resource type="Texture2D" uid="uid://c8tggyds2ps8p" path="res://Assets/Scary Maze/Terendak Plan view (1).PNG" id="19_akxli"]
+[ext_resource type="AudioStream" uid="uid://bhjfdswmiid1f" path="res://Assets/sfx/space waster/horror-rumble-winds-253834.ogg" id="21_7tsi3"]
+[ext_resource type="Script" path="res://scenes/ambience.gd" id="22_5wj74"]
+[ext_resource type="AudioStream" uid="uid://becn5ab1vi1" path="res://Assets/sfx/Mengarang [lCwN6FEZ1qk].ogg" id="23_54yin"]
+[ext_resource type="Script" path="res://scenes/soundtrack.gd" id="24_p2wtv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qy8gu"]
 texture = ExtResource("1_7tt2e")
@@ -322,6 +326,16 @@ modulate = Color(0.23, 0.23, 0.23, 0.286275)
 position = Vector2(1, -4)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("19_akxli")
+
+[node name="Ambience" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("21_7tsi3")
+autoplay = true
+script = ExtResource("22_5wj74")
+
+[node name="Soundtrack" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("23_54yin")
+autoplay = true
+script = ExtResource("24_p2wtv")
 
 [connection signal="area_entered" from="CursorArea" to="CursorArea" method="_on_area_entered"]
 [connection signal="body_entered" from="CursorArea" to="CursorArea" method="_on_body_entered"]

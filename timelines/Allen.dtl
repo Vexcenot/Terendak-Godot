@@ -2,6 +2,7 @@ join "Uncle Allen" rightmost
 join "Uncle Allen" left
 join Maya leftmost
 "Uncle Allen": "Maya! Where have you been?"
+[sound volume="0.0"]
 "Uncle Allen": "Its getting late!"
 Maya: "Uncle Allen! Uhh, sorry, I didn't see the time!"
 Maya: "I was...."

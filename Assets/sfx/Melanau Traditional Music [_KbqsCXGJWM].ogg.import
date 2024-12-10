@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dp5a0ug3brnc8"
+path="res://.godot/imported/Melanau Traditional Music [_KbqsCXGJWM].ogg-7ef7b0d08b35294f121ed97cf64e1741.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/sfx/Melanau Traditional Music [_KbqsCXGJWM].ogg"
+dest_files=["res://.godot/imported/Melanau Traditional Music [_KbqsCXGJWM].ogg-7ef7b0d08b35294f121ed97cf64e1741.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

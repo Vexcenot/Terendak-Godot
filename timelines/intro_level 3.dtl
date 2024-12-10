@@ -19,5 +19,5 @@ leave Maya
 leave tupeing
 tupeing: ...
 [end_timeline]
-[wait time="1.0"]
+[wait time="0.5"]
 [end_timeline]

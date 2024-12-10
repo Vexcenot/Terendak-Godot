@@ -1,6 +1,8 @@
 Maya: "Grandpa has always been a daredevil."
+[music path="res://Assets/sfx/ambience-wind-blowing-through-trees-01-186986.ogg" fade="0.0" volume="0.0"]
 Maya: "Even 50 years old, he was always doing the wildest things."
 Maya: "One time, he climbed a tree because I made a bet with him."
+[music path="res://Assets/sfx/Melanau Traditional Music [_KbqsCXGJWM].ogg" fade="0.0" volume="-1.0"]
 [background arg="res://Assets/cutscene/Level 1/New 6.png" fade="0.0"]
 Maya: "I don't remember what the bet was, but grandpa did it anyway."
 tupeing: "What a very loving grandfather you have..."

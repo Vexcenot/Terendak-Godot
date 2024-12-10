@@ -11,7 +11,7 @@ func _process(delta: float) -> void:
 
 func _on_body_entered(body: Node2D) -> void:
 	print("Convo Started")
-	Dialogic.start("Deaf")
+	Dialogic.start("dakan_deaf_1")
 	print("cain get!")
 	Dialogic.timeline_ended.connect(ended)
 	

@@ -15,5 +15,5 @@ Dakan2: "I have no time for cowards!"
 leave Dakan2 [animation="Fade Out"]
 Maya: "..."
 leave Maya
-[wait time="1.0"]
+[wait time="0.1"]
 [end_timeline]

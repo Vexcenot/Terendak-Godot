@@ -17,5 +17,5 @@ Maya (Default_Masked): "Lost in a tree huh?"
 tupeing: "Keep your eyes up in the tree, its up there somewhere."
 "Dakan 1": <Empty Text Event>
 leave Maya
-[wait time="1.0"]
+[wait time="0.1"]
 [end_timeline]

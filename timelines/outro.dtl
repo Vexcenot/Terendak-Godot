@@ -1,5 +1,6 @@
 Maya: "Grandpa?"
 [background arg="res://Assets/cutscene/Intro/All black.png" fade="0.0"]
+[music path="res://Assets/sfx/Melanau-Rebana Alu Alu.ogg" fade="0.0" volume="0.0"]
 Maya: "Are you awake?"
 Grandpa: ...
 Maya: "Grandpa...take this..."

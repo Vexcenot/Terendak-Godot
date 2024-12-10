@@ -7,13 +7,13 @@
 [ext_resource type="Script" path="res://scripts/atmosphere_activate.gd" id="5_gmp4r"]
 [ext_resource type="Shader" path="res://Assets/shaders/Vignette.gdshader" id="6_d3i4e"]
 [ext_resource type="PackedScene" uid="uid://bkfpr202l306y" path="res://scenes/lever.tscn" id="7_yko2i"]
-[ext_resource type="AudioStream" uid="uid://dhk3g8vir2edv" path="res://Assets/sfx/Melanau-Rebana Alu Alu.ogg" id="8_3xpmj"]
+[ext_resource type="AudioStream" uid="uid://dp5a0ug3brnc8" path="res://Assets/sfx/Melanau Traditional Music [_KbqsCXGJWM].ogg" id="8_cuand"]
 [ext_resource type="Texture2D" uid="uid://bn63j3idec2p0" path="res://Assets/sprites/world_tileset.png" id="8_r1o6a"]
 [ext_resource type="Texture2D" uid="uid://colgdrgmk36vc" path="res://Assets/2dplatforming/Plants V2.png" id="9_2wam3"]
 [ext_resource type="Script" path="res://scenes/soundtrack.gd" id="9_k0xop"]
 [ext_resource type="Texture2D" uid="uid://mv76j8tl0cil" path="res://Assets/2dplatforming/Wooden platform 1.png" id="10_1absb"]
+[ext_resource type="AudioStream" uid="uid://vaguw350nj2y" path="res://Assets/sfx/space waster/river-ambience-23452.mp3" id="10_1k1a6"]
 [ext_resource type="PackedScene" uid="uid://47xf7cuo38yl" path="res://scenes/drowning.tscn" id="10_jth37"]
-[ext_resource type="AudioStream" uid="uid://dw6ylbfos045s" path="res://Assets/sfx/summer-outdoors-nature-ambience-228110.mp3" id="10_wg7w1"]
 [ext_resource type="Script" path="res://scenes/forest_ambience.gd" id="11_24ho0"]
 [ext_resource type="Texture2D" uid="uid://cmu5iai8arnd0" path="res://Assets/2dplatforming/Wooden platform 2.png" id="11_xjlsi"]
 [ext_resource type="Texture2D" uid="uid://b4joyg15sysbh" path="res://Assets/2dplatforming/Wooden platform 3.png" id="12_hout7"]
@@ -5598,15 +5598,15 @@ scale = Vector2(0.2, 0.2)
 priority = 10
 
 [node name="Soundtrack2" type="AudioStreamPlayer2D" parent="player"]
-position = Vector2(3917, 61)
-stream = ExtResource("8_3xpmj")
-volume_db = 3.702
+position = Vector2(-3, -67)
+stream = ExtResource("8_cuand")
+volume_db = -11.155
 autoplay = true
 script = ExtResource("9_k0xop")
 
 [node name="Forest ambience" type="AudioStreamPlayer2D" parent="player"]
 position = Vector2(-2, -7)
-stream = ExtResource("10_wg7w1")
+stream = ExtResource("10_1k1a6")
 autoplay = true
 script = ExtResource("11_24ho0")
 
@@ -5647,15 +5647,16 @@ scale = Vector2(0.6, 0.6)
 position = Vector2(-23.3343, -333.333)
 
 [node name="bridge" parent="Dream/Sprite2D" instance=ExtResource("15_t7bu2")]
-position = Vector2(4433.33, 193.333)
+position = Vector2(4486.67, 241.666)
 script = ExtResource("16_rkat4")
 
 [node name="bridge2" parent="Dream/Sprite2D" instance=ExtResource("15_t7bu2")]
-position = Vector2(4800, 48.333)
+position = Vector2(4798.33, 96.6664)
+scale = Vector2(0.8, 0.8)
 script = ExtResource("16_rkat4")
 
 [node name="bridge3" parent="Dream/Sprite2D" instance=ExtResource("15_t7bu2")]
-position = Vector2(5230, -123.334)
+position = Vector2(5228.33, -63.3336)
 script = ExtResource("16_rkat4")
 
 [node name="bridge5" parent="Dream/Sprite2D" instance=ExtResource("15_t7bu2")]

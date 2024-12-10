@@ -1,4 +1,8 @@
 join Dakan3 rightmost
 join Maya leftmost
-Dakan3: "daghdaigdbafakjscgyaiofgwr"
-Maya: "Look! That Dakan is stuck!
+Dakan3: ???
+Maya: <Maya didn't notice the Dakan.>
+Dakan3: !!!
+leave Dakan3
+[wait time="0.5"]
+[end_timeline]

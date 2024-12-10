@@ -7,6 +7,7 @@ I'm currently boarding a bus to Mukah.
 Maya: "This is going to be a long ride..."
 [background arg="res://Assets/cutscene/Intro/2.png" fade="0.5"]
 It's in the middle of April, I have nothing to do.
+[music path="res://Assets/sfx/ambience-wind-blowing-through-trees-01-186986.ogg" fade="0.0" volume="0.0"]
 I wanted to sit at home and relax on the bed all day.
 But my parents sent me some urgent news.
 My grandpa in Mukah fell ill, but they cannot return because of their jobs.
@@ -21,6 +22,7 @@ The only bus available departs at 10pm.
 [background arg="res://Assets/cutscene/Intro/5.png" fade="0.5"]
 "Help me..."
 "Help me..."
+[music path="res://Assets/sfx/Melanau-Rebana Alu Alu.ogg" fade="0.0" volume="0.0"]
 [background arg="res://Assets/cutscene/Intro/6-2.png" fade="0.0"]
 [wait time="1.0"]
 [background arg="res://Assets/cutscene/Intro/6-3.png" fade="0.0"]
@@ -31,7 +33,6 @@ Before I knew it, I was already in Mukah.
 [background arg="res://Assets/cutscene/Intro/7.png" fade="0.5"]
 The sounds of nature are peaceful compared to the city.
 It's been decade since I was last here...
-[music path="res://Assets/sfx/summer-outdoors-nature-ambience-228110.mp3" fade="0.0" volume="0.0"]
 [background arg="8.png" fade="0.5"]
 "Uncle Allen is waiting for me at the door."
 "Uncle Allen": "Maya...Welcome!"

@@ -10,8 +10,8 @@
 [ext_resource type="PackedScene" uid="uid://ccuyxy5520tns" path="res://scenes/chest.tscn" id="7_0coem"]
 [ext_resource type="PackedScene" uid="uid://bkfpr202l306y" path="res://scenes/lever.tscn" id="7_y4ht0"]
 [ext_resource type="Texture2D" uid="uid://bn63j3idec2p0" path="res://Assets/sprites/world_tileset.png" id="8_a558a"]
-[ext_resource type="AudioStream" uid="uid://dhk3g8vir2edv" path="res://Assets/sfx/Melanau-Rebana Alu Alu.ogg" id="9_23jog"]
 [ext_resource type="Texture2D" uid="uid://colgdrgmk36vc" path="res://Assets/2dplatforming/Plants V2.png" id="9_f4h7i"]
+[ext_resource type="AudioStream" uid="uid://iw61ip5p1hwh" path="res://Assets/sfx/space waster/Melanau-Rebana Alu Alu.mp3" id="9_k5wx8"]
 [ext_resource type="PackedScene" uid="uid://t31087jjpc7d" path="res://scenes/bridge.tscn" id="10_0gqu6"]
 [ext_resource type="PackedScene" uid="uid://3w6luficyxyc" path="res://NPC Scenes/Depression Dakan.tscn" id="10_p6j52"]
 [ext_resource type="Script" path="res://scenes/soundtrack.gd" id="10_w1l6r"]
@@ -4796,9 +4796,9 @@ scale = Vector2(0.2, 0.2)
 priority = 10
 
 [node name="Soundtrack" type="AudioStreamPlayer2D" parent="player"]
-position = Vector2(3917, 61)
-stream = ExtResource("9_23jog")
-volume_db = 3.702
+position = Vector2(0, -57)
+stream = ExtResource("9_k5wx8")
+volume_db = 0.872
 autoplay = true
 script = ExtResource("10_w1l6r")
 
@@ -6315,7 +6315,7 @@ texture = ExtResource("25_4pby5")
 [node name="pause" parent="CanvasLayer" instance=ExtResource("50_kygd2")]
 
 [node name="Felicia" parent="." instance=ExtResource("48_0l7j0")]
-position = Vector2(1023, -185)
+position = Vector2(1023, -188)
 
 [connection signal="lever_state_changed" from="player/Lever" to="player/CanvasLayer3/Atmosphere" method="_on_lever_lever_state_changed"]
 [connection signal="lever_state_changed" from="player/Lever" to="Dream/Sprite2D/bridge" method="_on_lever_lever_state_changed"]

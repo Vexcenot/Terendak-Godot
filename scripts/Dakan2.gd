@@ -1,6 +1,6 @@
 extends Area2D
 
-
+var worm = false
 @onready var canvas_layer = $On
 
 
@@ -11,10 +11,12 @@ func _process(delta: float) -> void:
 		canvas_layer.visible = false
 
 func _on_body_entered(body: Node2D) -> void:
-	print("Convo Started")
-	Dialogic.start("Worm Quest")
-	DragManager.talking = true
-	Dialogic.timeline_ended.connect(dakan)
+	if worm == false:
+		print("Convo Started")
+		Dialogic.start("Worm Quest")
+		DragManager.talking = true
+		worm = true
+		Dialogic.timeline_ended.connect(dakan)
 
 func dakan():
 	Dialogic.timeline_ended.disconnect(dakan)

@@ -1,5 +1,4 @@
 join tupeing rightmost
-[background arg="res://Assets/menu/Controls Maze.png" fade="0.5"]
 [wait_input]
 [background fade="0.5"]
 tupeing: Maya Watch Out!
@@ -14,7 +13,9 @@ tupeing: Use your mouse to get the dropped pieces.
 tupeing: Be careful of the walls, they will grab you.
 tupeing: I need to use my powers to pull you back to safety
 tupeing: Dont worry about the hands, they are there to distract you...
-tupeing: Good luck!
+[background arg="res://Assets/menu/Controls Maze.png" fade="0.5"]
+[wait_input]
+[background fade="0.5"]
 update tupeing [animation="Tada" length="1.0" wait="true"]
 leave tupeing [animation="Zoom Center Out"]
 [wait time="1.0" skippable="true"]

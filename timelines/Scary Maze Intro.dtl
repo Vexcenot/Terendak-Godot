@@ -1,8 +1,8 @@
 join tupeing rightmost
+join Maya leftmost
 [wait_input]
 [background fade="0.5"]
 tupeing: Maya Watch Out!
-join Maya leftmost
 Maya: Woah!
 Maya: Wh- WHOSE HANDS ARE THESE
 tupeing: Keep me on Maya

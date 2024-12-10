@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://b7cqsu13xmtmn"]
+[gd_scene load_steps=5 format=3 uid="uid://b7cqsu13xmtmn"]
 
 [ext_resource type="Script" path="res://scripts/Dakan3.gd" id="1_22isn"]
 [ext_resource type="Texture2D" uid="uid://c1c053ah1mw47" path="res://characters/sprites/Dakan3.png" id="2_wxxmv"]
+[ext_resource type="Texture2D" uid="uid://b6u5d8bw47pil" path="res://NPC Scenes/Dakan3_piece.png" id="3_6x0k1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e3xc7"]
 size = Vector2(95, 251)
@@ -21,8 +22,7 @@ flip_h = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.3, 0.3)
-texture = ExtResource("2_wxxmv")
-flip_h = true
+texture = ExtResource("3_6x0k1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -126)

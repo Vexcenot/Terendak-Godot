@@ -1,7 +1,13 @@
+join Dakan3 center
+Dakan3: Keh Keh Keh
+The dakan places himself on the floor
+leave Dakan3 [animation="Slide Out Down"]
+leave Dakan3 [animation="Fade Out"]
 Maya: ...
 Maya: Eh?
 *Crash*
 [background arg="res://Assets/cutscene/Level 3/New 5.png" fade="0.0"]
+All the Terendak pieces Maya had scattered all over the floor
 Dakan3: "Hehehehehehehehe...."
 Maya: Hey!
 Maya: Huh?

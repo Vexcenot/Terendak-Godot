@@ -17,6 +17,36 @@ entries = {
 "text": "Spirits will attack a person through the mind, body, soul or emotions. From an outsider's perspective, they receive an illness.",
 "title": "Causes sickness"
 },
+"Ikut saya ke belakang rumah": {
+"name": "Ikut saya ke belakang rumah",
+"text": "Rina's eyes lit up when I said that...",
+"title": "Follow me to behind the house!"
+},
+"Lama tak jumpa": {
+"name": "Lama tak jumpa",
+"text": "Its been 10 years",
+"title": "Long time no see"
+},
+"Nak buat Dakan untuk kamu je": {
+"name": "Nak buat Dakan untuk kamu je",
+"text": "Is Rina a shaman? She must be joking...",
+"title": "Need to make a Dakan for you?"
+},
+"Saya ajar kamu": {
+"name": "Saya ajar kamu",
+"text": "That was easy",
+"title": "I'll teach you"
+},
+"Selamet suab. Inou dengah nou?": {
+"name": "Selamet suab. Inou dengah nou?",
+"text": "Bahasa Melanau",
+"title": "Good morning, how are you?"
+},
+"Sudah sepuluh tahun je...": {
+"name": "Sudah sepuluh tahun je...",
+"text": "Time flies",
+"title": "Its been 10 years, huh?"
+},
 "Tapi, kamu sudah lupa makanan kegemaran!": {
 "alternatives": ["Translation"],
 "case_sensitive": true,
@@ -26,16 +56,21 @@ entries = {
 "text": "But you have forgotten your favourite food!.",
 "title": "Maya Fact #1337"
 },
+"Tengok!": {
+"name": "Tengok!",
+"text": "Rina wants to show me something?",
+"title": "Look!"
+},
 "Translation": "Tapi, kamu sudah lupa makanan kegemaran!",
 "Uncle Tom": {
 "name": "Uncle Tom",
 "text": "He has a sleeper build. Man is built like a tank under those clothes.",
 "title": "Looks can be deceiving"
 },
-"“Selamet suab. Inou dengah nou?”": {
-"name": "“Selamet suab. Inou dengah nou?”",
-"text": "Bahasa Melanau",
-"title": "Good morning, how are you?"
+"tipu je": {
+"name": "tipu je",
+"text": "Don't joke about that Rina.",
+"title": "I'm kidding"
 }
 }
 enabled = true

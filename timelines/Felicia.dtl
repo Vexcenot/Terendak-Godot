@@ -2,10 +2,10 @@ join Maya leftmost
 join Felicia rightmost [mirrored="true"]
 Felicia: “Selamet suab. Inou dengah nou?”
 Maya: Uhh....
-Felicia: “Ah, maaf, good morning,  Maya, how are you?”
+Felicia: “Ah, maaf, good morning, Maya, how are you?”
 Maya (Default): “Good morning Auntie, I’m doing okay…”
 Felicia: “Ah…I came to drop off some medicine."
-Felicia: "After that I'll be cooking dinner for you all!"
+Felicia: "After that I'll be cooking dinner for you!"
 Maya (Default): “Its okay auntie... this is a family matter, it should not concern you.”
 Felicia: “Don’t be like that Maya, everyone in the village is concerned for one another.”
 Felicia: "We look after each other."

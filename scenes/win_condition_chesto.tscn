@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://caingmda1e7qi"]
 
 [ext_resource type="Script" path="res://scenes/win_condition_chesto.gd" id="1_7kima"]
-[ext_resource type="AudioStream" uid="uid://n2412bnu0en2" path="res://sounds/forest fucker.mp3" id="2_780yc"]
+[ext_resource type="AudioStream" uid="uid://dhk3g8vir2edv" path="res://Assets/sfx/Melanau-Rebana Alu Alu.ogg" id="2_7jd82"]
 [ext_resource type="FontFile" uid="uid://sswlt8c163m4" path="res://fonts/FIGHTBACK.ttf" id="3_33fvr"]
 [ext_resource type="Texture2D" uid="uid://dk5pxtkq5qwn7" path="res://Assets/Scary Maze/Terendak piece 1.png" id="4_abb0s"]
 
@@ -110,8 +110,7 @@ process_mode = 3
 script = ExtResource("1_7kima")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_780yc")
-pitch_scale = 0.85
+stream = ExtResource("2_7jd82")
 autoplay = true
 
 [node name="Transition" type="AnimationPlayer" parent="."]

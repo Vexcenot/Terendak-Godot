@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://clxgqmivnyfiq" path="res://Assets/charactermodels/Npc 3.png" id="2_3cuwb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e3xc7"]
-size = Vector2(185.5, 251)
+size = Vector2(293, 355)
 
 [node name="Tom" type="Area2D"]
 collision_mask = 2
@@ -17,7 +17,7 @@ texture = ExtResource("2_3cuwb")
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(95.5, -103)
+position = Vector2(203, -17)
 scale = Vector2(2, 2)
 shape = SubResource("RectangleShape2D_e3xc7")
 

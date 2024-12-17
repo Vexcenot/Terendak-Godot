@@ -1,10 +1,10 @@
 join Rina rightmost [mirrored="true"]
 join Maya leftmost
-Rina: "Maya, Maya! Lama tak jumpa!" (Long time no see!)
+Rina: "Maya, Maya! Lama tak jumpa!"
 Maya: "Auntie Rina? It's been a while..."
 Rina: "Yeah! Come, come, I've been anxiously waiting for the day you return!"
 Maya: "What for?"
-Rina: "Tengok!" (Look!)
+Rina: "Tengok!" 
 join Maya center
 join Rina right [mirrored="true"]
 Rina: <Rina shows a bowl full of fat Sago worms.>
@@ -18,7 +18,8 @@ Rina: "Sudah sepuluh tahun je..."
 leave tupeing
 leave Rina [animation="Fade Out"]
 [wait time="1.0"]
-join Maya (Default_Masked) leftmost
+join Maya rightmost [animation="Slide In Right" mirrored="true"]
+join Maya (Default) leftmost [animation="Slide In Right"]
 tupeing: "Maya, what are you doing?"
 tupeing: "We need the Sago worms for the Dakan!"
 Maya: "No, no! I can't stand the look of them!"
@@ -28,11 +29,15 @@ tupeing: "Are you saying a sago worm is worth more than your grandpa?"
 Maya: "What? NO!"
 Maya: "Grandpa is worth WAY MORE than that."
 tupeing: "Well?"
-Maya marches back to Auntie Rina
-join Rina rightmost [mirrored="true"]
+join Maya rightmost
+leave Maya [animation="Fade Out"]
+Maya marches back to Auntie Rina.
+join Rina rightmost [animation="Fade In" mirrored="true"]
+join Maya leftmost
+join Maya center
 Maya (Default): "Hi again Auntie Rina..."
 Rina: "Hi, hi!"
-Rina: "Maaf ya... saya lupa kamu sudah sepuluh tahun tak balik kampung..."  (I forgot you haven't came back in 10 years.)
+Rina: "Maaf ya... saya lupa kamu sudah sepuluh tahun tak balik kampung..."
 Rina: "Tapi, kamu sudah lupa makanan kegemaran!"
 Maya (Default): "Ehh...."
 Maya (Default): "I...Don't believe it..."

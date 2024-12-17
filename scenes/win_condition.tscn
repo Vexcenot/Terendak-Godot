@@ -1,10 +1,10 @@
 [gd_scene load_steps=9 format=3 uid="uid://cpg4u3glin3oe"]
 
 [ext_resource type="Script" path="res://scripts/win_condition.gd" id="1_y8fcg"]
-[ext_resource type="AudioStream" uid="uid://n2412bnu0en2" path="res://sounds/forest fucker.mp3" id="2_sth8e"]
+[ext_resource type="AudioStream" uid="uid://dhk3g8vir2edv" path="res://Assets/sfx/Melanau-Rebana Alu Alu.ogg" id="2_fclcm"]
 [ext_resource type="Texture2D" uid="uid://vapqy2bxm08a" path="res://textures/shadow.png" id="3_1emos"]
 [ext_resource type="FontFile" uid="uid://sswlt8c163m4" path="res://fonts/FIGHTBACK.ttf" id="3_gle32"]
-[ext_resource type="Texture2D" uid="uid://b1rioj00is08b" path="res://textures/dwadasdwadwa.png" id="4_fgc4o"]
+[ext_resource type="Texture2D" uid="uid://bgkdnkvgts5j1" path="res://Assets/Scary Maze/Terendak piece 2.png" id="4_7mdux"]
 
 [sub_resource type="Animation" id="Animation_nxaoi"]
 resource_name = "fade"
@@ -111,8 +111,7 @@ process_mode = 3
 script = ExtResource("1_y8fcg")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_sth8e")
-pitch_scale = 0.85
+stream = ExtResource("2_fclcm")
 autoplay = true
 
 [node name="Transition" type="AnimationPlayer" parent="."]
@@ -161,7 +160,7 @@ texture = ExtResource("3_1emos")
 [node name="Dwadasdwadwa" type="Sprite2D" parent="CanvasLayer2"]
 position = Vector2(671.329, 346.154)
 scale = Vector2(0.13, 0.13)
-texture = ExtResource("4_fgc4o")
+texture = ExtResource("4_7mdux")
 
 [node name="Label" type="Label" parent="CanvasLayer2"]
 anchors_preset = 15

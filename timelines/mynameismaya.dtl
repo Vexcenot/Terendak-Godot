@@ -1,17 +1,17 @@
 [background arg="res://Assets/cutscene/Intro/All black.png" fade="0.0"]
 Press Space to forward text.
 No movement is available while dialogue is active
-[background arg="res://Assets/cutscene/Intro/1.png" fade="0.5"]
+[background arg="res://Assets/cutscene/NEW INTRO/Panel 1-1.png" fade="0.5"]
 My name is Maya.
 I'm currently boarding a bus to Mukah.
 Maya: "This is going to be a long ride..."
-[background arg="res://Assets/cutscene/Intro/2.png" fade="0.5"]
+[background arg="res://Assets/cutscene/NEW INTRO/Panel 1-2.png" fade="0.5"]
 It's in the middle of April, I have nothing to do.
 [music path="res://Assets/sfx/ambience-wind-blowing-through-trees-01-186986.ogg" fade="0.0" volume="0.0"]
 I wanted to sit at home and relax on the bed all day.
 But my parents sent me some urgent news.
 My grandpa in Mukah fell ill, but they cannot return because of their jobs.
-[background arg="res://Assets/cutscene/Intro/3.png" fade="0.5"]
+[background arg="res://Assets/cutscene/NEW INTRO/Panel 1-3.png" fade="0.5"]
 Reluctantly, I volunteered to book a trip to Mukah to help out.
 I decided I needed time away from the city.
 The only bus available departs at 10pm.

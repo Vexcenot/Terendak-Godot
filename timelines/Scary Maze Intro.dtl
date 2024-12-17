@@ -1,7 +1,8 @@
-join tupeing rightmost
-join Maya leftmost
+[background arg="res://Assets/menu/Controls Maze.png" fade="0.5"]
 [wait_input]
 [background fade="0.5"]
+join tupeing rightmost
+join Maya leftmost
 tupeing: Maya Watch Out!
 Maya: Woah!
 Maya: Wh- WHOSE HANDS ARE THESE

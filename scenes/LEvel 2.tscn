@@ -5773,22 +5773,24 @@ visibility_layer = 1
 z_index = 100
 position = Vector2(67.3334, 42.6667)
 
-[node name="BridgeWithRail9" type="Sprite2D" parent="CanvasGroup"]
+[node name="CanvasLayer" type="CanvasLayer" parent="CanvasGroup"]
+
+[node name="BridgeWithRail9" type="Sprite2D" parent="CanvasGroup/CanvasLayer"]
 modulate = Color(0.956863, 1, 0.756863, 1)
-z_index = 100
-position = Vector2(37.0525, 13.9636)
+z_index = 4096
+position = Vector2(9482.16, 57.8908)
 rotation = -2.03331
-scale = Vector2(0.1, 0.1)
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("39_ntm03")
 region_enabled = true
 region_rect = Rect2(310.346, 383.306, 1085.9, 153.783)
 
-[node name="BridgeWithRail10" type="Sprite2D" parent="CanvasGroup"]
+[node name="BridgeWithRail10" type="Sprite2D" parent="CanvasGroup/CanvasLayer"]
 modulate = Color(0.956863, 1, 0.756863, 1)
-z_index = 100
-position = Vector2(37.0525, 11.9636)
+z_index = 4096
+position = Vector2(9482.16, 51.8908)
 rotation = -2.03331
-scale = Vector2(0.1, 0.1)
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("39_ntm03")
 flip_v = true
 region_enabled = true
@@ -7882,6 +7884,7 @@ texture = ExtResource("29_fr8pt")
 [node name="BridgeWithRail" type="Sprite2D" parent="Visuals/-2"]
 position = Vector2(10171.3, 18.75)
 texture = ExtResource("39_ntm03")
+metadata/_edit_lock_ = true
 
 [node name="BridgeWithRail2" type="Sprite2D" parent="Visuals/-2"]
 position = Vector2(11521.3, 18.75)
@@ -7942,6 +7945,7 @@ texture = ExtResource("34_mumy8")
 [node name="DirtPlatform3" type="Sprite2D" parent="Visuals/-1"]
 position = Vector2(9251.11, -36.6667)
 texture = ExtResource("34_mumy8")
+metadata/_edit_lock_ = true
 
 [node name="DirtPlatform9" type="Sprite2D" parent="Visuals/-1"]
 position = Vector2(15497.8, -54.4444)
@@ -8041,6 +8045,7 @@ texture = ExtResource("41_2omho")
 [node name="Water8" type="Sprite2D" parent="Visuals/-1/Water"]
 position = Vector2(17471.5, 193.005)
 texture = ExtResource("41_2omho")
+metadata/_edit_lock_ = true
 
 [node name="Water9" type="Sprite2D" parent="Visuals/-1/Water"]
 position = Vector2(19364.7, 218.416)
@@ -8109,6 +8114,7 @@ texture = ExtResource("41_2omho")
 [node name="Water8" type="Sprite2D" parent="Visuals/-1/Water2"]
 position = Vector2(17471.5, 193.005)
 texture = ExtResource("41_2omho")
+metadata/_edit_lock_ = true
 
 [node name="Water9" type="Sprite2D" parent="Visuals/-1/Water2"]
 position = Vector2(19364.7, 218.416)
